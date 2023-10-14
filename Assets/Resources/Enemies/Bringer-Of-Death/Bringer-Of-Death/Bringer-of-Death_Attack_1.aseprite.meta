@@ -1,0 +1,802 @@
+fileFormatVersion: 2
+guid: 3707a3d3347aeaa499d7ea54b63d2bde
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Attack
+    second: {fileID: 7400000, guid: 83346360daa6bda47a9f9cf4f6dcd60d, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Death
+    second: {fileID: 7400000, guid: c2292f1d53505ef4c856af6a29d8cc5a, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638328802666343597
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Bringer-of-Death_Attack_1_Frame_0
+    originalName: 
+    pivot: {x: -0.3181819, y: -0.018518519}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 335
+      y: 188
+      width: 44
+      height: 54
+    spriteID: 72f0c1b1d00be8a4aa0c6da8ef5d07d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 251, y: 187}
+  - name: Bringer-of-Death_Attack_1_Frame_1
+    originalName: 
+    pivot: {x: -0.13333333, y: -0.018518519}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 341
+      y: 4
+      width: 60
+      height: 54
+    spriteID: 4291a1ea05e0a7d4da36b40577f62774
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 263, y: 3}
+  - name: Bringer-of-Death_Attack_1_Frame_2
+    originalName: 
+    pivot: {x: -0.049180355, y: -0.014492754}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 272
+      y: 4
+      width: 61
+      height: 69
+    spriteID: 605593022d2a400448e318873e2788e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 3}
+  - name: Bringer-of-Death_Attack_1_Frame_3
+    originalName: 
+    pivot: {x: -0.08064512, y: -0.014492754}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 414
+      y: 95
+      width: 62
+      height: 69
+    spriteID: 4acbc278ea722bd46973e0eb0f667725
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 339, y: 94}
+  - name: Bringer-of-Death_Attack_1_Frame_4
+    originalName: 
+    pivot: {x: 0.48872182, y: -0.013157895}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 273
+      y: 95
+      width: 133
+      height: 76
+    spriteID: e6e953656c9dd7c4e915c426138a19b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 94}
+  - name: Bringer-of-Death_Attack_1_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.012048193}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 140
+      height: 83
+    spriteID: 10c36988a6f87e6488dbb1482ddbdd52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3}
+  - name: Bringer-of-Death_Attack_1_Frame_6
+    originalName: 
+    pivot: {x: 0.52755904, y: -0.011764706}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 95
+      width: 127
+      height: 85
+    spriteID: 4b209d5574fdd8c40a7d818386f5084a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 94}
+  - name: Bringer-of-Death_Attack_1_Frame_7
+    originalName: 
+    pivot: {x: 0.52380955, y: -0.011764706}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 95
+      width: 126
+      height: 85
+    spriteID: ad3a6ac700918554fa744b25f7cb8a5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 94}
+  - name: Bringer-of-Death_Attack_1_Frame_8
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.0121951215}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 4
+      width: 112
+      height: 82
+    spriteID: 9e4e92be8c02be0459ae7ae90bd2517d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 3}
+  - name: Bringer-of-Death_Attack_1_Frame_9
+    originalName: 
+    pivot: {x: -0.43243238, y: -0.018867925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 387
+      y: 188
+      width: 37
+      height: 53
+    spriteID: 8a3936333f2382f46868dff3a7f5369b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 301, y: 187}
+  - name: Bringer-of-Death_Attack_1_Frame_10
+    originalName: 
+    pivot: {x: -0.37500003, y: -0.018867925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 467
+      y: 4
+      width: 40
+      height: 53
+    spriteID: 1ed91779d13596944bdb9da576d62838
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 382, y: 3}
+  - name: Bringer-of-Death_Attack_1_Frame_11
+    originalName: 
+    pivot: {x: -0.26666665, y: -0.018518519}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 188
+      width: 45
+      height: 54
+    spriteID: 9217666d3c0660b4e8ce14402db19961
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 147, y: 187}
+  - name: Bringer-of-Death_Attack_1_Frame_12
+    originalName: 
+    pivot: {x: -0.2291667, y: -0.018518519}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 117
+      y: 188
+      width: 48
+      height: 54
+    spriteID: e0fe5fd9307f8c7469e0e083e0162f83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 187}
+  - name: Bringer-of-Death_Attack_1_Frame_13
+    originalName: 
+    pivot: {x: -0.22448984, y: -0.017857142}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 188
+      width: 49
+      height: 56
+    spriteID: 8be5245ac3dcea545a72a6535e70f0bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -21, y: 187}
+  - name: Bringer-of-Death_Attack_1_Frame_14
+    originalName: 
+    pivot: {x: -0.26666665, y: -0.018867925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 282
+      y: 188
+      width: 45
+      height: 53
+    spriteID: 1421877a2f691464c947b44feaf194c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 282, y: 188}
+  - name: Bringer-of-Death_Attack_1_Frame_15
+    originalName: 
+    pivot: {x: -0.3, y: -0.016666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 409
+      y: 4
+      width: 50
+      height: 60
+    spriteID: f9ae5ced4edad1e48b88e16a09c85acf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 3}
+  - name: Bringer-of-Death_Attack_1_Frame_16
+    originalName: 
+    pivot: {x: -0.3333333, y: -0.10169491}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 188
+      width: 48
+      height: 59
+    spriteID: 1cf547e1fb53c514c93cb9d8cdf8b811
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -82, y: 182}
+  - name: Bringer-of-Death_Attack_1_Frame_17
+    originalName: 
+    pivot: {x: -0.31250003, y: -0.26923078}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 188
+      width: 48
+      height: 52
+    spriteID: add76d96549b0d14aa9a717f756fa8e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 174}
+  - name: Bringer-of-Death_Attack_1_Frame_18
+    originalName: 
+    pivot: {x: -0.45000008, y: -0.3877551}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 432
+      y: 188
+      width: 40
+      height: 49
+    spriteID: 909716aca64ca38469d521bcf73153e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 344, y: 169}
+  - name: Bringer-of-Death_Attack_1_Frame_19
+    originalName: 
+    pivot: {x: -0.7878788, y: -0.70000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 255
+      width: 33
+      height: 40
+    spriteID: 8fc854dcc2c47344e851c84173a5dbce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -92, y: 227}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 559794667
+    name: Bringer-of-Death_Attack_1
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Bringer-of-Death_Attack_1_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 72f0c1b1d00be8a4aa0c6da8ef5d07d3
+    - name: Bringer-of-Death_Attack_1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 4291a1ea05e0a7d4da36b40577f62774
+    - name: Bringer-of-Death_Attack_1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 605593022d2a400448e318873e2788e8
+    - name: Bringer-of-Death_Attack_1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 4acbc278ea722bd46973e0eb0f667725
+    - name: Bringer-of-Death_Attack_1_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: e6e953656c9dd7c4e915c426138a19b6
+    - name: Bringer-of-Death_Attack_1_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 10c36988a6f87e6488dbb1482ddbdd52
+    - name: Bringer-of-Death_Attack_1_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 4b209d5574fdd8c40a7d818386f5084a
+    - name: Bringer-of-Death_Attack_1_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: ad3a6ac700918554fa744b25f7cb8a5f
+    - name: Bringer-of-Death_Attack_1_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 9e4e92be8c02be0459ae7ae90bd2517d
+    - name: Bringer-of-Death_Attack_1_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 8a3936333f2382f46868dff3a7f5369b
+    - name: Bringer-of-Death_Attack_1_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 1ed91779d13596944bdb9da576d62838
+    - name: Bringer-of-Death_Attack_1_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 9217666d3c0660b4e8ce14402db19961
+    - name: Bringer-of-Death_Attack_1_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: e0fe5fd9307f8c7469e0e083e0162f83
+    - name: Bringer-of-Death_Attack_1_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 8be5245ac3dcea545a72a6535e70f0bc
+    - name: Bringer-of-Death_Attack_1_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 82
+        y: 1
+        width: 45
+        height: 53
+      spriteId: 1421877a2f691464c947b44feaf194c7
+    - name: Bringer-of-Death_Attack_1_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: f9ae5ced4edad1e48b88e16a09c85acf
+    - name: Bringer-of-Death_Attack_1_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 1cf547e1fb53c514c93cb9d8cdf8b811
+    - name: Bringer-of-Death_Attack_1_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: add76d96549b0d14aa9a717f756fa8e5
+    - name: Bringer-of-Death_Attack_1_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 909716aca64ca38469d521bcf73153e0
+    - name: Bringer-of-Death_Attack_1_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: 0
+        width: 140
+        height: 93
+      spriteId: 8fc854dcc2c47344e851c84173a5dbce
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: tvOS
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 140, y: 93}

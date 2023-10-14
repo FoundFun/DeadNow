@@ -1,19 +1,18 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using CodeBase.Hero;
 using UnityEngine;
 
 public class HeroAttack : MonoBehaviour
 {   
     public HeroAnimator Animator;
-    private bool _isAttack;
+
+    public bool IsAttack { get; private set; }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && !_isAttack)
+        if (Input.GetKey(KeyCode.LeftShift) && !IsAttack)
         {
-            _isAttack = true;
+            IsAttack = true;
 
             StartCoroutine(Attack());
         }
@@ -23,8 +22,8 @@ public class HeroAttack : MonoBehaviour
     {
         Animator.PlayAttack();
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
 
-        _isAttack = false;
+        IsAttack = false;
     }
 }

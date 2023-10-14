@@ -1,0 +1,746 @@
+fileFormatVersion: 2
+guid: ca4d7e8dcd8afde4ab17c2e7d4e95984
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Attack
+    second: {fileID: 7400000, guid: 536f99c7632d8cf40a2ab5bc64ced916, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Death
+    second: {fileID: 7400000, guid: c8eee4222c4bc5047b5202462ef2373a, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 6
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 6
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638328858177250276
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Mirtail_Frame_0
+    originalName: 
+    pivot: {x: -0.3902439, y: -0.1509434}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 391
+      width: 41
+      height: 53
+    spriteID: 083fc62e40bd66b4c8ec11ba6eba475c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 391}
+  - name: Mirtail_Frame_1
+    originalName: 
+    pivot: {x: -0.3255814, y: -0.1509434}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 213
+      width: 43
+      height: 53
+    spriteID: 9c5dcdec81fe135449306a260e8316de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 213}
+  - name: Mirtail_Frame_2
+    originalName: 
+    pivot: {x: -0.3902439, y: -0.1509434}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 452
+      width: 41
+      height: 53
+    spriteID: d2eb28d1ddd73ae4aac1512bc1d4084e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 452}
+  - name: Mirtail_Frame_3
+    originalName: 
+    pivot: {x: -0.4390244, y: -0.1509434}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 65
+      width: 41
+      height: 53
+    spriteID: 2dab61703360dfb48a2c4a496e2885e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 65}
+  - name: Mirtail_Frame_4
+    originalName: 
+    pivot: {x: -0.25233644, y: -0.11594203}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 107
+      height: 69
+    spriteID: 1fc6cdf7b619ee1479bb4e7722809886
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Mirtail_Frame_5
+    originalName: 
+    pivot: {x: -0.25233644, y: -0.11594203}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 81
+      width: 107
+      height: 69
+    spriteID: a697d4c63353fed44b6115a8e038d2ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 81}
+  - name: Mirtail_Frame_6
+    originalName: 
+    pivot: {x: -0.6041667, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 213
+      width: 48
+      height: 63
+    spriteID: 2b7785887e284324998a347eeb33bb15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 213}
+  - name: Mirtail_Frame_7
+    originalName: 
+    pivot: {x: -0.5625, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 284
+      width: 48
+      height: 63
+    spriteID: 585e3b05a8c245345a895e1fb7165cea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 284}
+  - name: Mirtail_Frame_8
+    originalName: 
+    pivot: {x: -0.6041667, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 355
+      width: 48
+      height: 63
+    spriteID: 7880fdf0e72cc064bb91160d38b712fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 355}
+  - name: Mirtail_Frame_9
+    originalName: 
+    pivot: {x: -0.6458333, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 426
+      width: 48
+      height: 63
+    spriteID: 47153c4240947614dbaf143a07ce228c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 426}
+  - name: Mirtail_Frame_10
+    originalName: 
+    pivot: {x: -0.27522936, y: -0.1509434}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 4
+      width: 109
+      height: 53
+    spriteID: 342eb7889cbddd94d8b83c8fc04d4b6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 4}
+  - name: Mirtail_Frame_11
+    originalName: 
+    pivot: {x: -0.2857143, y: -0.17021276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 158
+      width: 105
+      height: 47
+    spriteID: 1e243a36994ccc845adad60efa49bc1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 158}
+  - name: Mirtail_Frame_12
+    originalName: 
+    pivot: {x: -0.35714287, y: -0.1509434}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 274
+      width: 42
+      height: 53
+    spriteID: 8d35e1e7c28676046816e2ad0b8e0084
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 274}
+  - name: Mirtail_Frame_13
+    originalName: 
+    pivot: {x: -0.34883723, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 118
+      width: 43
+      height: 50
+    spriteID: 5a6c9d2465179ae40a759d5e838722f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 118}
+  - name: Mirtail_Frame_14
+    originalName: 
+    pivot: {x: -0.30434784, y: -0.16666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 335
+      width: 46
+      height: 48
+    spriteID: 588a75eb75aca744abbda2769b0e8267
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 335}
+  - name: Mirtail_Frame_15
+    originalName: 
+    pivot: {x: -0.2916667, y: -0.17777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 65
+      width: 48
+      height: 45
+    spriteID: ee998fc6012739e4b9ee8aa589cbfa18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 65}
+  - name: Mirtail_Frame_16
+    originalName: 
+    pivot: {x: -0.3333333, y: -0.19512196}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 228
+      width: 51
+      height: 41
+    spriteID: 9f418c69e96ebad43bd0443cb335ab8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 228}
+  - name: Mirtail_Frame_17
+    originalName: 
+    pivot: {x: -0.2916667, y: -0.18181819}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 176
+      width: 48
+      height: 44
+    spriteID: a522116bdd307be408426f734bdff0a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 176}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1781495164
+    name: Mirtail
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Mirtail_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 16
+        y: 8
+        width: 41
+        height: 53
+      spriteId: 083fc62e40bd66b4c8ec11ba6eba475c
+    - name: Mirtail_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 14
+        y: 8
+        width: 43
+        height: 53
+      spriteId: 9c5dcdec81fe135449306a260e8316de
+    - name: Mirtail_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 16
+        y: 8
+        width: 41
+        height: 53
+      spriteId: d2eb28d1ddd73ae4aac1512bc1d4084e
+    - name: Mirtail_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 18
+        y: 8
+        width: 41
+        height: 53
+      spriteId: 2dab61703360dfb48a2c4a496e2885e2
+    - name: Mirtail_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 27
+        y: 8
+        width: 107
+        height: 69
+      spriteId: 1fc6cdf7b619ee1479bb4e7722809886
+    - name: Mirtail_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 27
+        y: 8
+        width: 107
+        height: 69
+      spriteId: a697d4c63353fed44b6115a8e038d2ed
+    - name: Mirtail_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 29
+        y: 8
+        width: 48
+        height: 63
+      spriteId: 2b7785887e284324998a347eeb33bb15
+    - name: Mirtail_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 27
+        y: 8
+        width: 48
+        height: 63
+      spriteId: 585e3b05a8c245345a895e1fb7165cea
+    - name: Mirtail_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 29
+        y: 8
+        width: 48
+        height: 63
+      spriteId: 7880fdf0e72cc064bb91160d38b712fe
+    - name: Mirtail_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 31
+        y: 8
+        width: 48
+        height: 63
+      spriteId: 47153c4240947614dbaf143a07ce228c
+    - name: Mirtail_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 30
+        y: 8
+        width: 109
+        height: 53
+      spriteId: 342eb7889cbddd94d8b83c8fc04d4b6e
+    - name: Mirtail_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 30
+        y: 8
+        width: 105
+        height: 47
+      spriteId: 1e243a36994ccc845adad60efa49bc1b
+    - name: Mirtail_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 15
+        y: 8
+        width: 42
+        height: 53
+      spriteId: 8d35e1e7c28676046816e2ad0b8e0084
+    - name: Mirtail_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 15
+        y: 8
+        width: 43
+        height: 50
+      spriteId: 5a6c9d2465179ae40a759d5e838722f5
+    - name: Mirtail_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 14
+        y: 8
+        width: 46
+        height: 48
+      spriteId: 588a75eb75aca744abbda2769b0e8267
+    - name: Mirtail_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 14
+        y: 8
+        width: 48
+        height: 45
+      spriteId: ee998fc6012739e4b9ee8aa589cbfa18
+    - name: Mirtail_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 17
+        y: 8
+        width: 51
+        height: 41
+      spriteId: 9f418c69e96ebad43bd0443cb335ab8f
+    - name: Mirtail_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 14
+        y: 8
+        width: 48
+        height: 44
+      spriteId: a522116bdd307be408426f734bdff0a0
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: tvOS
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 174, y: 140}
