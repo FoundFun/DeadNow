@@ -6,6 +6,16 @@ ScriptedImporter:
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
+      name: Death
+    second: {fileID: 7400000, guid: 4f0e23636835e4a4db1b82f1cac68659, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: be0061b29f272be4b932120a4e7c48d8, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
       name: meditat_Clip
     second: {fileID: 7400000, guid: b6f3652524fec7d44bcdbc5ed66ad1de, type: 2}
   serializedVersion: 2
@@ -100,7 +110,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638328316141443666
+  platformSettingsDirtyTick: 638328903049027154
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,7 +141,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 192
       y: 4
       width: 17
       height: 25
@@ -143,7 +153,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 192, y: 4}
   - name: meditat_Frame_1
     originalName: 
     pivot: {x: 0.5294118, y: -0.48}
@@ -151,8 +161,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 37
+      x: 217
+      y: 4
       width: 17
       height: 25
     spriteID: fab38667357975a4ba407abe19e10a8a
@@ -163,7 +173,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 37}
+    uvTransform: {x: 217, y: 4}
   - name: meditat_Frame_2
     originalName: 
     pivot: {x: 0.5294118, y: -0.44}
@@ -171,8 +181,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 70
+      x: 56
+      y: 74
       width: 17
       height: 25
     spriteID: 91c1f71509454a34d84deb5228ebd9c1
@@ -183,7 +193,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 70}
+    uvTransform: {x: 56, y: 74}
   - name: meditat_Frame_3
     originalName: 
     pivot: {x: 0.5294118, y: -0.48}
@@ -191,8 +201,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 29
-      y: 4
+      x: 81
+      y: 74
       width: 17
       height: 25
     spriteID: ac0309bdc6ae02d4ba18fed79fe609bb
@@ -203,7 +213,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 29, y: 4}
+    uvTransform: {x: 81, y: 74}
   - name: meditat_Frame_4
     originalName: 
     pivot: {x: 0.5294118, y: -0.52}
@@ -211,8 +221,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 29
-      y: 37
+      x: 106
+      y: 74
       width: 17
       height: 25
     spriteID: 870a74c921fa64f49a3a499bc92fd9d7
@@ -223,7 +233,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 29, y: 37}
+    uvTransform: {x: 106, y: 74}
   - name: meditat_Frame_5
     originalName: 
     pivot: {x: 0.5294118, y: -0.56}
@@ -231,8 +241,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 29
-      y: 70
+      x: 131
+      y: 74
       width: 17
       height: 25
     spriteID: 2b3988da40e0cb144884ac0d54efecc6
@@ -243,7 +253,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 29, y: 70}
+    uvTransform: {x: 131, y: 74}
   - name: meditat_Frame_6
     originalName: 
     pivot: {x: 0.5294118, y: -0.52}
@@ -251,8 +261,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 54
-      y: 4
+      x: 156
+      y: 74
       width: 17
       height: 25
     spriteID: c31d649f313f1bc43afde8394e01e775
@@ -263,7 +273,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 54, y: 4}
+    uvTransform: {x: 156, y: 74}
   - name: meditat_Frame_7
     originalName: 
     pivot: {x: 0.5294118, y: -0.48}
@@ -271,8 +281,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 54
-      y: 37
+      x: 181
+      y: 74
       width: 17
       height: 25
     spriteID: 3f641bc5292d72f4d804e1321c0fa530
@@ -283,7 +293,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 54, y: 37}
+    uvTransform: {x: 181, y: 74}
   - name: meditat_Frame_8
     originalName: 
     pivot: {x: 0.5294118, y: -0.44}
@@ -291,8 +301,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 54
-      y: 70
+      x: 206
+      y: 74
       width: 17
       height: 25
     spriteID: 6e079714b5a53ae41a0e152716afe800
@@ -303,7 +313,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 54, y: 70}
+    uvTransform: {x: 206, y: 74}
   - name: meditat_Frame_9
     originalName: 
     pivot: {x: 0.5294118, y: -0.52}
@@ -311,8 +321,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 79
-      y: 4
+      x: 231
+      y: 74
       width: 17
       height: 25
     spriteID: 08f35c743f500894c9dbba39eeab2277
@@ -323,7 +333,367 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 79, y: 4}
+    uvTransform: {x: 231, y: 74}
+  - name: meditat_Frame_10
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.2413793}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 37
+      width: 18
+      height: 29
+    spriteID: 580d97b6da39fb74c970e1abafdc3e46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 37}
+  - name: meditat_Frame_11
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.2413793}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 37
+      width: 18
+      height: 29
+    spriteID: 08d30a4d8667e9141be7f1da4b9577d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 37}
+  - name: meditat_Frame_12
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.2413793}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 37
+      width: 18
+      height: 29
+    spriteID: b978480793adbb14eba7088871a76d30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 37}
+  - name: meditat_Frame_13
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.25925925}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 37
+      width: 18
+      height: 27
+    spriteID: 8f9ed0f8b7c146941b970f0be687eb57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 37}
+  - name: meditat_Frame_14
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.26923078}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 37
+      width: 18
+      height: 26
+    spriteID: f9698733b63b819409383c4843abe188
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 37}
+  - name: meditat_Frame_15
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.26923078}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 37
+      width: 18
+      height: 26
+    spriteID: a85e4bf275b6be24a99c1809376e39a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 134, y: 37}
+  - name: meditat_Frame_16
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.26923078}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 37
+      width: 18
+      height: 26
+    spriteID: 22a2dcd7103d5734fb20acf861536a69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 37}
+  - name: meditat_Frame_17
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.26923078}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 37
+      width: 18
+      height: 26
+    spriteID: f7b83a8b27a011a4eabf5a00db18b274
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 37}
+  - name: meditat_Frame_18
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.26923078}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 37
+      width: 18
+      height: 26
+    spriteID: d1373db19e63bac49b34a0d01a077b41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 37}
+  - name: meditat_Frame_19
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.26923078}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 74
+      width: 18
+      height: 26
+    spriteID: 3f1a7426a10cbc44fab9fc9efe0f9f38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 74}
+  - name: meditat_Frame_20
+    originalName: 
+    pivot: {x: 0.61111116, y: -0.26923078}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 74
+      width: 18
+      height: 26
+    spriteID: fb6581b8196c0154dbb89de95012d530
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 74}
+  - name: meditat_Frame_21
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.28}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 39
+      height: 25
+    spriteID: ed4f958ddab7935499231aa73e813061
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: meditat_Frame_22
+    originalName: 
+    pivot: {x: 0.275, y: -0.30434784}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 4
+      width: 40
+      height: 23
+    spriteID: 082d0cab5bd10ca46ae8e8c01bfa0645
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 4}
+  - name: meditat_Frame_23
+    originalName: 
+    pivot: {x: 0.2820513, y: -0.4117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 4
+      width: 39
+      height: 17
+    spriteID: e0a7249e2eeb7934eb7a1cb7dd268317
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 4}
+  - name: meditat_Frame_24
+    originalName: 
+    pivot: {x: 0.2894737, y: -0.5833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 146
+      y: 4
+      width: 38
+      height: 12
+    spriteID: 593f6cc317836e940b0ee98da4b72e2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 4}
+  - name: meditat_Frame_25
+    originalName: 
+    pivot: {x: 0.08695656, y: -1.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 146
+      y: 24
+      width: 23
+      height: 5
+    spriteID: 55cffdb2ff1cd444486d30bd9b66711d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 24}
+  - name: meditat_Frame_26
+    originalName: 
+    pivot: {x: -1.0999992, y: -3}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 108
+      width: 10
+      height: 3
+    spriteID: e219edca6aabb3e4993d7818c8295f33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -23, y: 99}
+  - name: meditat_Frame_27
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 22
+      y: 108
+      width: 0
+      height: 0
+    spriteID: b097d9918c1d4fc4ba21a237db24dda7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -78, y: 44}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -413,6 +783,150 @@ ScriptedImporter:
         width: 17
         height: 25
       spriteId: 08f35c743f500894c9dbba39eeab2277
+    - name: meditat_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 29
+      spriteId: 580d97b6da39fb74c970e1abafdc3e46
+    - name: meditat_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 29
+      spriteId: 08d30a4d8667e9141be7f1da4b9577d0
+    - name: meditat_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 29
+      spriteId: b978480793adbb14eba7088871a76d30
+    - name: meditat_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 27
+      spriteId: 8f9ed0f8b7c146941b970f0be687eb57
+    - name: meditat_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 26
+      spriteId: f9698733b63b819409383c4843abe188
+    - name: meditat_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 26
+      spriteId: a85e4bf275b6be24a99c1809376e39a4
+    - name: meditat_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 26
+      spriteId: 22a2dcd7103d5734fb20acf861536a69
+    - name: meditat_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 26
+      spriteId: f7b83a8b27a011a4eabf5a00db18b274
+    - name: meditat_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 26
+      spriteId: d1373db19e63bac49b34a0d01a077b41
+    - name: meditat_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 26
+      spriteId: 3f1a7426a10cbc44fab9fc9efe0f9f38
+    - name: meditat_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 133
+        y: 7
+        width: 18
+        height: 26
+      spriteId: fb6581b8196c0154dbb89de95012d530
+    - name: meditat_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 133
+        y: 7
+        width: 39
+        height: 25
+      spriteId: ed4f958ddab7935499231aa73e813061
+    - name: meditat_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 133
+        y: 7
+        width: 40
+        height: 23
+      spriteId: 082d0cab5bd10ca46ae8e8c01bfa0645
+    - name: meditat_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 133
+        y: 7
+        width: 39
+        height: 17
+      spriteId: e0a7249e2eeb7934eb7a1cb7dd268317
+    - name: meditat_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 133
+        y: 7
+        width: 38
+        height: 12
+      spriteId: 593f6cc317836e940b0ee98da4b72e2d
+    - name: meditat_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 142
+        y: 7
+        width: 23
+        height: 5
+      spriteId: 55cffdb2ff1cd444486d30bd9b66711d
+    - name: meditat_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 128
+        y: 0
+        width: 100
+        height: 64
+      spriteId: e219edca6aabb3e4993d7818c8295f33
+    - name: meditat_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 128
+        y: 0
+        width: 100
+        height: 64
+      spriteId: b097d9918c1d4fc4ba21a237db24dda7
     linkedCells: []
     parentIndex: -1
   platformSettings:

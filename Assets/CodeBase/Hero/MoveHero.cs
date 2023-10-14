@@ -23,14 +23,14 @@ namespace CodeBase.Hero
             _horizontal = Input.GetAxis("Horizontal");
             Vector2 rigidbody = _rigidbody2D.velocity;
 
-            if (rigidbody.x > 3)
+            if (rigidbody.x > 4)
             {
-                rigidbody.x = 3;
+                rigidbody.x = 4;
                 _rigidbody2D.velocity = rigidbody;
             }
-            else if (rigidbody.x < -3)
+            else if (rigidbody.x < -4)
             {
-                rigidbody.x = -3;
+                rigidbody.x = -4;
                 _rigidbody2D.velocity = rigidbody;
             }
         }

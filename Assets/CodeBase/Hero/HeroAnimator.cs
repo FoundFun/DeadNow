@@ -9,6 +9,8 @@ namespace CodeBase.Hero
     private static readonly int AttackHash = Animator.StringToHash("Attack");
     private static readonly int HitHash = Animator.StringToHash("Hit");
     private static readonly int DieHash = Animator.StringToHash("Die");
+    private static readonly int DownHash = Animator.StringToHash("Down");
+    private static readonly int DieFinallyHash = Animator.StringToHash("FinallyDeath");
     private static readonly int JumpHash = Animator.StringToHash("Jump");
     private static readonly int TransferHash = Animator.StringToHash("Transfer");
 
@@ -31,6 +33,8 @@ namespace CodeBase.Hero
     public void PlayAttack() => Animator.SetTrigger(AttackHash);
 
     public void PlayDeath() =>  Animator.SetTrigger(DieHash);
+    public void PlayFinallyDeath() =>  Animator.SetTrigger(DieFinallyHash);
+    public void PlayFinallyDown() =>  Animator.SetTrigger(DownHash);
 
     public void ResetToIdle() => Animator.Play(_idleStateHash, -1);
 

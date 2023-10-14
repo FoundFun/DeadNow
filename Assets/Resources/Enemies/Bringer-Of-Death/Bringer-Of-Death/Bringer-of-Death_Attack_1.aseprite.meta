@@ -7,12 +7,12 @@ ScriptedImporter:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: Attack
-    second: {fileID: 7400000, guid: 83346360daa6bda47a9f9cf4f6dcd60d, type: 2}
+    second: {fileID: 7400000, guid: 2a4f98dcd10c44946951e8a8321425db, type: 2}
   - first:
       type: UnityEngine:AnimationClip
       assembly: UnityEngine.AnimationModule
       name: Death
-    second: {fileID: 7400000, guid: c2292f1d53505ef4c856af6a29d8cc5a, type: 2}
+    second: {fileID: 7400000, guid: ed55a0b8284cbe14ab591ea94ec2a0c3, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -105,7 +105,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638328802666343597
+  platformSettingsDirtyTick: 638328993624964056
   textureAssetName: 
   singleSpriteImportData:
   - name: 

@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace CodeBase.Hero
@@ -16,14 +16,14 @@ namespace CodeBase.Hero
         {
             Vector2 rigidbody = Rigidbody2D.velocity;
 
-            if (rigidbody.y > 5)
+            if (rigidbody.y > 7)
             {
-                rigidbody.y = 5;
+                rigidbody.y = 7;
                 Rigidbody2D.velocity = rigidbody;
             }
-            else if (rigidbody.y < -5)
+            else if (rigidbody.y < -7)
             {
-                rigidbody.y = -5;
+                rigidbody.y = -7;
                 Rigidbody2D.velocity = rigidbody;
             }
         }
@@ -33,10 +33,8 @@ namespace CodeBase.Hero
             if (Input.GetKey(KeyCode.Space) && IsGround && !IsJump)
             {
                 IsJump = true;
-                Rigidbody2D.velocity = new Vector2(Rigidbody2D.velocity.x, 0);
 
-                Rigidbody2D.AddForce(new Vector2(Rigidbody2D.velocity.x, Force), ForceMode2D.Impulse);
-                Animator.Jump();
+                StartCoroutine(OnJump());
             }
         }
 
@@ -44,7 +42,6 @@ namespace CodeBase.Hero
         {
             if (collider.gameObject.GetComponent<Ground>())
             {
-                IsJump = false;
                 IsGround = true;
             }
         }
@@ -53,7 +50,6 @@ namespace CodeBase.Hero
         {
             if (other.gameObject.GetComponent<Ground>())
             {
-                IsJump = false;
                 IsGround = true;
             }
         }
@@ -62,6 +58,19 @@ namespace CodeBase.Hero
         {
             if (other.gameObject.GetComponent<Ground>())
                 IsGround = false;
+        }
+
+        private IEnumerator OnJump()
+        {
+            Rigidbody2D.velocity = new Vector2(Rigidbody2D.velocity.x, 0);
+
+            Rigidbody2D.AddForce(new Vector2(Rigidbody2D.velocity.x, Force), ForceMode2D.Impulse);
+            
+            Animator.Jump();
+
+            yield return new WaitForSeconds(1);
+            
+            IsJump = false;
         }
     }
 }
