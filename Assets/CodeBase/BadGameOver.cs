@@ -66,7 +66,7 @@ namespace CodeBase
 
             while (CanvasGroup.alpha != 1)
             {
-                CanvasGroup.alpha += 0.001f;
+                CanvasGroup.alpha += 0.002f;
                 
                 yield return null;
             }
