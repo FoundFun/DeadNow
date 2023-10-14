@@ -32,13 +32,10 @@ namespace CodeBase
             StartCoroutine(OnOpen());
         }
 
-        public void Close()
-        {
-            CanvasGroup.alpha = 0;
-        }
-
         private IEnumerator OnOpen()
         {
+            Piano4.Play();
+            
             while (Main.volume != 0)
             {
                 Main.volume -= 0.01f;

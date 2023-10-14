@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using CodeBase.Enemy;
+using CodeBase.Environment;
 using CodeBase.Hero;
 using UnityEngine;
 

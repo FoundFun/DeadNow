@@ -1,28 +1,33 @@
 using CodeBase.Hero;
 using UnityEngine;
 
-public class ChangeCollumFurst : MonoBehaviour
+namespace CodeBase
 {
-    public GameObject CollumTarget;
-    public GameObject Collum;
-    public GameObject Ship;
-    public HeroSpeaker Speaker;
-
-    private AudioSource _explosionAudio;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class ChangeCollumFurst : MonoBehaviour
     {
-        if (collision.GetComponent<HeroAnimator>())
+        public GameObject CollumTarget;
+        public GameObject Collum;
+        public GameObject Ship;
+        public HeroSpeaker Speaker;
+
+        private AudioSource _explosionAudio;
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            Collum.SetActive(false);
-            CollumTarget.SetActive(false);
-            
-            if (Ship != null)
-                Ship.SetActive(true);
+            if (collision.GetComponent<HeroAnimator>())
+            {
+                if (CollumTarget != null)
+                    CollumTarget.SetActive(false);
+                if (Collum != null)
+                    Collum.SetActive(false);
 
-            Speaker.ShowText(Speaker.MapsChange);
+                if (Ship != null)
+                    Ship.SetActive(true);
+                if (Speaker != null)
+                    Speaker.ShowText(Speaker.MapsChange);
 
-            enabled = false;
+                gameObject.SetActive(false);
+            }
         }
     }
 }

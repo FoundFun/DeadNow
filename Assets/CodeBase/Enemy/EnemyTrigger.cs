@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using CodeBase.Hero;
+using UnityEngine;
 
-namespace CodeBase
+namespace CodeBase.Enemy
 {
     public class EnemyTrigger : MonoBehaviour
     {

@@ -2,46 +2,53 @@ using System.Collections;
 using CodeBase.Hero;
 using UnityEngine;
 
-public class BossMusicTarget : MonoBehaviour
+namespace CodeBase.Enemy
 {
-    public AudioSource Main;
-    public AudioSource Boss;
-
-    private bool _isBossMusic;
-
-    private void Start()
+    public class BossMusicTarget : MonoBehaviour
     {
-        Reset();
-    }
+        public AudioSource Main;
+        public AudioSource Boss;
 
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.GetComponent<HeroAnimator>() && !_isBossMusic)
+        private bool _isBossMusic;
+
+        private void Start()
         {
-            _isBossMusic = true;
-            StartCoroutine(PlayBossMusic());
+            Reset();
         }
-    }
 
-    private IEnumerator PlayBossMusic()
-    {
-        while (Main.volume != 0)
+        private void OnTriggerEnter2D(Collider2D collider)
         {
-            Main.volume -= 0.01f;
-            yield return null;
+            if (collider.GetComponent<HeroAnimator>() && !_isBossMusic)
+            {
+                _isBossMusic = true;
+                StartCoroutine(PlayBossMusic());
+            }
         }
+
+        private IEnumerator PlayBossMusic()
+        {
+            Boss.Play();
+            
+            while (Main.volume != 0)
+            {
+                Boss.volume += 0.01f;
+                Main.volume -= 0.01f;
+                
+                yield return null;
+            }
         
-        while (Boss.volume != 1)
-        {
-            Boss.volume += 0.01f;
+            while (Boss.volume != 1)
+            {
+                Boss.volume += 0.01f;
 
-            yield return null;
+                yield return null;
+            }
         }
-    }
 
-    private void Reset()
-    {
-        Boss.volume = 0;
-        _isBossMusic = false;
+        private void Reset()
+        {
+            Boss.volume = 0;
+            _isBossMusic = false;
+        }
     }
 }

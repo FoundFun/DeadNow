@@ -2,26 +2,29 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HeroSpeaker : MonoBehaviour
+namespace CodeBase
 {
-    public Text MapsChange;
-
-    private Coroutine _coroutine;
-
-    public void ShowText(Text text)
+    public class HeroSpeaker : MonoBehaviour
     {
-        if(_coroutine != null)
-            StopCoroutine(_coroutine);
+        public Text MapsChange;
 
-        _coroutine = StartCoroutine(OnShowText(text));
-    }
+        private Coroutine _coroutine;
 
-    private IEnumerator OnShowText(Text text)
-    {
-        text.gameObject.LeanScale(Vector3.one, 1).setEaseOutBounce();
+        public void ShowText(Text text)
+        {
+            if(_coroutine != null)
+                StopCoroutine(_coroutine);
 
-        yield return new WaitForSeconds(4);
+            _coroutine = StartCoroutine(OnShowText(text));
+        }
+
+        private IEnumerator OnShowText(Text text)
+        {
+            text.gameObject.LeanScale(new Vector3(0.009259259f, 0.009259259f, 0.009259259f), 1).setEaseOutBounce();
+
+            yield return new WaitForSeconds(4);
         
-        text.gameObject.LeanScale(Vector3.zero, 1).setEaseOutBounce();
+            text.gameObject.LeanScale(Vector3.zero, 1).setEaseOutBounce();
+        }
     }
 }

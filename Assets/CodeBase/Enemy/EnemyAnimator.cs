@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CodeBase
+namespace CodeBase.Enemy
 {
     public class EnemyAnimator : MonoBehaviour
     {

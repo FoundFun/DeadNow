@@ -1,34 +1,36 @@
 using System.Collections;
-using CodeBase.Hero;
 using UnityEngine;
 
-public class HeroTransfer : MonoBehaviour
+namespace CodeBase.Hero
 {
-    public HeroAnimator Animator;
-    public Rigidbody2D Rigidbody2D;
+    public class HeroTransfer : MonoBehaviour
+    {
+        public HeroAnimator Animator;
+        public Rigidbody2D Rigidbody2D;
 
-    private const float _downSpeed = 0.1f;
+        private const float _downSpeed = 0.1f;
     
-    public bool IsTransfer { get; private set; }
+        public bool IsTransfer { get; private set; }
 
-    private void FixedUpdate()
-    {
-        if (Input.GetKey(KeyCode.LeftControl) && !IsTransfer)
+        private void FixedUpdate()
         {
-            IsTransfer = true;
+            if (Input.GetKey(KeyCode.LeftControl) && !IsTransfer)
+            {
+                IsTransfer = true;
 
-            StartCoroutine(Transfer());
+                StartCoroutine(Transfer());
+            }
         }
-    }
 
-    private IEnumerator Transfer()
-    {
-        Animator.Transfer();
+        private IEnumerator Transfer()
+        {
+            Animator.Transfer();
         
-        Rigidbody2D.AddForce(Vector2.down * _downSpeed);
+            Rigidbody2D.AddForce(Vector2.down * _downSpeed);
 
-        yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(2);
 
-        IsTransfer = false;
+            IsTransfer = false;
+        }
     }
 }

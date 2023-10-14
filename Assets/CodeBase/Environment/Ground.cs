@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CodeBase.Hero
+namespace CodeBase.Environment
 {
     internal class Ground : MonoBehaviour
     {

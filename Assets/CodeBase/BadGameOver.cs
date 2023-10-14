@@ -39,6 +39,8 @@ namespace CodeBase
 
         private IEnumerator OnOpen()
         {
+            Piano1.Play();
+            
             while (Main.volume != 0)
             {
                 Main.volume -= 0.01f;
