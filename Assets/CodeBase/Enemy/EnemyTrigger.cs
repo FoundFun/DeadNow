@@ -5,15 +5,25 @@ namespace CodeBase
     public class EnemyTrigger : MonoBehaviour
     {
         public EnemyAnimator Animator;
-        
-        public bool IsDead { get; private set; } 
+        public EnemySpeaker Speaker;
+
+        public bool IsDead { get; private set; }
+
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.TryGetComponent(out HeroAttack heroAttack) && !IsDead)
+            {
+                Speaker.ShowText(Speaker.Tutorial);
+            }
+        }
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (other.TryGetComponent<HeroAttack>(out HeroAttack heroAttack) && !IsDead)
+            if (other.TryGetComponent(out HeroAttack heroAttack) && !IsDead)
             {
                 if (heroAttack.IsAttack)
                 {
+                    Speaker.ShowText(Speaker.Dead);
                     IsDead = true;
                     Animator.Death();
                 }
