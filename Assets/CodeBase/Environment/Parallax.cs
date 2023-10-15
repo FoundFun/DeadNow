@@ -1,13 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
-using CodeBase.Hero;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Parallax : MonoBehaviour
 {
+    public Camera Camera;
     public float Speed;
+    public Vector3 Position;
 
+    private bool _isStop;
+    
     private RawImage _image;
     private float _imagePositionX;
 
@@ -15,18 +17,25 @@ public class Parallax : MonoBehaviour
     {
         _image = GetComponent<RawImage>();
         _imagePositionX = _image.uvRect.x;
+
+        StartCoroutine(MoveParallax());
     }
 
-    private void Update()
+    private IEnumerator MoveParallax()
     {
-        if (Input.GetAxis("Horizontal") != 0)
+        while (!_isStop)
         {
-            _imagePositionX += Speed * Input.GetAxis("Horizontal") * Time.deltaTime;
+            Position = Camera.transform.position;
 
-            if (_imagePositionX >= 1)
-            {
+            yield return null;
+        
+            if(Camera.transform.position.x > Position.x)
+                _imagePositionX += Speed * Time.deltaTime;
+            if(Camera.transform.position.x < Position.x)
+                _imagePositionX -= Speed * Time.deltaTime;
+        
+            if (_imagePositionX >= 1) 
                 _imagePositionX = 0;
-            }
 
             _image.uvRect = new Rect(_imagePositionX, _image.uvRect.y, _image.uvRect.width, _image.uvRect.height);
         }

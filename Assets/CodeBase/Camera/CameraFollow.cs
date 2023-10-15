@@ -12,7 +12,7 @@ namespace CodeBase.Camera
             if (Following == null)
                 return;
 
-            Vector3 targetPosition = new Vector3(Following.position.x, Following.position.y + 2, transform.position.z);
+            Vector3 targetPosition = new Vector3(Following.position.x, transform.position.y, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, Speed * Time.deltaTime);;
         }
     }

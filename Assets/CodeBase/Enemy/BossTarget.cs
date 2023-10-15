@@ -14,6 +14,7 @@ namespace CodeBase.Enemy
         public EnemyTrigger Bringer;
         public EnemyTrigger Monah;
         public EnemyAnimator Animator;
+        public AudioSource DeathExplosion;
     
         private bool _isAttack;
 
@@ -54,6 +55,10 @@ namespace CodeBase.Enemy
                 yield return new WaitForSeconds(3f);
                 
                 Animator.Death();
+                
+                yield return new WaitForSeconds(0.2f);
+                
+                DeathExplosion.Play();
                 
                 yield return new WaitForSeconds(1f);
 

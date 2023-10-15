@@ -13,6 +13,8 @@ namespace CodeBase.Environment
         public GameObject Fire;
         public GameObject Fire1;
         public GameObject Fire2;
+        public AudioSource FireDeath;
+        public AudioSource DeathExplosion;
 
         public event Action BadFireGameOver;
         public event Action GoodGameOver;
@@ -44,10 +46,12 @@ namespace CodeBase.Environment
                 if (!Monah.IsDead && Wizard1.IsDead && Wizard2.IsDead)
                 {
                     Fire.SetActive(false);
+                    FireDeath.Play();
                     GoodGameOver?.Invoke();
                 }
                 else
                 {
+                    DeathExplosion.Play();
                     BadFireGameOver?.Invoke();
                 }
             }
