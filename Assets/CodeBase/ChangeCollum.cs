@@ -8,6 +8,7 @@ namespace CodeBase
         public GameObject CollumTarget;
         public GameObject Collum;
         public GameObject Ship;
+        public GameObject Enable;
         public HeroSpeaker Speaker;
         public AudioSource Unlock;
 
@@ -19,13 +20,18 @@ namespace CodeBase
             {
                 if (CollumTarget != null)
                     CollumTarget.SetActive(false);
+                
                 if (Collum != null)
                     Collum.SetActive(false);
 
                 if (Ship != null)
                     Ship.SetActive(true);
+                
                 if (Speaker != null)
                     Speaker.ShowText(Speaker.MapsChange);
+
+                if (Enable != null)
+                    Enable.SetActive(true);
                 
                 Unlock.Play();
 
