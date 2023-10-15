@@ -39,6 +39,7 @@ namespace CodeBase.Environment
                 other.GetComponent<HeroJump>().enabled = false;
                 other.GetComponent<HeroTransfer>().enabled = false;
                 other.GetComponent<HeroFlipper>().enabled = false;
+                other.GetComponent<HeroAttack>().enabled = false;
 
                 if (!Monah.IsDead && Wizard1.IsDead && Wizard2.IsDead)
                 {

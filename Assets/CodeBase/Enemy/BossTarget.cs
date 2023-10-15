@@ -30,6 +30,7 @@ namespace CodeBase.Enemy
                 animator.GetComponent<HeroJump>().enabled = false;
                 animator.GetComponent<HeroTransfer>().enabled = false;
                 animator.GetComponent<HeroFlipper>().enabled = false;
+                animator.GetComponent<HeroAttack>().enabled = false;
 
                 StartCoroutine(Attack(animator));
             }
@@ -37,7 +38,7 @@ namespace CodeBase.Enemy
 
         private IEnumerator Attack(HeroAnimator animator)
         {
-            if (!Monah.IsDead && Samurai.IsDead && FantasyKnight.IsDead && Knight.IsDead && Bandit.IsDead && Bringer.IsDead)
+            if (Monah.IsDead && Samurai.IsDead && FantasyKnight.IsDead && Knight.IsDead && Bandit.IsDead && Bringer.IsDead)
             {
                 yield return new WaitForSeconds(3f);
                 
