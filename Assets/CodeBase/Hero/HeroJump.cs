@@ -9,6 +9,7 @@ namespace CodeBase.Hero
         public Rigidbody2D Rigidbody2D;
         public HeroAnimator Animator;
         public float Force;
+        public AudioSource Jump;
         
         public bool IsGround { get; private set; }
         public bool IsJump { get; private set; }
@@ -34,6 +35,8 @@ namespace CodeBase.Hero
             if (Input.GetKey(KeyCode.Space) && IsGround && !IsJump)
             {
                 IsJump = true;
+                
+                Jump.Play();
 
                 StartCoroutine(OnJump());
             }
@@ -64,7 +67,7 @@ namespace CodeBase.Hero
         private IEnumerator OnJump()
         {
             Rigidbody2D.velocity = new Vector2(Rigidbody2D.velocity.x, 0);
-
+            
             Rigidbody2D.AddForce(new Vector2(Rigidbody2D.velocity.x, Force), ForceMode2D.Impulse);
             
             Animator.Jump();

@@ -69,7 +69,7 @@ namespace CodeBase
 
             yield return new WaitForSeconds(3f);
 
-            Thanks.gameObject.LeanMoveLocalY(2580, 30);
+            Thanks.gameObject.LeanMoveLocalY(2580, 50);
         }
     }
 }

@@ -11,24 +11,44 @@ namespace CodeBase.Environment
         public EnemyTrigger Wizard2;
         public EnemyTrigger Monah;
         public GameObject Fire;
+        public GameObject Fire1;
+        public GameObject Fire2;
 
-        public event Action BadGameOver;
+        public event Action BadFireGameOver;
         public event Action GoodGameOver;
 
         public bool AltarComplete { get; private set; }
 
         private void OnTriggerStay2D(Collider2D other)
         {
+            if (Wizard1.IsDead && !AltarComplete)
+            {
+                Fire1.SetActive(false);
+            }
+
+            if (Wizard2.IsDead && !AltarComplete)
+            {
+                Fire2.SetActive(false);
+            }
+
             if (other.GetComponent<HeroTransfer>().IsTransfer && !AltarComplete)
             {
-                Debug.Log("GameOver");
                 AltarComplete = true;
-                Fire.SetActive(true);
+                
+                other.GetComponent<HeroMove>().enabled = false;
+                other.GetComponent<HeroJump>().enabled = false;
+                other.GetComponent<HeroTransfer>().enabled = false;
+                other.GetComponent<HeroFlipper>().enabled = false;
 
                 if (!Monah.IsDead && Wizard1.IsDead && Wizard2.IsDead)
+                {
+                    Fire.SetActive(false);
                     GoodGameOver?.Invoke();
+                }
                 else
-                    BadGameOver?.Invoke();
+                {
+                    BadFireGameOver?.Invoke();
+                }
             }
         }
 

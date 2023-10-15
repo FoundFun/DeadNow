@@ -39,6 +39,12 @@ namespace CodeBase.Enemy
         {
             if (!Monah.IsDead && Samurai.IsDead && FantasyKnight.IsDead && Knight.IsDead && Bandit.IsDead && Bringer.IsDead)
             {
+                yield return new WaitForSeconds(3f);
+                
+                animator.Transfer();
+
+                yield return new WaitForSeconds(1f);
+                
                 animator.PlayFinallyDown();
                 WarGameOver?.Invoke();
             }

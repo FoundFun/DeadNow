@@ -7,8 +7,7 @@ namespace CodeBase.Enemy
     {
         public EnemyAnimator Animator;
         public EnemySpeaker Speaker;
-
-        public bool IsDead { get; private set; }
+        public bool IsDead;
 
         private void OnTriggerEnter2D(Collider2D col)
         {

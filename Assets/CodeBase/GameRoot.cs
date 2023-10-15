@@ -15,11 +15,12 @@ namespace CodeBase
         public GoodGameOver Good;
         public BadGameOver Bad;
         public WarGameOver War;
+        public FireGameOver Fire;
 
         private void OnEnable()
         {
             AltarTrigger.GoodGameOver += GoodGameOver;
-            AltarTrigger.BadGameOver += BadGameOver;
+            AltarTrigger.BadFireGameOver += BadFireGameOver;
             BossTarget.WarGameOver += WarGameOver;
             BossTarget.BadGameOver += BadGameOver;
         }
@@ -27,7 +28,7 @@ namespace CodeBase
         private void OnDisable()
         {
             AltarTrigger.GoodGameOver -= GoodGameOver;
-            AltarTrigger.BadGameOver -= BadGameOver;
+            AltarTrigger.BadFireGameOver -= BadFireGameOver;
             BossTarget.WarGameOver -= WarGameOver;
             BossTarget.BadGameOver -= BadGameOver;
         }
@@ -37,6 +38,9 @@ namespace CodeBase
 
         private void BadGameOver() => 
             StartCoroutine(OnBadGameOver());
+
+        private void BadFireGameOver() => 
+            StartCoroutine(OnBadFireGameOver());
 
         private void WarGameOver() => 
             StartCoroutine(OnWarGameOver());
@@ -56,7 +60,7 @@ namespace CodeBase
 
             Good.Open();
         }
-        
+
         private IEnumerator OnBadGameOver()
         {
             HeroAnimator.PlayDeath();
@@ -64,6 +68,15 @@ namespace CodeBase
             yield return new WaitForSeconds(3);
 
             Bad.Open();
+        }
+
+        private IEnumerator OnBadFireGameOver()
+        {
+            HeroAnimator.PlayDeath();
+            
+            yield return new WaitForSeconds(3);
+
+            Fire.Open();
         }
     }
 }

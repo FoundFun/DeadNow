@@ -7,6 +7,7 @@ namespace CodeBase.Hero
     {   
         public HeroAnimator Animator;
         public Rigidbody2D Rigidbody2D;
+        public AudioSource AttackSound;
 
         private const float _downSpeed = 0.1f;
 
@@ -19,6 +20,8 @@ namespace CodeBase.Hero
             if (Input.GetKey(KeyCode.LeftShift) && !_delay)
             {
                 _delay = true;
+                
+                AttackSound.Play();
 
                 StartCoroutine(Attack());
             }
