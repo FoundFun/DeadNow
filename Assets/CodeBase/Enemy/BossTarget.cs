@@ -56,12 +56,9 @@ namespace CodeBase.Enemy
                 
                 Animator.Death();
                 
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(1f);
                 
                 DeathExplosion.Play();
-                
-                yield return new WaitForSeconds(1f);
-
                 BadGameOver?.Invoke();
             }
         }
