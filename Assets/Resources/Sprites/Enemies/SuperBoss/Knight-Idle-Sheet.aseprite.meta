@@ -1,0 +1,550 @@
+fileFormatVersion: 2
+guid: acacfe3bd1ba17145926ae7a7ef74ac4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Attack
+    second: {fileID: 7400000, guid: ae30a2714d95ff84795cdaa0c2e5c1ed, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: 42f6c2cbee6bf3e4a9d4ef14437c624a, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 1
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 1
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638328432468192950
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Knight-Idle-Sheet_Frame_0
+    originalName: 
+    pivot: {x: -0.99999994, y: 1.7111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 177
+      width: 28
+      height: 45
+    spriteID: 94f9c0c905717f845b7a0188d4608a64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 177}
+  - name: Knight-Idle-Sheet_Frame_1
+    originalName: 
+    pivot: {x: -0.96551716, y: 1.7111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 198
+      width: 29
+      height: 45
+    spriteID: 75e9fd6e844666b48b793e67de379da6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 198}
+  - name: Knight-Idle-Sheet_Frame_2
+    originalName: 
+    pivot: {x: -0.99999994, y: 1.7111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 130
+      width: 28
+      height: 45
+    spriteID: 1d135b9ad646fdd4598377c76c8f3434
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 130}
+  - name: Knight-Idle-Sheet_Frame_3
+    originalName: 
+    pivot: {x: -1.037037, y: 1.7111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 183
+      width: 27
+      height: 45
+    spriteID: 262771690f2d06a4881a3692cf1b9cb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 183}
+  - name: Knight-Idle-Sheet_Frame_4
+    originalName: 
+    pivot: {x: -0.7567567, y: 1.7111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 201
+      width: 37
+      height: 45
+    spriteID: 16d2df1dca6cba14e84d864e76e19e18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 201}
+  - name: Knight-Idle-Sheet_Frame_5
+    originalName: 
+    pivot: {x: -0.62222224, y: 1.3}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 130
+      width: 45
+      height: 60
+    spriteID: d8d4888e5957e394498bb35e5fd8fdc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 130}
+  - name: Knight-Idle-Sheet_Frame_6
+    originalName: 
+    pivot: {x: -0.6511628, y: 1.2539682}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 130
+      width: 43
+      height: 63
+    spriteID: 0dadbd96af10ffd499a019c0c7a0ef96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 130}
+  - name: Knight-Idle-Sheet_Frame_7
+    originalName: 
+    pivot: {x: -0.7368421, y: 1.1142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 130
+      width: 38
+      height: 70
+    spriteID: 5240ce4c7f158134c94f7b1664e834b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 130}
+  - name: Knight-Idle-Sheet_Frame_8
+    originalName: 
+    pivot: {x: 0, y: 1.3728813}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 63
+      width: 66
+      height: 59
+    spriteID: f81388455824b3949be05e4a61ff1a77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 63}
+  - name: Knight-Idle-Sheet_Frame_9
+    originalName: 
+    pivot: {x: 0, y: 1.5882353}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 77
+      height: 51
+    spriteID: d4236aaa0cc23fd4bb44546ec0baa97a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Knight-Idle-Sheet_Frame_10
+    originalName: 
+    pivot: {x: 0, y: 2.0512822}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 130
+      width: 59
+      height: 39
+    spriteID: d478c19762775b8498b5bcab65920eae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 130}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1429732202
+    name: Knight-Idle-Sheet
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Knight-Idle-Sheet_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 28
+        y: 13
+        width: 28
+        height: 45
+      spriteId: 94f9c0c905717f845b7a0188d4608a64
+    - name: Knight-Idle-Sheet_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 28
+        y: 13
+        width: 29
+        height: 45
+      spriteId: 75e9fd6e844666b48b793e67de379da6
+    - name: Knight-Idle-Sheet_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 28
+        y: 13
+        width: 28
+        height: 45
+      spriteId: 1d135b9ad646fdd4598377c76c8f3434
+    - name: Knight-Idle-Sheet_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 28
+        y: 13
+        width: 27
+        height: 45
+      spriteId: 262771690f2d06a4881a3692cf1b9cb0
+    - name: Knight-Idle-Sheet_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 28
+        y: 13
+        width: 37
+        height: 45
+      spriteId: 16d2df1dca6cba14e84d864e76e19e18
+    - name: Knight-Idle-Sheet_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 28
+        y: 12
+        width: 45
+        height: 60
+      spriteId: d8d4888e5957e394498bb35e5fd8fdc5
+    - name: Knight-Idle-Sheet_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 28
+        y: 11
+        width: 43
+        height: 63
+      spriteId: 0dadbd96af10ffd499a019c0c7a0ef96
+    - name: Knight-Idle-Sheet_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 28
+        y: 12
+        width: 38
+        height: 70
+      spriteId: 5240ce4c7f158134c94f7b1664e834b3
+    - name: Knight-Idle-Sheet_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 9
+        width: 66
+        height: 59
+      spriteId: f81388455824b3949be05e4a61ff1a77
+    - name: Knight-Idle-Sheet_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 9
+        width: 77
+        height: 51
+      spriteId: d4236aaa0cc23fd4bb44546ec0baa97a
+    - name: Knight-Idle-Sheet_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 10
+        width: 59
+        height: 39
+      spriteId: d478c19762775b8498b5bcab65920eae
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: tvOS
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 95, y: 90}
