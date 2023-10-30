@@ -16,11 +16,11 @@ public class Tutorial : MonoBehaviour
 
         yield return new WaitForSeconds(2);
         
-        SpaceTutorial.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
+        SpaceTutorial.transform.DOScale(Vector3.one, 2).Elapsed();
 
         yield return new WaitForSeconds(2);
         
-        LShiftTutorial.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
+        LShiftTutorial.transform.DOScale(Vector3.one, 2).Elapsed();
 
         yield return new WaitForSeconds(5);
 
