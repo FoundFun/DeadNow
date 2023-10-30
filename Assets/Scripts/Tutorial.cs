@@ -1,30 +1,26 @@
 using System.Collections;
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
     public CanvasGroup CanvasGroup;
-    public Text WASD;
-    public Text Space;
-    public Text LShift;
-    public Text LCTRL;
+    public TextMeshProUGUI ADTutorial;
+    public TextMeshProUGUI SpaceTutorial;
+    public TextMeshProUGUI LShiftTutorial;
 
     private IEnumerator Start()
     {
-       /* WASD.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
+        ADTutorial.transform.DOScale(Vector3.one, 2).Elapsed();
 
         yield return new WaitForSeconds(2);
         
-        Space.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
+        SpaceTutorial.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
 
         yield return new WaitForSeconds(2);
         
-        LShift.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
-
-        yield return new WaitForSeconds(2);
-        
-        LCTRL.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();*/
+        LShiftTutorial.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
 
         yield return new WaitForSeconds(5);
 

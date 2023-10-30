@@ -72,8 +72,8 @@ MonoBehaviour:
     \u041F\u043E\u043D\u043E\u043C\u0430\u0440\u0435\u0432\n\n\u0410\u043D\u0434\u0440\u0435\u0439
     \u0428\u0435\u0441\u0442\u043E\u0432\n\n\n\n\n\u0421\u043F\u0430\u0441\u0438\u0431\u043E!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 65d02523383a2094c8a07d735db54dcd, type: 2}
+  m_sharedMaterial: {fileID: -5227752367715752221, guid: 65d02523383a2094c8a07d735db54dcd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

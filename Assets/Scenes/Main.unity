@@ -820,8 +820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3990f2641b64704a86c847db63a6392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Following: {fileID: 4202450148843497907}
-  Speed: 10
 --- !u!1 &527676478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,7 +2655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOver: {fileID: 0}
   _waitingTimeOpenCanvas: 0
-  _player: {fileID: 0}
+  _player: {fileID: 4202450148843497911}
 --- !u!4 &2122281707
 Transform:
   m_ObjectHideFlags: 0
@@ -2923,6 +2921,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989809474}
     m_Modifications:
+    - target: {fileID: 2735630069509892181, guid: 0d693c48691e98a458fd97843b194a82, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 65d02523383a2094c8a07d735db54dcd, type: 2}
+    - target: {fileID: 2735630069509892181, guid: 0d693c48691e98a458fd97843b194a82, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5227752367715752221, guid: 65d02523383a2094c8a07d735db54dcd, type: 2}
+    - target: {fileID: 2735630069509892181, guid: 0d693c48691e98a458fd97843b194a82, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641831921134858382, guid: 0d693c48691e98a458fd97843b194a82, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3641831921134858382, guid: 0d693c48691e98a458fd97843b194a82, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
@@ -3068,6 +3082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8419163452419167096, guid: 4ef4bcf5c6bd7974cacf31ccc532e478, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3200,6 +3218,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989809474}
     m_Modifications:
+    - target: {fileID: 4631650671801431640, guid: e4e5ff48c46cccb4c80c8df4aeee2b87, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4631650671801431640, guid: e4e5ff48c46cccb4c80c8df4aeee2b87, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
@@ -3340,18 +3362,6 @@ PrefabInstance:
     - target: {fileID: 3393192569450267211, guid: 6fbe88b1ee35652478bcf639c2647077, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3864007002238613363, guid: 6fbe88b1ee35652478bcf639c2647077, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000008046627
-      objectReference: {fileID: 0}
-    - target: {fileID: 7995991361130539696, guid: 6fbe88b1ee35652478bcf639c2647077, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000013828278
-      objectReference: {fileID: 0}
-    - target: {fileID: 7995991361130539696, guid: 6fbe88b1ee35652478bcf639c2647077, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.031315982
       objectReference: {fileID: 0}
     - target: {fileID: 9003977940033460615, guid: 6fbe88b1ee35652478bcf639c2647077, type: 3}
       propertyPath: m_Name
@@ -3544,6 +3554,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989809474}
     m_Modifications:
+    - target: {fileID: 1451516001170818725, guid: 0638a0608ddbd3348a671dd8a99dbfa1, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2778351330137108037, guid: 0638a0608ddbd3348a671dd8a99dbfa1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3633,11 +3647,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0638a0608ddbd3348a671dd8a99dbfa1, type: 3}
---- !u!4 &4202450148843497907 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4905212545099041767, guid: 4ef4bcf5c6bd7974cacf31ccc532e478, type: 3}
+--- !u!114 &4202450148843497911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7710150747696975130, guid: 4ef4bcf5c6bd7974cacf31ccc532e478, type: 3}
   m_PrefabInstance: {fileID: 1355068115498308731}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c321eaf85c658874ba2ac302630672b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4249839615368621333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3393192569450267211, guid: 6fbe88b1ee35652478bcf639c2647077, type: 3}
@@ -4003,6 +4023,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'GoodGameOver '
       objectReference: {fileID: 0}
+    - target: {fileID: 5419464219689733820, guid: ca386df6a969c6a48b2e1ce57c400dd4, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7470781934897404070, guid: ca386df6a969c6a48b2e1ce57c400dd4, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7470781934897404070, guid: ca386df6a969c6a48b2e1ce57c400dd4, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
@@ -4120,22 +4148,6 @@ PrefabInstance:
     - target: {fileID: 4466326998578692185, guid: acb85db2fbc570245992c1a1e088eddc, type: 3}
       propertyPath: m_Name
       value: WarriorFantasy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6177821453454603516, guid: acb85db2fbc570245992c1a1e088eddc, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000006914139
-      objectReference: {fileID: 0}
-    - target: {fileID: 6177821453454603516, guid: acb85db2fbc570245992c1a1e088eddc, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.031315982
-      objectReference: {fileID: 0}
-    - target: {fileID: 7244258364318207986, guid: acb85db2fbc570245992c1a1e088eddc, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000006914139
-      objectReference: {fileID: 0}
-    - target: {fileID: 7244258364318207986, guid: acb85db2fbc570245992c1a1e088eddc, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.031315982
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
