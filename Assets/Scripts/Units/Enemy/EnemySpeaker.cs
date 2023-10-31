@@ -1,41 +1,37 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace CodeBase.Enemy
+public class EnemySpeaker : MonoBehaviour
 {
-    public class EnemySpeaker : MonoBehaviour
+    public TextMeshProUGUI Dead;
+    public TextMeshProUGUI Tutorial;
+
+    private Coroutine _coroutine;
+
+    public void ShowText(TextMeshProUGUI text)
     {
-        public TextMeshProUGUI Dead;
-        public TextMeshProUGUI Tutorial;
+        if (_coroutine != null)
+            StartCoroutine(OnShowTwoText(text));
+        else
+            _coroutine = StartCoroutine(OnShowText(text));
+    }
 
-        private Coroutine _coroutine;
+    private IEnumerator OnShowText(TextMeshProUGUI text)
+    {
+        //text.gameObject.LeanScale(new Vector3(0.009259259f, 0.009259259f, 0.009259259f), 1).setEaseOutBounce();
 
-        public void ShowText(TextMeshProUGUI text)
-        {
-            if (_coroutine != null)
-                StartCoroutine(OnShowTwoText(text));
-            else
-                _coroutine = StartCoroutine(OnShowText(text));
-        }
+        yield return new WaitForSeconds(4);
 
-        private IEnumerator OnShowText(TextMeshProUGUI text)
-        {
-            //text.gameObject.LeanScale(new Vector3(0.009259259f, 0.009259259f, 0.009259259f), 1).setEaseOutBounce();
+        //text.gameObject.LeanScale(Vector3.zero, 1).setEaseOutBounce();
+    }
 
-            yield return new WaitForSeconds(4);
+    private IEnumerator OnShowTwoText(TextMeshProUGUI text)
+    {
+        //text.gameObject.LeanScale(new Vector3(0.009259259f, 0.009259259f, 0.009259259f), 1).setEaseOutBounce();
 
-            //text.gameObject.LeanScale(Vector3.zero, 1).setEaseOutBounce();
-        }
+        yield return new WaitForSeconds(4);
 
-        private IEnumerator OnShowTwoText(TextMeshProUGUI text)
-        {
-            //text.gameObject.LeanScale(new Vector3(0.009259259f, 0.009259259f, 0.009259259f), 1).setEaseOutBounce();
-
-            yield return new WaitForSeconds(4);
-
-            //text.gameObject.LeanScale(Vector3.zero, 1).setEaseOutBounce();
-        }
+        //text.gameObject.LeanScale(Vector3.zero, 1).setEaseOutBounce();
     }
 }

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: PlayerParameters
   m_EditorClassIdentifier: 
   _maxHealth: 10
-  _minHealth: 0
-  _minSpeed: 0
+  _minHealth: 1
+  _minSpeed: 1
   _maxSpeed: 7
-  _jumpForce: 10
+  _jumpForce: 5
   _groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   _groundDistanceTrigger: 0.2
+  _minSpeedAttack: 1

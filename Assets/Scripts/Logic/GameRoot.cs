@@ -1,5 +1,4 @@
-﻿using CodeBase;
-using System;
+﻿using System;
 using System.Collections;
 using UnityEngine;
 
@@ -27,7 +26,7 @@ public class GameRoot : MonoBehaviour
 
     private IEnumerator OnGameOver(int animationDeath)
     {
-        _player.PlayerAnimator.SetAnimation(animationDeath);
+        _player.AnimatorController.SetAnimation(Animation.Die);
         yield return _waitForSeconds;
         _gameOver.Open();
     }

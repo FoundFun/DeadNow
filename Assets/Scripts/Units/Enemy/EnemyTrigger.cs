@@ -1,38 +1,34 @@
-﻿using CodeBase.Hero;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace CodeBase.Enemy
+public class EnemyTrigger : MonoBehaviour
 {
-    public class EnemyTrigger : MonoBehaviour
+    public EnemyAnimator Animator;
+    public EnemySpeaker Speaker;
+    public bool IsDead;
+
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        public EnemyAnimator Animator;
-        public EnemySpeaker Speaker;
-        public bool IsDead;
-
-        private void OnTriggerEnter2D(Collider2D col)
+        if (col.TryGetComponent(out PlayerAttack heroAttack) && !IsDead)
         {
-            if (col.TryGetComponent(out PlayerAttack heroAttack) && !IsDead)
+            Speaker.ShowText(Speaker.Tutorial);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out PlayerAttack heroAttack) && !IsDead)
+        {
+            if (heroAttack.IsAttack)
             {
-                Speaker.ShowText(Speaker.Tutorial);
+                Speaker.ShowText(Speaker.Dead);
+                IsDead = true;
+                Animator.Death();
             }
         }
+    }
 
-        private void OnTriggerStay2D(Collider2D other)
-        {
-            if (other.TryGetComponent(out PlayerAttack heroAttack) && !IsDead)
-            {
-                if (heroAttack.IsAttack)
-                {
-                    Speaker.ShowText(Speaker.Dead);
-                    IsDead = true;
-                    Animator.Death();
-                }
-            }
-        }
-
-        public void Reset()
-        {
-            IsDead = false;
-        }
+    public void Reset()
+    {
+        IsDead = false;
     }
 }
