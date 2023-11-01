@@ -1,37 +1,46 @@
-﻿using System.Collections;
-using TMPro;
+﻿using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpeaker : MonoBehaviour
 {
-    public TextMeshProUGUI Dead;
-    public TextMeshProUGUI Tutorial;
+    [SerializeField] private List<TextParameters> _dialog;
 
-    private Coroutine _coroutine;
+    private Sequence _sequence;
 
-    public void ShowText(TextMeshProUGUI text)
+    private void Start()
     {
-        if (_coroutine != null)
-            StartCoroutine(OnShowTwoText(text));
-        else
-            _coroutine = StartCoroutine(OnShowText(text));
+        _sequence = DOTween.Sequence();
     }
 
-    private IEnumerator OnShowText(TextMeshProUGUI text)
+    public void ChangeSizeDialogText()
     {
-        //text.gameObject.LeanScale(new Vector3(0.009259259f, 0.009259259f, 0.009259259f), 1).setEaseOutBounce();
-
-        yield return new WaitForSeconds(4);
-
-        //text.gameObject.LeanScale(Vector3.zero, 1).setEaseOutBounce();
+        _sequence = DOTween.Sequence();
+        foreach (var dialog in _dialog)
+        {
+            dialog.Text.gameObject.SetActive(true);
+            AppendTween(dialog.Text.GetComponent<RectTransform>().DOSizeDelta(dialog.TextSize, dialog.TextResizeDuration), dialog.WaitingTime);
+        }
     }
 
-    private IEnumerator OnShowTwoText(TextMeshProUGUI text)
+    public void ChangeFadeDialogText()
     {
-        //text.gameObject.LeanScale(new Vector3(0.009259259f, 0.009259259f, 0.009259259f), 1).setEaseOutBounce();
+        _sequence = DOTween.Sequence();
+        foreach (var dialog in _dialog)
+        {
+            dialog.Text.gameObject.SetActive(true);
+            AppendTween(dialog.Text.DOFade(dialog.TextFade, dialog.TextResizeDuration), dialog.WaitingTime);
+        }
+    }
 
-        yield return new WaitForSeconds(4);
+    private void AppendTween(Tween tween, float intervalTime)
+    {
+        _sequence.Append(tween);
+        _sequence.AppendInterval(intervalTime);
+    }
 
-        //text.gameObject.LeanScale(Vector3.zero, 1).setEaseOutBounce();
+    private void OnDestroy()
+    {
+        _sequence.Kill();
     }
 }
