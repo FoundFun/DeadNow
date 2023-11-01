@@ -249,12 +249,12 @@ GameObject:
   - component: {fileID: 4490086048638037349}
   - component: {fileID: 8639328398774781836}
   - component: {fileID: 1409561351951378757}
-  - component: {fileID: 7710150747696975130}
   - component: {fileID: 255326375429923563}
   - component: {fileID: 1595472252015650169}
   - component: {fileID: 6270144539023833584}
+  - component: {fileID: 2617237940048574100}
   m_Layer: 0
-  m_Name: Player
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,23 +422,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7710150747696975130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8419163452419167096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c321eaf85c658874ba2ac302630672b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _parameters: {fileID: 11400000, guid: 68783a35094e6114ca4e076e7ed2637d, type: 2}
-  _animatorController: {fileID: 0}
-  _moveJoystick: {fileID: 8320581202121991264, guid: edfff9e693dde9147a2c0ad60a950f7b, type: 3}
-  _rb: {fileID: 1409561351951378757}
-  _groundCheckPos: {fileID: 7574406064108056532}
 --- !u!114 &255326375429923563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,6 +551,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2617237940048574100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8419163452419167096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c321eaf85c658874ba2ac302630672b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parameters: {fileID: 11400000, guid: 68783a35094e6114ca4e076e7ed2637d, type: 2}
+  _animatorController: {fileID: 0}
+  _moveJoystick: {fileID: 0}
+  _rb: {fileID: 0}
+  _groundCheckPos: {fileID: 0}
 --- !u!1 &8977960055753634032
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class PlayerMovement : Player, IMovable
     {
         Move();
 
-        if (((_moveJoystick.Direction.y > 0.5f || Input.GetKeyDown(KeyCode.Space))) && IsGround())
+        if ((_moveJoystick.Direction.y > 0.5f || Input.GetKeyDown(KeyCode.Space)) && IsGround())
             Jump();
     }
 
