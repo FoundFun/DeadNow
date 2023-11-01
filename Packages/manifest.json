@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.agava.webutility": "https://github.com/forcepusher/com.agava.webutility.git#3.0.0",
+    "com.agava.yandexgames": "https://github.com/forcepusher/com.agava.yandexgames.git#15.1.1",
     "com.coffee.softmask-for-ugui": "https://github.com/mob-sakai/SoftMaskForUGUI.git",
     "com.unity.2d.aseprite": "1.0.1",
     "com.unity.collab-proxy": "2.0.7",
