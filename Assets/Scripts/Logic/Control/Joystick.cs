@@ -33,7 +33,6 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     protected virtual void Start()
     {
-
         HandleRange = _handleRange;
         DeadZone = _deadZone;
 
@@ -46,6 +45,8 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         _handle.anchorMax = center;
         _handle.pivot = center;
         _handle.anchoredPosition = Vector2.zero;
+        _background.gameObject.SetActive(false);
+        _handle.gameObject.SetActive(false);
     }
 
     public void OnDrag(PointerEventData eventData)
