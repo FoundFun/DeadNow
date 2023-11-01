@@ -29,7 +29,6 @@ public class GameOverCanvas : MonoBehaviour
             foreach (var text in _texts)
                 _sequence.PrependInterval(1).Append(text.DOFade(1, _textFadeDuration));
         });
-
     }
 
     private void OnDestroy()

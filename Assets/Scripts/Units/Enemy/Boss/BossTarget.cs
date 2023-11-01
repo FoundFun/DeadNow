@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class BossTarget : Enemy
 {
-    [SerializeField] private EnemyAnimator _animator;
     [SerializeField] private AudioSource _deathExplosion;
 
     private void OnTriggerStay2D(Collider2D other)

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : Unit
 {
     private static List<Enemy> _enemies = new List<Enemy>();
 
@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
         _enemies.Add(this);
     }
 
-    private void OnDestroy()
+    protected override void OnDestroy()
     {
         _enemies.Remove(this);
     }

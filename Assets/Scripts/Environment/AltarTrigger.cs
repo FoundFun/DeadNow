@@ -19,7 +19,7 @@ public class AltarTrigger : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (Wizard1.IsDead && !AltarComplete)
+        /*if (Wizard1.IsDead && !AltarComplete)
         {
             Fire1.SetActive(false);
         }
@@ -27,7 +27,7 @@ public class AltarTrigger : MonoBehaviour
         if (Wizard2.IsDead && !AltarComplete)
         {
             Fire2.SetActive(false);
-        }
+        }*/
 
         /*if (other.GetComponent<HeroTransfer>().IsTransfer && !AltarComplete)
         {

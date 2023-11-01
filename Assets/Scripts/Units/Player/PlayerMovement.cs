@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class PlayerMovement : Player, IMovable
+public class PlayerMovement : MonoBehaviour, IMovable
 {
+    [SerializeField] private Player _player;
     [SerializeField] private Joystick _moveJoystick;
-    [SerializeField] private Rigidbody2D _rb;
+    [SerializeField] private Rigidbody2D _rigidBody2D;
     [SerializeField] private Transform _groundCheckPos;
 
     private void FixedUpdate()
@@ -16,19 +17,19 @@ public class PlayerMovement : Player, IMovable
 
     public void Move()
     {
-        Vector2 movement = new Vector2(_moveJoystick.Direction.x * PlayerParameters.MaxSpeed, _rb.velocity.y);
-        if (_rb.velocity.x < PlayerParameters.MaxSpeed)
-            _rb.AddForce(movement);
+        Vector2 movement = new Vector2(_moveJoystick.Direction.x * _player.PlayerParameters.MaxSpeed, _rigidBody2D.velocity.y);
+        if (_rigidBody2D.velocity.x < _player.PlayerParameters.MaxSpeed)
+            _rigidBody2D.AddForce(movement);
     }
 
     private void Jump()
     {
-        _rb.velocity = new Vector2(_rb.velocity.x, PlayerParameters.JumpForce);
+        _rigidBody2D.velocity = new Vector2(_rigidBody2D.velocity.x, _player.PlayerParameters.JumpForce);
     }
 
     private bool IsGround()
     {
         return Physics2D.OverlapCircleAll(_groundCheckPos.position,
-            PlayerParameters.GroundDistanceTrigger, PlayerParameters.GroundLayer).Length > 0;
+            _player.PlayerParameters.GroundDistanceTrigger, _player.PlayerParameters.GroundLayer).Length > 0;
     }
 } 
