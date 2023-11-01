@@ -571,7 +571,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -654,18 +653,6 @@ Transform:
   - {fileID: 620409739}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3990f2641b64704a86c847db63a6392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &527676478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,13 +2908,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7710150747696975130, guid: 4ef4bcf5c6bd7974cacf31ccc532e478, type: 3}
+      propertyPath: _moveJoystick
+      value: 
+      objectReference: {fileID: 8320581202121991264, guid: edfff9e693dde9147a2c0ad60a950f7b, type: 3}
     - target: {fileID: 8419163452419167096, guid: 4ef4bcf5c6bd7974cacf31ccc532e478, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8419163452419167096, guid: 4ef4bcf5c6bd7974cacf31ccc532e478, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3267,6 +3254,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid
       objectReference: {fileID: 0}
+    - target: {fileID: 3088247340168810082, guid: d794ed29a4f7c074b92fbfafcb14a9ae, type: 3}
+      propertyPath: Boss
+      value: 
+      objectReference: {fileID: 2123165867}
+    - target: {fileID: 3088247340168810082, guid: d794ed29a4f7c074b92fbfafcb14a9ae, type: 3}
+      propertyPath: Main
+      value: 
+      objectReference: {fileID: 1377993749}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
