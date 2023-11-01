@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace BasicTemplate.CodeBase
 {
-    public class HorizontalLayoutGroup : LayoutGroup
+    public class ScaleHorizontalLayoutGroup : LayoutGroup
     {
         [SerializeField] private RectTransform _canvasRectTransform;
         [SerializeField] private Transform _scaledObject;
