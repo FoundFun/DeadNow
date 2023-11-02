@@ -2,15 +2,15 @@ using UnityEngine;
 
 namespace CodeBase.Hero
 {
+    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(HeroAnimator))]
     public class HeroMove : MonoBehaviour
     {
-        public HeroJump HeroJump;
-        public float MovementSpeed;
+        private const float MoveSpeed = 4;
 
         private Rigidbody2D _rigidbody2D;
         private HeroAnimator _heroAnimator;
-        private Vector2 _moveDirection;
-        private float _horizontal;
+        private float _direction;
 
         private void Awake()
         {
@@ -18,33 +18,23 @@ namespace CodeBase.Hero
             _heroAnimator = GetComponent<HeroAnimator>();
         }
 
-        private void Update()
-        {
-            _horizontal = Input.GetAxis("Horizontal");
-            Vector2 rigidbody = _rigidbody2D.velocity;
-
-            if (rigidbody.x > 4)
-            {
-                rigidbody.x = 4;
-                _rigidbody2D.velocity = rigidbody;
-            }
-            else if (rigidbody.x < -4)
-            {
-                rigidbody.x = -4;
-                _rigidbody2D.velocity = rigidbody;
-            }
-        }
+        private void Update() => 
+            _direction = Input.GetAxis("Horizontal");
 
         private void FixedUpdate()
         {
-            if (_horizontal != 0 && !HeroJump.IsJump)
+            if (_direction != 0)
                 Move();
         }
 
         private void Move()
         {
             _heroAnimator.Move();
-            _rigidbody2D.AddForce(new Vector2(_horizontal * MovementSpeed, _rigidbody2D.velocity.y), ForceMode2D.Force);
+            _rigidbody2D.MovePosition(new Vector2(_rigidbody2D.transform.position.x + _direction * Speed(),
+                _rigidbody2D.transform.position.y));
         }
+
+        private float Speed() => 
+            MoveSpeed * Time.fixedDeltaTime;
     }
 }
