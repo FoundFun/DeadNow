@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b8c78fb779b98c42a87276ce3b5ee79
+guid: 80df322d9aab89b42a8ccbae71cf334a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -114,8 +114,8 @@ ScriptedImporter:
     fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
-    defaultPivotSpace: 0
-    defaultPivotAlignment: 6
+    defaultPivotSpace: 1
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -126,8 +126,8 @@ ScriptedImporter:
     fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
-    defaultPivotSpace: 0
-    defaultPivotAlignment: 6
+    defaultPivotSpace: 1
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -135,7 +135,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638328233298959903
+  platformSettingsDirtyTick: 638345251025311540
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -161,8 +161,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Hero_Frame_0
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -181,8 +181,8 @@ ScriptedImporter:
     uvTransform: {x: 40, y: 210}
   - name: Hero_Frame_1
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -201,8 +201,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 223}
   - name: Hero_Frame_2
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -221,8 +221,8 @@ ScriptedImporter:
     uvTransform: {x: 146, y: 63}
   - name: Hero_Frame_3
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -241,8 +241,8 @@ ScriptedImporter:
     uvTransform: {x: 176, y: 35}
   - name: Hero_Frame_4
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -261,8 +261,8 @@ ScriptedImporter:
     uvTransform: {x: 146, y: 231}
   - name: Hero_Frame_5
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -281,8 +281,8 @@ ScriptedImporter:
     uvTransform: {x: 202, y: 4}
   - name: Hero_Frame_6
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -301,8 +301,8 @@ ScriptedImporter:
     uvTransform: {x: 202, y: 24}
   - name: Hero_Frame_7
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -321,8 +321,8 @@ ScriptedImporter:
     uvTransform: {x: 202, y: 43}
   - name: Hero_Frame_8
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -341,8 +341,8 @@ ScriptedImporter:
     uvTransform: {x: 66, y: 37}
   - name: Hero_Frame_9
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -361,8 +361,8 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 4}
   - name: Hero_Frame_10
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -381,8 +381,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 84}
   - name: Hero_Frame_11
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -401,8 +401,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 43}
   - name: Hero_Frame_12
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -421,8 +421,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Hero_Frame_13
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -441,8 +441,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 120}
   - name: Hero_Frame_14
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -461,8 +461,8 @@ ScriptedImporter:
     uvTransform: {x: 146, y: 129}
   - name: Hero_Frame_15
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -481,8 +481,8 @@ ScriptedImporter:
     uvTransform: {x: 66, y: 73}
   - name: Hero_Frame_16
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -501,8 +501,8 @@ ScriptedImporter:
     uvTransform: {x: 66, y: 109}
   - name: Hero_Frame_17
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -521,8 +521,8 @@ ScriptedImporter:
     uvTransform: {x: 40, y: 39}
   - name: Hero_Frame_18
     originalName: 
-    pivot: {x: 0, y: -0.08695652}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -541,8 +541,8 @@ ScriptedImporter:
     uvTransform: {x: 176, y: 4}
   - name: Hero_Frame_19
     originalName: 
-    pivot: {x: -0.99999994, y: -1.1111112}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -561,8 +561,8 @@ ScriptedImporter:
     uvTransform: {x: 239, y: 24}
   - name: Hero_Frame_20
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -581,8 +581,8 @@ ScriptedImporter:
     uvTransform: {x: 66, y: 145}
   - name: Hero_Frame_21
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -601,8 +601,8 @@ ScriptedImporter:
     uvTransform: {x: 40, y: 177}
   - name: Hero_Frame_22
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -621,8 +621,8 @@ ScriptedImporter:
     uvTransform: {x: 66, y: 181}
   - name: Hero_Frame_23
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -641,8 +641,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 187}
   - name: Hero_Frame_24
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -661,8 +661,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 152}
   - name: Hero_Frame_25
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -681,8 +681,8 @@ ScriptedImporter:
     uvTransform: {x: 66, y: 4}
   - name: Hero_Frame_26
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -701,8 +701,8 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 38}
   - name: Hero_Frame_27
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -721,8 +721,8 @@ ScriptedImporter:
     uvTransform: {x: 40, y: 107}
   - name: Hero_Frame_28
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -741,8 +741,8 @@ ScriptedImporter:
     uvTransform: {x: 66, y: 217}
   - name: Hero_Frame_29
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -761,8 +761,8 @@ ScriptedImporter:
     uvTransform: {x: 40, y: 73}
   - name: Hero_Frame_30
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -781,8 +781,8 @@ ScriptedImporter:
     uvTransform: {x: 93, y: 4}
   - name: Hero_Frame_31
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -801,8 +801,8 @@ ScriptedImporter:
     uvTransform: {x: 146, y: 4}
   - name: Hero_Frame_32
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -821,8 +821,8 @@ ScriptedImporter:
     uvTransform: {x: 146, y: 32}
   - name: Hero_Frame_33
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -841,8 +841,8 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 72}
   - name: Hero_Frame_34
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -861,8 +861,8 @@ ScriptedImporter:
     uvTransform: {x: 146, y: 96}
   - name: Hero_Frame_35
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -881,8 +881,8 @@ ScriptedImporter:
     uvTransform: {x: 146, y: 163}
   - name: Hero_Frame_36
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -901,8 +901,8 @@ ScriptedImporter:
     uvTransform: {x: 93, y: 35}
   - name: Hero_Frame_37
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -921,8 +921,8 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 106}
   - name: Hero_Frame_38
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -941,8 +941,8 @@ ScriptedImporter:
     uvTransform: {x: 176, y: 67}
   - name: Hero_Frame_39
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -961,8 +961,8 @@ ScriptedImporter:
     uvTransform: {x: 146, y: 197}
   - name: Hero_Frame_40
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -981,8 +981,8 @@ ScriptedImporter:
     uvTransform: {x: 93, y: 71}
   - name: Hero_Frame_41
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1001,8 +1001,8 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 141}
   - name: Hero_Frame_42
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1021,8 +1021,8 @@ ScriptedImporter:
     uvTransform: {x: 40, y: 4}
   - name: Hero_Frame_43
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1041,8 +1041,8 @@ ScriptedImporter:
     uvTransform: {x: 93, y: 107}
   - name: Hero_Frame_44
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1061,8 +1061,8 @@ ScriptedImporter:
     uvTransform: {x: 40, y: 142}
   - name: Hero_Frame_45
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1081,8 +1081,8 @@ ScriptedImporter:
     uvTransform: {x: 93, y: 143}
   - name: Hero_Frame_46
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1101,8 +1101,8 @@ ScriptedImporter:
     uvTransform: {x: 93, y: 179}
   - name: Hero_Frame_47
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1121,8 +1121,8 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 176}
   - name: Hero_Frame_48
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1141,8 +1141,8 @@ ScriptedImporter:
     uvTransform: {x: 93, y: 215}
   - name: Hero_Frame_49
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
