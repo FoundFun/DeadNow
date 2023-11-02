@@ -152,7 +152,7 @@ BoxCollider2D:
   m_Offset: {x: -0.094558954, y: 0.875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1, y: 1.75}
     newSize: {x: 0.16, y: 0.28}
     adaptiveTilingThreshold: 0.5
@@ -214,8 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c321eaf85c658874ba2ac302630672b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeroJump: {fileID: 3036493043921273541}
-  MovementSpeed: 10
+  _speed: 15
 --- !u!114 &3328282219960209151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,10 +240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79beeb4ed5df45539d79661c8a7e551e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rigidbody2D: {fileID: 2005721159435883323}
-  Animator: {fileID: 7605180059722827946}
-  Force: 10
-  Jump: {fileID: 0}
+  _audioJump: {fileID: 0}
+  _jumpForce: 7
 --- !u!114 &8122846945651671900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,7 +254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f499b12943ce4b968c50e83d4222169d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeroJump: {fileID: 3036493043921273541}
 --- !u!114 &2065539684486145372
 MonoBehaviour:
   m_ObjectHideFlags: 0

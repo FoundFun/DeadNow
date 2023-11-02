@@ -6,35 +6,45 @@ namespace CodeBase.Hero
     [RequireComponent(typeof(HeroAnimator))]
     public class HeroMove : MonoBehaviour
     {
-        private const float MoveSpeed = 4;
+        [SerializeField] private float _speed;
 
+        private const float MaxVelocityX = 5;
+        private const float MinVelocityX = -5;
+
+        private HeroInput _input;
         private Rigidbody2D _rigidbody2D;
         private HeroAnimator _heroAnimator;
-        private float _direction;
+        private Vector2 _direction;
 
         private void Awake()
         {
+            _input = new HeroInput();
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _heroAnimator = GetComponent<HeroAnimator>();
         }
 
+        private void OnEnable() => 
+            _input.Enable();
+
+        private void OnDisable() => 
+            _input.Disable();
+
         private void Update() => 
-            _direction = Input.GetAxis("Horizontal");
+            _direction = _input.Hero.Move.ReadValue<Vector2>();
 
         private void FixedUpdate()
         {
-            if (_direction != 0)
+            if (_direction.x != 0 && WithinVelocity())
                 Move();
         }
+
+        private bool WithinVelocity() => 
+            _rigidbody2D.velocity.x is < MaxVelocityX and > MinVelocityX;
 
         private void Move()
         {
             _heroAnimator.Move();
-            _rigidbody2D.MovePosition(new Vector2(_rigidbody2D.transform.position.x + _direction * Speed(),
-                _rigidbody2D.transform.position.y));
+            _rigidbody2D.AddForce(Vector2.right * _direction.x * _speed, ForceMode2D.Force);
         }
-
-        private float Speed() => 
-            MoveSpeed * Time.fixedDeltaTime;
     }
 }

@@ -1,80 +1,51 @@
-﻿using System.Collections;
-using CodeBase.Environment;
+﻿using CodeBase.Environment;
 using UnityEngine;
 
 namespace CodeBase.Hero
 {
+    [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(HeroAnimator))]
     public class HeroJump : MonoBehaviour
     {
-        public Rigidbody2D Rigidbody2D;
-        public HeroAnimator Animator;
-        public float Force;
-        public AudioSource Jump;
-        
-        public bool IsGround { get; private set; }
-        public bool IsJump { get; private set; }
+        [SerializeField] private AudioSource _audioJump;
+        [SerializeField] private float _jumpForce;
 
-        private void Update()
+        private HeroInput _input;
+        private Rigidbody2D _rigidbody2D;
+        private HeroAnimator _animator;
+        private bool _isGround;
+
+        private void Awake()
         {
-            Vector2 rigidbody = Rigidbody2D.velocity;
-
-            if (rigidbody.y > 7)
-            {
-                rigidbody.y = 7;
-                Rigidbody2D.velocity = rigidbody;
-            }
-            else if (rigidbody.y < -7)
-            {
-                rigidbody.y = -7;
-                Rigidbody2D.velocity = rigidbody;
-            }
-        }
-
-        private void FixedUpdate()
-        {
-            if (Input.GetKey(KeyCode.Space) && IsGround && !IsJump)
-            {
-                IsJump = true;
-                
-                Jump.Play();
-
-                StartCoroutine(OnJump());
-            }
-        }
-
-        private void OnTriggerEnter2D(Collider2D collider)
-        {
-            if (collider.gameObject.GetComponent<Ground>())
-            {
-                IsGround = true;
-            }
-        }
-
-        private void OnTriggerStay2D(Collider2D other)
-        {
-            if (other.gameObject.GetComponent<Ground>())
-            {
-                IsGround = true;
-            }
-        }
-
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            if (other.gameObject.GetComponent<Ground>())
-                IsGround = false;
-        }
-
-        private IEnumerator OnJump()
-        {
-            Rigidbody2D.velocity = new Vector2(Rigidbody2D.velocity.x, 0);
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+            _animator = GetComponent<HeroAnimator>();
             
-            Rigidbody2D.AddForce(new Vector2(Rigidbody2D.velocity.x, Force), ForceMode2D.Impulse);
+            _input = new HeroInput();
             
-            Animator.Jump();
+            _input.Hero.Jump.performed += _ => OnJump();
+        }
 
-            yield return new WaitForSeconds(1);
-            
-            IsJump = false;
+        private void OnEnable() => 
+            _input.Enable();
+
+        private void OnDisable() => 
+            _input.Disable();
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.GetComponent<Ground>()) 
+                _isGround = true;
+        }
+
+        private void OnJump()
+        {
+            if (!_isGround)
+                return;
+
+            _isGround = false;
+            _rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+            _audioJump.Play();
+            _animator.Jump();
         }
     }
 }

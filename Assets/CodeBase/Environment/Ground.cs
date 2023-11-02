@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace CodeBase.Environment
 {
-    internal class Ground : MonoBehaviour
+    public class Ground : MonoBehaviour
     {
     }
 }

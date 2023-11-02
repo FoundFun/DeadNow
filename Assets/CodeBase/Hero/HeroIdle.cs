@@ -4,8 +4,6 @@ namespace CodeBase.Hero
 {
     public class HeroIdle : MonoBehaviour
     {
-        public HeroJump HeroJump;
-
         private HeroAnimator _heroAnimator;
         private float _horizontal;
 
@@ -18,7 +16,7 @@ namespace CodeBase.Hero
         {
             _horizontal = Input.GetAxis("Horizontal");
 
-            if (_horizontal == 0 && !HeroJump.IsJump)
+            if (_horizontal == 0)
                 _heroAnimator.Idle();
         }
     }
