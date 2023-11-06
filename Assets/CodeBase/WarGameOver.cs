@@ -1,75 +1,39 @@
 ﻿using System.Collections;
+using CodeBase.GameOvers;
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace CodeBase
 {
-    public class WarGameOver : MonoBehaviour
+    public class WarGameOver : GameOverBase
     {
-        public CanvasGroup CanvasGroup;
-        public AudioSource War;
-        public AudioSource Main;
-        public Text Thanks;
-        public Text Title;
-        public Text TheEnd;
-
-        private void Start()
+        [SerializeField] private AudioSource _war;
+        [SerializeField] private AudioSource _main;
+        [SerializeField] private TextMeshProUGUI _endingNumber;
+        [SerializeField] private TextMeshProUGUI _theEnd;
+        
+        private const float Duration = 2f;
+        
+        protected override void GameOverReset()
         {
-            Reset();
+            _war.volume = 0;
+            _endingNumber.gameObject.transform.localScale = Vector3.zero;
+            _theEnd.gameObject.transform.localScale = Vector3.zero;
         }
 
-        private void Reset()
+        protected override IEnumerator PlayGameOver()
         {
-            War.volume = 0;
-            CanvasGroup.alpha = 0;
-            Title.gameObject.transform.localScale = Vector3.zero;
-            TheEnd.gameObject.transform.localScale = Vector3.zero;
-        }
+            StartCoroutine(OnDisableAudio(_main));
+            StartCoroutine(OnEnableAudio(_war));
+            
+            yield return new WaitForSeconds(Duration);
 
-        public void Open()
-        {
-            StartCoroutine(OnOpen());
-        }
+            _endingNumber.transform.DOScale(Vector3.one, Duration).SetEase(Ease.OutQuart);
 
-        public void Close()
-        {
-            CanvasGroup.alpha = 0;
-        }
+            yield return new WaitForSeconds(Duration);
 
-        private IEnumerator OnOpen()
-        {
-            while (Main.volume != 0)
-            {
-                Main.volume -= 0.01f;
-
-                War.volume += 0.01f;
-
-                yield return null;
-            }
-
-            while (War.volume != 1)
-            {
-                War.volume += 0.01f;
-
-                yield return null;
-            }
-
-            while (CanvasGroup.alpha != 1)
-            {
-                CanvasGroup.alpha += 0.002f;
-
-                yield return null;
-            }
-
-            TheEnd.gameObject.LeanScale(Vector3.one, 2f).setEaseOutBounce();
-
-            yield return new WaitForSeconds(2f);
-
-            Title.gameObject.LeanScale(Vector3.one, 2f).setEaseOutBounce();
-
-            yield return new WaitForSeconds(3f);
-
-            Thanks.gameObject.LeanMoveLocalY(2580, 50);
+            _theEnd.transform.DOScale(Vector3.one, Duration).SetEase(Ease.OutQuart);
         }
     }
 }

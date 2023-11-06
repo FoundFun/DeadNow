@@ -1,85 +1,43 @@
 ﻿using System.Collections;
+using CodeBase.GameOvers;
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace CodeBase
 {
-    public class FireGameOver : MonoBehaviour
+    public class FireGameOver : GameOverBase
     {
-        public CanvasGroup CanvasGroup;
-        public AudioSource Piano5;
-        public AudioSource Main;
-        public AudioSource War;
-        public Text Thanks;
-        public Text Title;
-        public Text TheEnd;
+        [SerializeField] private AudioSource _piano5;
+        [SerializeField] private AudioSource _main;
+        [SerializeField] private AudioSource _war;
+        [SerializeField] private TextMeshProUGUI _endingNumber;
+        [SerializeField] private TextMeshProUGUI _theEnd;
+        
+        private const float Duration = 2;
 
-        private void Start()
+        protected override void GameOverReset()
         {
-            Reset();
+            _piano5.volume = 0;
+            _endingNumber.gameObject.transform.localScale = Vector3.zero;
+            _theEnd.gameObject.transform.localScale = Vector3.zero;
         }
 
-        private void Reset()
+        protected override IEnumerator PlayGameOver()
         {
-            Piano5.volume = 0;
-            CanvasGroup.alpha = 0;
-            Title.gameObject.transform.localScale = Vector3.zero;
-            TheEnd.gameObject.transform.localScale = Vector3.zero;
-        }
+            _piano5.Play();
 
-        public void Open()
-        {
-            StartCoroutine(OnOpen());
-        }
-
-        public void Close()
-        {
-            CanvasGroup.alpha = 0;
-        }
-
-        private IEnumerator OnOpen()
-        {
-            Piano5.Play();
+            StartCoroutine(OnDisableAudio(_war));
+            StartCoroutine(OnDisableAudio(_main));
+            StartCoroutine(OnEnableAudio(_piano5));
             
-            while (Main.volume != 0)
-            {
-                Main.volume -= 0.01f;
-                War.volume -= 0.01f;
-                Piano5.volume += 0.01f;
-                
-                yield return null;
-            }
+            yield return new WaitForSeconds(Duration);
 
-            while (War.volume != 0)
-            {
-                War.volume -= 0.01f;
-                
-                yield return null;
-            }
-            
-            while (Piano5.volume != 1)
-            {
-                Piano5.volume += 0.01f;
+            _endingNumber.transform.DOScale(Vector3.one, Duration).SetEase(Ease.OutQuart);
 
-                yield return null;
-            }
+            yield return new WaitForSeconds(Duration);
 
-            while (CanvasGroup.alpha != 1)
-            {
-                CanvasGroup.alpha += 0.002f;
-                
-                yield return null;
-            }
-
-            TheEnd.gameObject.LeanScale(Vector3.one, 2f).setEaseOutBounce();
-
-            yield return new WaitForSeconds(2f);
-
-            Title.gameObject.LeanScale(Vector3.one, 2f).setEaseOutBounce();
-
-            yield return new WaitForSeconds(3f);
-
-            Thanks.gameObject.LeanMoveLocalY(2580, 50);
+            _theEnd.transform.DOScale(Vector3.one, Duration).SetEase(Ease.OutQuart);
         }
     }
 }

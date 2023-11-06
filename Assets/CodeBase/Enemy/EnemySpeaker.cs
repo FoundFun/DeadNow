@@ -24,8 +24,8 @@ namespace CodeBase.Enemy
 
         public void Reset()
         {
-            _dead.transform.DOScale(Vector3.zero, 0);
-            _tutorial.transform.DOScale(Vector3.zero, 0);
+            _dead.transform.DOScale(Vector3.zero, Duration);
+            _tutorial.transform.DOScale(Vector3.zero, Duration);
         }
 
         public void ShowText(TextMeshProUGUI message)

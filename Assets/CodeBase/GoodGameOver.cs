@@ -1,72 +1,43 @@
 ﻿using System.Collections;
+using Agava.YandexGames;
+using CodeBase.GameOvers;
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace CodeBase
 {
-    public class GoodGameOver : MonoBehaviour
+    public class GoodGameOver : GameOverBase
     {
-        public CanvasGroup CanvasGroup;
-        public AudioSource Piano4;
-        public AudioSource Main;
-        public Text Thanks;
-        public Text Title;
-        public Text TheEnd;
+        [SerializeField] private AudioSource _piano4;
+        [SerializeField] private AudioSource _main;
+        [SerializeField] private TextMeshProUGUI _endingNumber;
+        [SerializeField] private TextMeshProUGUI _theEnd;
+        
+        private const float Duration = 2;
 
-        private void Start()
+        protected override void GameOverReset()
         {
-            Reset();
+            _piano4.volume = 0;
+            _endingNumber.gameObject.transform.localScale = Vector3.zero;
+            _theEnd.gameObject.transform.localScale = Vector3.zero;
         }
 
-        private void Reset()
+        protected override IEnumerator PlayGameOver()
         {
-            Piano4.volume = 0;
-            CanvasGroup.alpha = 0;
-            Title.gameObject.transform.localScale = Vector3.zero;
-            TheEnd.gameObject.transform.localScale = Vector3.zero;
-        }
-
-        public void Open()
-        {
-            StartCoroutine(OnOpen());
-        }
-
-        private IEnumerator OnOpen()
-        {
-            Piano4.Play();
+            _piano4.Play();
             
-            while (Main.volume != 0)
-            {
-                Main.volume -= 0.01f;
-                
-                Piano4.volume += 0.01f;
-                
-                yield return null;
-            }
+            StartCoroutine(OnDisableAudio(_main));
+            StartCoroutine(OnEnableAudio(_piano4));
             
-            while (Piano4.volume != 1)
-            {
-                Piano4.volume += 0.01f;
+            yield return new WaitForSeconds(Duration);
 
-                yield return null;
-            }
+            _endingNumber.transform.DOScale(Vector3.one, Duration).SetEase(Ease.OutQuart);
 
-            while (CanvasGroup.alpha != 1)
-            {
-                CanvasGroup.alpha += 0.002f;
-                
-                yield return null;
-            }
+            yield return new WaitForSeconds(Duration);
 
-            TheEnd.gameObject.LeanScale(Vector3.one, 2f).setEaseOutBounce();
-
-            yield return new WaitForSeconds(2f);
-
-            Title.gameObject.LeanScale(Vector3.one, 2f).setEaseOutBounce();
-
-            yield return new WaitForSeconds(3f);
-
-            Thanks.gameObject.LeanMoveLocalY(2580, 50);
+            _theEnd.transform.DOScale(Vector3.one, Duration).SetEase(Ease.OutQuart);
         }
     }
 }

@@ -3092,7 +3092,7 @@ GameObject:
   - component: {fileID: 2123165866}
   - component: {fileID: 2123165867}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: War
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3222,21 +3222,17 @@ PrefabInstance:
       value: BadFireGameOver
       objectReference: {fileID: 0}
     - target: {fileID: 5920781767378339440, guid: 6bba706d0b50d6549b6c97ae2270f2e0, type: 3}
-      propertyPath: War
+      propertyPath: _war
       value: 
       objectReference: {fileID: 2123165867}
     - target: {fileID: 5920781767378339440, guid: 6bba706d0b50d6549b6c97ae2270f2e0, type: 3}
-      propertyPath: Main
+      propertyPath: _main
       value: 
       objectReference: {fileID: 1377993749}
     - target: {fileID: 5920781767378339440, guid: 6bba706d0b50d6549b6c97ae2270f2e0, type: 3}
-      propertyPath: Piano5
+      propertyPath: _piano5
       value: 
       objectReference: {fileID: 1143818686}
-    - target: {fileID: 5920781767378339440, guid: 6bba706d0b50d6549b6c97ae2270f2e0, type: 3}
-      propertyPath: Thanks
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8320400433496955915, guid: 6bba706d0b50d6549b6c97ae2270f2e0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3331,17 +3327,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1033500043}
     m_Modifications:
     - target: {fileID: 4630385453885587670, guid: bc71aad9ff4dd2749ba15b572e5dfba0, type: 3}
-      propertyPath: War
+      propertyPath: _war
       value: 
       objectReference: {fileID: 2123165867}
     - target: {fileID: 4630385453885587670, guid: bc71aad9ff4dd2749ba15b572e5dfba0, type: 3}
-      propertyPath: Main
+      propertyPath: _main
       value: 
       objectReference: {fileID: 1377993749}
-    - target: {fileID: 4630385453885587670, guid: bc71aad9ff4dd2749ba15b572e5dfba0, type: 3}
-      propertyPath: Thanks
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5069688872802824391, guid: bc71aad9ff4dd2749ba15b572e5dfba0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4150,15 +4142,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5825082334718341979, guid: 15c7cbac6ba9a7d44b62844e704e67ab, type: 3}
-      propertyPath: War
+      propertyPath: _war
       value: 
       objectReference: {fileID: 2123165867}
     - target: {fileID: 5825082334718341979, guid: 15c7cbac6ba9a7d44b62844e704e67ab, type: 3}
-      propertyPath: Main
+      propertyPath: _main
       value: 
       objectReference: {fileID: 1377993749}
     - target: {fileID: 5825082334718341979, guid: 15c7cbac6ba9a7d44b62844e704e67ab, type: 3}
-      propertyPath: Piano1
+      propertyPath: _piano1
       value: 
       objectReference: {fileID: 366396486}
     m_RemovedComponents: []
@@ -4175,17 +4167,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1033500043}
     m_Modifications:
     - target: {fileID: 3110527530075038315, guid: 45b74415ba2870e4796ea33cfd3df300, type: 3}
-      propertyPath: Main
+      propertyPath: _main
       value: 
       objectReference: {fileID: 1377993749}
     - target: {fileID: 3110527530075038315, guid: 45b74415ba2870e4796ea33cfd3df300, type: 3}
-      propertyPath: Piano4
+      propertyPath: _piano4
       value: 
       objectReference: {fileID: 1515626564}
-    - target: {fileID: 3110527530075038315, guid: 45b74415ba2870e4796ea33cfd3df300, type: 3}
-      propertyPath: Thanks
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4458664856394519454, guid: 45b74415ba2870e4796ea33cfd3df300, type: 3}
       propertyPath: m_Pivot.x
       value: 0
