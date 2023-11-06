@@ -28,7 +28,7 @@ namespace CodeBase
                     Ship.SetActive(true);
                 
                 if (Speaker != null)
-                    Speaker.ShowText(Speaker.MapsChange);
+                    Speaker.ShowText(Speaker.MapsChangeMessage);
 
                 if (Enable != null)
                     Enable.SetActive(true);

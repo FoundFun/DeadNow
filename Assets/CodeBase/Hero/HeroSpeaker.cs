@@ -1,32 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
-namespace CodeBase.Enemy
+namespace CodeBase.Hero
 {
-    public class EnemySpeaker : MonoBehaviour
+    public class HeroSpeaker : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI _dead;
-        [SerializeField] private TextMeshProUGUI _tutorial;
-
+        [SerializeField] private TextMeshProUGUI _mapsChangeMessage;
+        
         private const float TargetSize = 0.01f;
         private const int ShowTime = 4;
         private const int Duration = 1;
 
         private Coroutine _coroutine;
+        
+        public TextMeshProUGUI MapsChangeMessage => _mapsChangeMessage;
 
-        public TextMeshProUGUI Dead => _dead;
-        public TextMeshProUGUI Tutorial => _tutorial;
-
-        private void Start() => 
+        private void Awake() => 
             Reset();
 
-        public void Reset()
-        {
-            _dead.transform.DOScale(Vector3.zero, 0);
-            _tutorial.transform.DOScale(Vector3.zero, 0);
-        }
+        public void Reset() => 
+            _mapsChangeMessage.transform.DOScale(Vector3.zero, 0);
 
         public void ShowText(TextMeshProUGUI message)
         {
@@ -44,7 +40,7 @@ namespace CodeBase.Enemy
             message.transform.DOScale(new Vector3(TargetSize, TargetSize, TargetSize), Duration).SetEase(Ease.OutQuart);
 
             yield return new WaitForSeconds(ShowTime);
-
+        
             message.transform.DOScale(Vector3.zero, Duration).SetEase(Ease.OutQuart);
         }
     }
