@@ -1060,66 +1060,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
-    - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: autoUpdate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: fogIntensity
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: rainIntensity
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: windIntensity
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: masterIntensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395192248, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: lightningIntensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1637212425, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520605116634314041, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520605116634314041, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520605116980315704, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_SortingOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520605116980315704, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520605117174259813, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_SortingOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520605117174259813, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520605117208042690, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_SortingOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520605117208042690, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5520605117869745959, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_Name
       value: Rain
@@ -1163,10 +1103,6 @@ PrefabInstance:
     - target: {fileID: 5520605117869745961, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435234438484904348, guid: 4d484893fae264f4fac554213fbdb074, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
