@@ -1,38 +1,50 @@
 using System.Collections;
+using DG.Tweening;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Tutorial : MonoBehaviour
+namespace CodeBase
 {
-    public CanvasGroup CanvasGroup;
-    public Text WASD;
-    public Text Space;
-    public Text LShift;
-    public Text LCTRL;
-
-    private IEnumerator Start()
+    public class Tutorial : MonoBehaviour
     {
-        WASD.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
-
-        yield return new WaitForSeconds(2);
+        [SerializeField] private CanvasGroup _canvasGroup;
+        [SerializeField] private TextMeshProUGUI _adKeyboard;
+        [SerializeField] private TextMeshProUGUI _space;
+        [SerializeField] private TextMeshProUGUI _lShift;
         
-        Space.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
+        private const int DurationAnimation = 2;
 
-        yield return new WaitForSeconds(2);
-        
-        LShift.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
+        private void Awake() =>
+            Reset();
 
-        yield return new WaitForSeconds(2);
-        
-        LCTRL.gameObject.LeanScale(Vector3.one, 2).setEaseOutBounce();
-
-        yield return new WaitForSeconds(5);
-
-        while (CanvasGroup.alpha != 0)
+        private IEnumerator Start()
         {
-            CanvasGroup.alpha -= 0.01f;
+            _adKeyboard.transform.DOScale(Vector3.one, DurationAnimation).SetEase(Ease.OutQuart);
 
-            yield return null;
+            yield return new WaitForSeconds(DurationAnimation);
+        
+            _space.transform.DOScale(Vector3.one, DurationAnimation).SetEase(Ease.OutQuart);
+
+            yield return new WaitForSeconds(DurationAnimation);
+        
+            _lShift.transform.DOScale(Vector3.one, DurationAnimation).SetEase(Ease.OutQuart);
+
+            yield return new WaitForSeconds(DurationAnimation);
+        
+            while (_canvasGroup.alpha != 0)
+            {
+                _canvasGroup.alpha -= 0.01f;
+
+                yield return null;
+            }
+        }
+
+        private void Reset()
+        {
+            _canvasGroup.alpha = 1;
+            _adKeyboard.transform.localScale = Vector3.zero;
+            _space.transform.localScale = Vector3.zero;
+            _lShift.transform.localScale = Vector3.zero;
         }
     }
 }
