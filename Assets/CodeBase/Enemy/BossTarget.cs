@@ -43,7 +43,7 @@ namespace CodeBase.Enemy
             {
                 yield return new WaitForSeconds(3f);
                 
-                animator.Transfer();
+                animator.SitDown();
 
                 yield return new WaitForSeconds(1f);
                 

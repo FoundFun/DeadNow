@@ -24,7 +24,7 @@ namespace CodeBase.Hero
 
         private IEnumerator Transfer()
         {
-            Animator.Transfer();
+            Animator.SitDown();
             
             Rigidbody2D.AddForce(Vector2.down * _downSpeed);
 
