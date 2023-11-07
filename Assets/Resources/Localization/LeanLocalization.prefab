@@ -401,6 +401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6479399820087694443}
   - component: {fileID: 964751132402981710}
+  - component: {fileID: 8462909237489776329}
   m_Layer: 0
   m_Name: LeanLocalization
   m_TagString: Untagged
@@ -450,6 +451,19 @@ MonoBehaviour:
   defaultLanguage: English
   saveLoad: 1
   prefabs: []
+--- !u!114 &8462909237489776329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615158814644287311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440b276aadc0483095510a428635a931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _leanLocalization: {fileID: 964751132402981710}
 --- !u!1001 &4732338589065872765
 PrefabInstance:
   m_ObjectHideFlags: 0

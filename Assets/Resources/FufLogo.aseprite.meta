@@ -1,0 +1,909 @@
+fileFormatVersion: 2
+guid: 0688347e38932404bb81c025de67ac74
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: FufLogo_Clip
+    second: {fileID: 7400000, guid: d58df4648d1b3994ea064d084e1a3ccf, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 1
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 1
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638348042982276289
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: FufLogo_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 196
+      width: 21
+      height: 20
+    spriteID: cdf01e2aaebff2045be868799fec50a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 196}
+  - name: FufLogo_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 116
+      width: 23
+      height: 20
+    spriteID: e77cb63ca4b98ce4ab114aa132d11986
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 116}
+  - name: FufLogo_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 224
+      width: 23
+      height: 12
+    spriteID: 1d4daaa0bb73dd34588262beee38b434
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 224}
+  - name: FufLogo_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 24
+      width: 23
+      height: 9
+    spriteID: 92079cc8214b1c8409c40cdca8387754
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 24}
+  - name: FufLogo_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 244
+      width: 27
+      height: 3
+    spriteID: 81b18352dec99a34bb2c785f41ff2032
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 244}
+  - name: FufLogo_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 248
+      width: 30
+      height: 3
+    spriteID: 27156513c1baf33478270c40cecf6a25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 248}
+  - name: FufLogo_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 41
+      width: 27
+      height: 3
+    spriteID: 1167cff3de4470348a8519cb793eb4b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 41}
+  - name: FufLogo_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 52
+      width: 27
+      height: 3
+    spriteID: 113e580f2de5e864c8f9780f36b80883
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 52}
+  - name: FufLogo_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 63
+      width: 27
+      height: 3
+    spriteID: d9a62aec80035124fb73f22cbe2f9299
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 63}
+  - name: FufLogo_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 4
+      width: 23
+      height: 12
+    spriteID: 387b072dbc91be649893ceecf4e53248
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 4}
+  - name: FufLogo_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 180
+      width: 23
+      height: 26
+    spriteID: a71cdd58b8529d24e97d35b337a65c8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 180}
+  - name: FufLogo_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 144
+      width: 25
+      height: 18
+    spriteID: 0ce214e6f768e6f4c96b39f2a291dcda
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 144}
+  - name: FufLogo_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 60
+      width: 26
+      height: 20
+    spriteID: 5af714c2f11120441b744e5eea310575
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 60}
+  - name: FufLogo_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 4
+      width: 28
+      height: 20
+    spriteID: 60b7335775878e941b5ed662c2a0c6a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 4}
+  - name: FufLogo_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 96
+      width: 30
+      height: 20
+    spriteID: 5d98d3b667ef20c4aa08dcdf5a7d94ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 96}
+  - name: FufLogo_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 36
+      width: 30
+      height: 22
+    spriteID: 38c949f043d20384fb74dac722a75a3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 36}
+  - name: FufLogo_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 30
+      height: 24
+    spriteID: 70c7c46ab52998c4192f848f0c2a06a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: FufLogo_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 66
+      width: 30
+      height: 22
+    spriteID: 5edbeaf3095acb643a001b5e08327fac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 66}
+  - name: FufLogo_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 124
+      width: 30
+      height: 20
+    spriteID: 03f320266c5c0f041bd08513a78c3dfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 124}
+  - name: FufLogo_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 152
+      width: 30
+      height: 20
+    spriteID: 3595e0d7edd09ef4bbff1f7e5686f6e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 152}
+  - name: FufLogo_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 32
+      width: 28
+      height: 20
+    spriteID: 3d30441c0cf3054499ec963c7ee7eb03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 32}
+  - name: FufLogo_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 88
+      width: 26
+      height: 20
+    spriteID: b5e79d9313ee8894d920e2784bcbc024
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 88}
+  - name: FufLogo_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 170
+      width: 25
+      height: 18
+    spriteID: 5fdb3e363d234024d92188fff180541d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 170}
+  - name: FufLogo_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 214
+      width: 23
+      height: 26
+    spriteID: 32935300bbcc120408bd5ed08ec86a5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 214}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1518966428
+    name: FufLogo
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: FufLogo_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 24
+        y: 8
+        width: 21
+        height: 20
+      spriteId: cdf01e2aaebff2045be868799fec50a4
+    - name: FufLogo_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 23
+        y: 8
+        width: 23
+        height: 20
+      spriteId: e77cb63ca4b98ce4ab114aa132d11986
+    - name: FufLogo_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 23
+        y: 8
+        width: 23
+        height: 12
+      spriteId: 1d4daaa0bb73dd34588262beee38b434
+    - name: FufLogo_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 23
+        y: 8
+        width: 23
+        height: 9
+      spriteId: 92079cc8214b1c8409c40cdca8387754
+    - name: FufLogo_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 21
+        y: 8
+        width: 27
+        height: 3
+      spriteId: 81b18352dec99a34bb2c785f41ff2032
+    - name: FufLogo_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 20
+        y: 8
+        width: 30
+        height: 3
+      spriteId: 27156513c1baf33478270c40cecf6a25
+    - name: FufLogo_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 21
+        y: 8
+        width: 27
+        height: 3
+      spriteId: 1167cff3de4470348a8519cb793eb4b5
+    - name: FufLogo_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 21
+        y: 8
+        width: 27
+        height: 3
+      spriteId: 113e580f2de5e864c8f9780f36b80883
+    - name: FufLogo_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 21
+        y: 8
+        width: 27
+        height: 3
+      spriteId: d9a62aec80035124fb73f22cbe2f9299
+    - name: FufLogo_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 23
+        y: 8
+        width: 23
+        height: 12
+      spriteId: 387b072dbc91be649893ceecf4e53248
+    - name: FufLogo_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 23
+        y: 8
+        width: 23
+        height: 26
+      spriteId: a71cdd58b8529d24e97d35b337a65c8e
+    - name: FufLogo_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 22
+        y: 8
+        width: 25
+        height: 18
+      spriteId: 0ce214e6f768e6f4c96b39f2a291dcda
+    - name: FufLogo_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 23
+        y: 8
+        width: 26
+        height: 20
+      spriteId: 5af714c2f11120441b744e5eea310575
+    - name: FufLogo_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 23
+        y: 8
+        width: 28
+        height: 20
+      spriteId: 60b7335775878e941b5ed662c2a0c6a9
+    - name: FufLogo_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 23
+        y: 8
+        width: 30
+        height: 20
+      spriteId: 5d98d3b667ef20c4aa08dcdf5a7d94ce
+    - name: FufLogo_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 23
+        y: 6
+        width: 30
+        height: 22
+      spriteId: 38c949f043d20384fb74dac722a75a3f
+    - name: FufLogo_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 23
+        y: 6
+        width: 30
+        height: 24
+      spriteId: 70c7c46ab52998c4192f848f0c2a06a0
+    - name: FufLogo_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 23
+        y: 8
+        width: 30
+        height: 22
+      spriteId: 5edbeaf3095acb643a001b5e08327fac
+    - name: FufLogo_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 23
+        y: 8
+        width: 30
+        height: 20
+      spriteId: 03f320266c5c0f041bd08513a78c3dfe
+    - name: FufLogo_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 23
+        y: 8
+        width: 30
+        height: 20
+      spriteId: 3595e0d7edd09ef4bbff1f7e5686f6e8
+    - name: FufLogo_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 23
+        y: 8
+        width: 28
+        height: 20
+      spriteId: 3d30441c0cf3054499ec963c7ee7eb03
+    - name: FufLogo_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 23
+        y: 8
+        width: 26
+        height: 20
+      spriteId: b5e79d9313ee8894d920e2784bcbc024
+    - name: FufLogo_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 22
+        y: 8
+        width: 25
+        height: 18
+      spriteId: 5fdb3e363d234024d92188fff180541d
+    - name: FufLogo_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 23
+        y: 8
+        width: 23
+        height: 26
+      spriteId: 32935300bbcc120408bd5ed08ec86a5a
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: tvOS
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 40}
