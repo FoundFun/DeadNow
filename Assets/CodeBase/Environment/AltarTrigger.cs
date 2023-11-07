@@ -33,13 +33,13 @@ namespace CodeBase.Environment
                 Fire2.SetActive(false);
             }
 
-            if (other.GetComponent<HeroTransfer>().IsTransfer && !AltarComplete)
+            if (other.GetComponent<HeroSquat>().IsTransfer && !AltarComplete)
             {
                 AltarComplete = true;
                 
                 other.GetComponent<HeroMove>().enabled = false;
                 other.GetComponent<HeroJump>().enabled = false;
-                other.GetComponent<HeroTransfer>().enabled = false;
+                other.GetComponent<HeroSquat>().enabled = false;
                 other.GetComponent<HeroFlipper>().enabled = false;
                 other.GetComponent<HeroAttack>().enabled = false;
 

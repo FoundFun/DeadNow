@@ -29,7 +29,7 @@ namespace CodeBase.Enemy
 
                 animator.GetComponent<HeroMove>().enabled = false;
                 animator.GetComponent<HeroJump>().enabled = false;
-                animator.GetComponent<HeroTransfer>().enabled = false;
+                animator.GetComponent<HeroSquat>().enabled = false;
                 animator.GetComponent<HeroFlipper>().enabled = false;
                 animator.GetComponent<HeroAttack>().enabled = false;
 
