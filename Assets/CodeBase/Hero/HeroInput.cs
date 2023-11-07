@@ -37,6 +37,24 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""45e8dfea-7418-48e0-b2b4-8374abe18aa5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Squat"",
+                    ""type"": ""Button"",
+                    ""id"": ""45e8dfea-7418-48e0-b2b4-8374abe18aa5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""Move"",
                     ""type"": ""Value"",
                     ""id"": ""1f5074ed-5921-4e21-80c0-11a1083ac66b"",
@@ -55,6 +73,28 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""96a179d4-a914-4e9e-ac6f-57c8d27fc59b"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""96a179d4-a914-4e9e-ac6f-57c8d27fc59b"",
+                    ""path"": ""<Keyboard>/leftctrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Squat"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -100,6 +140,8 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
         m_Hero = asset.FindActionMap("Hero", throwIfNotFound: true);
         m_Hero_Jump = m_Hero.FindAction("Jump", throwIfNotFound: true);
         m_Hero_Move = m_Hero.FindAction("Move", throwIfNotFound: true);
+        m_Hero_Squat = m_Hero.FindAction("Squat", true);
+        m_Hero_Attack = m_Hero.FindAction("Attack", true);
     }
 
     public void Dispose()
@@ -163,27 +205,61 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
     private List<IHeroActions> m_HeroActionsCallbackInterfaces = new List<IHeroActions>();
     private readonly InputAction m_Hero_Jump;
     private readonly InputAction m_Hero_Move;
+    private readonly InputAction m_Hero_Squat;
+    private readonly InputAction m_Hero_Attack;
+
     public struct HeroActions
     {
         private @HeroInput m_Wrapper;
+
         public HeroActions(@HeroInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Jump => m_Wrapper.m_Hero_Jump;
         public InputAction @Move => m_Wrapper.m_Hero_Move;
-        public InputActionMap Get() { return m_Wrapper.m_Hero; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
+        public InputAction @Squat => m_Wrapper.m_Hero_Squat;
+        public InputAction @Attack => m_Wrapper.m_Hero_Attack;
+
+        public InputActionMap Get() 
+        { 
+            return m_Wrapper.m_Hero;
+        }
+
+        public void Enable() 
+        { 
+            Get().Enable(); 
+        }
+
+        public void Disable() 
+        { 
+            Get().Disable(); 
+        }
+
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(HeroActions set) { return set.Get(); }
+
+        public static implicit operator InputActionMap(HeroActions set) 
+        { 
+            return set.Get(); 
+        }
+
         public void AddCallbacks(IHeroActions instance)
         {
             if (instance == null || m_Wrapper.m_HeroActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_HeroActionsCallbackInterfaces.Add(instance);
+
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
+
+            @Squat.started += instance.OnSquat;
+            @Squat.performed += instance.OnSquat;
+            @Squat.canceled += instance.OnSquat;
+
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
         }
 
         private void UnregisterCallbacks(IHeroActions instance)
@@ -191,9 +267,18 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
+
+            @Squat.started -= instance.OnSquat;
+            @Squat.performed -= instance.OnSquat;
+            @Squat.canceled -= instance.OnSquat;
+
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
         }
 
         public void RemoveCallbacks(IHeroActions instance)
@@ -206,14 +291,18 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
         {
             foreach (var item in m_Wrapper.m_HeroActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
+
             m_Wrapper.m_HeroActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
     public HeroActions @Hero => new HeroActions(this);
+
     public interface IHeroActions
     {
         void OnJump(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
+        void OnSquat(InputAction.CallbackContext context);
     }
 }
