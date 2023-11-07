@@ -39,7 +39,7 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Attack"",
                     ""type"": ""Button"",
-                    ""id"": ""45e8dfea-7418-48e0-b2b4-8374abe18aa5"",
+                    ""id"": ""45e8d6e5-7418-48e0-b2b4-8374abe18aa5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -48,7 +48,7 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Squat"",
                     ""type"": ""Button"",
-                    ""id"": ""45e8dfea-7418-48e0-b2b4-8374abe18aa5"",
+                    ""id"": ""45e8d4ea-7418-48e0-b2b4-8374abe18aa5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -90,7 +90,7 @@ public partial class @HeroInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""96a179d4-a914-4e9e-ac6f-57c8d27fc59b"",
-                    ""path"": ""<Keyboard>/leftctrl"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

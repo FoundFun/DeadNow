@@ -23,7 +23,15 @@ namespace CodeBase.Hero
             _animator = GetComponent<HeroAnimator>();
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _attackSound = GetComponent<AudioSource>();
+
+            _input.Hero.Attack.performed += (_) => StartCoroutine(Attack());
         }
+
+        private void OnEnable() =>
+            _input.Enable();
+
+        private void OnDisable() =>
+            _input.Disable();
 
         private IEnumerator Attack()
         {
