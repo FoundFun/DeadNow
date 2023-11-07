@@ -4,19 +4,21 @@ namespace CodeBase.Hero
 {
     public class HeroIdle : MonoBehaviour
     {
+        private HeroInput _input;
         private HeroAnimator _heroAnimator;
-        private float _horizontal;
+        private float _direction;
 
         private void Awake()
         {
+            _input = new HeroInput();
             _heroAnimator = GetComponent<HeroAnimator>();
         }
 
         private void Update()
         {
-            _horizontal = Input.GetAxis("Horizontal");
+            _direction = _input.Hero.Move.ReadValue<Vector2>().x;
 
-            if (_horizontal == 0)
+            if (_direction == 0)
                 _heroAnimator.Idle();
         }
     }
