@@ -3,11 +3,13 @@ using UnityEngine;
 
 namespace CodeBase.Hero
 {
+    [RequireComponent(typeof(HeroAnimator), typeof(Rigidbody2D), typeof(AudioSource))]
     public class HeroAttack : MonoBehaviour
-    {   
-        public HeroAnimator Animator;
-        public Rigidbody2D Rigidbody2D;
-        public AudioSource AttackSound;
+    {
+        private HeroInput _input;
+        private HeroAnimator _animator;
+        private Rigidbody2D _rigidbody2D;
+        private AudioSource _attackSound;
 
         private const float _downSpeed = 0.1f;
 
@@ -15,23 +17,19 @@ namespace CodeBase.Hero
     
         public bool IsAttack { get; private set; }
 
-        private void Update()
+        private void Awake()
         {
-            if (Input.GetKey(KeyCode.LeftShift) && !_delay)
-            {
-                _delay = true;
-                
-                AttackSound.Play();
-
-                StartCoroutine(Attack());
-            }
+            _input = new HeroInput();
+            _animator = GetComponent<HeroAnimator>();
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+            _attackSound = GetComponent<AudioSource>();
         }
 
         private IEnumerator Attack()
         {
-            Animator.PlayAttack();
+            _animator.PlayAttack();
         
-            Rigidbody2D.AddForce(Vector2.down * _downSpeed);
+            _rigidbody2D.AddForce(Vector2.down * _downSpeed);
         
             yield return new WaitForSeconds(0.2f);
         
