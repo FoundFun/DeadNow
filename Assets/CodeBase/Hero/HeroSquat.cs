@@ -12,9 +12,9 @@ namespace CodeBase.Hero
         
         public bool IsTransfer { get; private set; }
 
-        private WaitForSeconds _coroutineWait = new WaitForSeconds(2);
+        private readonly WaitForSeconds _coroutineWait = new WaitForSeconds(2);
 
-        private const float _downSpeed = 0.1f;
+        private const float DownSpeed = 0.1f;
 
         private void Awake()
         {
@@ -33,12 +33,12 @@ namespace CodeBase.Hero
 
         private IEnumerator Transfer()
         {
-            if (!IsTransfer)
+            if (IsTransfer)
                 yield break;
 
             IsTransfer = true;
-            _animator.SitDown();
-            _rigidbody2D.AddForce(Vector2.down * _downSpeed);
+            _animator.Squat();
+            _rigidbody2D.AddForce(Vector2.down * DownSpeed);
 
             yield return _coroutineWait;
 

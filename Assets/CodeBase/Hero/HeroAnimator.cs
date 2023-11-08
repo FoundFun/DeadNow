@@ -12,7 +12,7 @@ namespace CodeBase.Hero
     private readonly int _downHash = Animator.StringToHash("Down");
     private readonly int _dieFinallyHash = Animator.StringToHash("FinallyDeath");
     private readonly int _jumpHash = Animator.StringToHash("Jump");
-    private readonly int _sitDown = Animator.StringToHash("SitDown");
+    private readonly int _squat = Animator.StringToHash("Squat");
     private readonly int _idleHash = Animator.StringToHash("Idle");
 
     public void PlayAttack() => _animator.SetTrigger(_attackHash);
@@ -23,6 +23,6 @@ namespace CodeBase.Hero
     public void Jump() => _animator.SetTrigger(_jumpHash);
     public void Move() => _animator.SetTrigger(_moveHash);
     public void Idle() => _animator.SetTrigger(_idleHash);
-    public void SitDown() => _animator.SetTrigger(_sitDown);
+    public void Squat() => _animator.SetTrigger(_squat);
   }
 }
