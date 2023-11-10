@@ -4,15 +4,15 @@ namespace CodeBase.Enemy
 {
     public class KnightController : MonoBehaviour
     {
-        public EnemyTrigger Knight;
-        public GameObject DeadKnight;
+        [SerializeField] private EnemyTrigger _knight;
+        [SerializeField] private GameObject _deadKnight;
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (!Knight.IsDead)
+            if (!_knight.IsDead)
             {
-                Knight.gameObject.SetActive(false);
-                DeadKnight.SetActive(true);
+                _knight.gameObject.SetActive(false);
+                _deadKnight.SetActive(true);
             }
             
             gameObject.SetActive(false);

@@ -4,15 +4,15 @@ namespace CodeBase.Enemy
 {
     public class FantasyController : MonoBehaviour
     {
-        public EnemyTrigger FantasyWarrior;
-        public GameObject IdleFantasyWarrior;
+        [SerializeField] private EnemyTrigger _fantasyWarrior;
+        [SerializeField] private GameObject _idleFantasyWarrior;
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (!FantasyWarrior.IsDead)
+            if (!_fantasyWarrior.IsDead)
             {
-                FantasyWarrior.gameObject.SetActive(false);
-                IdleFantasyWarrior.SetActive(true);
+                _fantasyWarrior.gameObject.SetActive(false);
+                _idleFantasyWarrior.SetActive(true);
             }
             
             gameObject.SetActive(false);
