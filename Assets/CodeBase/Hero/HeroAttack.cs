@@ -11,10 +11,8 @@ namespace CodeBase.Hero
         private Rigidbody2D _rigidbody2D;
         private AudioSource _attackSound;
 
-        private const float _downSpeed = 0.1f;
+        private const float DownSpeed = 0.1f;
 
-        private bool _delay;
-    
         public bool IsAttack { get; private set; }
 
         private void Awake()
@@ -36,8 +34,9 @@ namespace CodeBase.Hero
         private IEnumerator Attack()
         {
             _animator.PlayAttack();
+            _attackSound.Play();
         
-            _rigidbody2D.AddForce(Vector2.down * _downSpeed);
+            _rigidbody2D.AddForce(Vector2.down * DownSpeed);
         
             yield return new WaitForSeconds(0.2f);
         
@@ -45,7 +44,6 @@ namespace CodeBase.Hero
 
             yield return new WaitForSeconds(1);
 
-            _delay = false;
             IsAttack = false;
         }
     }
