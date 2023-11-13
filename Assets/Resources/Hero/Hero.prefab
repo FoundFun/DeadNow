@@ -227,7 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3f2b4509f300f54e933fc4e30713fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpriteRenderer: {fileID: 1447397326753951016}
 --- !u!114 &3036493043921273541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,9 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cb653e89279614cad3357bd19c1871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 7605180059722827946}
-  Rigidbody2D: {fileID: 2005721159435883323}
-  AttackSound: {fileID: 0}
+  _attackSound: {fileID: 0}
 --- !u!114 &1940308447774542306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,8 +278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c89863502a4f5a4fa46967763466743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 7605180059722827946}
-  Rigidbody2D: {fileID: 2005721159435883323}
 --- !u!114 &469892755044638577
 MonoBehaviour:
   m_ObjectHideFlags: 0

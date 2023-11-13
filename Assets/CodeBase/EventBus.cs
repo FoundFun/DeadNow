@@ -1,3 +1,5 @@
+using System;
+
 namespace CodeBase
 {
     public class EventBus
@@ -14,5 +16,9 @@ namespace CodeBase
                 return _instance;
             }
         }
+
+        public Action HeroJump;
+        public Action HeroAttack;
+        public Action HeroSquat;
     }
 }

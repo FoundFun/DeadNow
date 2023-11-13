@@ -30,6 +30,9 @@ namespace CodeBase
             _lShift.transform.DOScale(Vector3.one, DurationAnimation).SetEase(Ease.OutQuart);
 
             yield return new WaitForSeconds(DurationAnimation);
+            
+            _canvasGroup.interactable = false;
+            _canvasGroup.blocksRaycasts = false;
         
             while (_canvasGroup.alpha != 0)
             {
@@ -42,6 +45,8 @@ namespace CodeBase
         private void Reset()
         {
             _canvasGroup.alpha = 1;
+            _canvasGroup.interactable = true;
+            _canvasGroup.blocksRaycasts = true;
             _adKeyboard.transform.localScale = Vector3.zero;
             _space.transform.localScale = Vector3.zero;
             _lShift.transform.localScale = Vector3.zero;

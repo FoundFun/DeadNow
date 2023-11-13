@@ -10,7 +10,7 @@ namespace CodeBase.Hero
         private Rigidbody2D _rigidbody2D;
         private HeroInput _input;
         
-        public bool IsTransfer { get; private set; }
+        public bool IsSquat { get; private set; }
 
         private readonly WaitForSeconds _coroutineWait = new WaitForSeconds(2);
 
@@ -22,27 +22,33 @@ namespace CodeBase.Hero
             _animator = GetComponent<HeroAnimator>();
             _rigidbody2D = GetComponent<Rigidbody2D>();
 
-            _input.Hero.Squat.performed += (_) => StartCoroutine(Transfer());
+            _input.Hero.Squat.performed += (_) => StartCoroutine(Squat());
         }
 
-        private void OnEnable() =>
-            _input.Enable();
-
-        private void OnDisable() =>
-            _input.Disable();
-
-        private IEnumerator Transfer()
+        private void OnEnable()
         {
-            if (IsTransfer)
+            _input.Enable();
+            EventBus.Instance.HeroSquat += () => StartCoroutine(Squat());
+        }
+
+        private void OnDisable()
+        {
+            _input.Disable();
+            EventBus.Instance.HeroSquat -= () => StartCoroutine(Squat());
+        }
+
+        private IEnumerator Squat()
+        {
+            if (IsSquat)
                 yield break;
 
-            IsTransfer = true;
+            IsSquat = true;
             _animator.Squat();
             _rigidbody2D.AddForce(Vector2.down * DownSpeed);
 
             yield return _coroutineWait;
 
-            IsTransfer = false;
+            IsSquat = false;
         }
     }
 }

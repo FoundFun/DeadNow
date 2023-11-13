@@ -33,17 +33,17 @@ namespace BasicTemplate.CodeBase.Services.Load
             _progressSlider.value = 0;
         }
 
-        public void LoadMenu(int sceneIndex) =>
-            StartCoroutine(LoadAsync(sceneIndex));
+        public void LoadFirstLevel(string sceneName) =>
+            StartCoroutine(LoadAsync(sceneName));
 
-        private IEnumerator LoadAsync(int sceneIndex)
+        private IEnumerator LoadAsync(string sceneName)
         {
             if (_load != null)
                 yield break;
 
             _hud.gameObject.SetActive(true);
 
-            _load = SceneManager.LoadSceneAsync(sceneIndex);
+            _load = SceneManager.LoadSceneAsync(sceneName);
             _load.allowSceneActivation = false;
 
             while (_progressSlider.value < 1)

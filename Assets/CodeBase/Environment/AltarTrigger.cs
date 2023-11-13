@@ -33,7 +33,7 @@ namespace CodeBase.Environment
                 Fire2.SetActive(false);
             }
 
-            if (other.GetComponent<HeroSquat>().IsTransfer && !AltarComplete)
+            if (other.GetComponent<HeroSquat>().IsSquat && !AltarComplete)
             {
                 AltarComplete = true;
                 

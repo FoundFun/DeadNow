@@ -1,3 +1,5 @@
+using CodeBase.Services;
+using CodeBase.Services.Input;
 using UnityEngine;
 
 namespace CodeBase.Hero
@@ -11,26 +13,21 @@ namespace CodeBase.Hero
         private const float MaxVelocityX = 5;
         private const float MinVelocityX = -5;
 
-        private HeroInput _input;
         private Rigidbody2D _rigidbody2D;
         private HeroAnimator _heroAnimator;
+        private IInputService _inputService;
         private Vector2 _direction;
 
         private void Awake()
         {
-            _input = new HeroInput();
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _heroAnimator = GetComponent<HeroAnimator>();
+            
+            _inputService = AllServices.Container.Single<IInputService>();
         }
 
-        private void OnEnable() => 
-            _input.Enable();
-
-        private void OnDisable() => 
-            _input.Disable();
-
         private void Update() => 
-            _direction = _input.Hero.Move.ReadValue<Vector2>();
+            _direction = _inputService.Axis;
 
         private void FixedUpdate()
         {

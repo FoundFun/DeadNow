@@ -25,11 +25,17 @@ namespace CodeBase.Hero
             _input.Hero.Jump.performed += _ => OnJump();
         }
 
-        private void OnEnable() => 
+        private void OnEnable()
+        {
             _input.Enable();
+            EventBus.Instance.HeroJump += OnJump;
+        }
 
-        private void OnDisable() => 
+        private void OnDisable()
+        {
             _input.Disable();
+            EventBus.Instance.HeroJump -= OnJump;
+        }
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
