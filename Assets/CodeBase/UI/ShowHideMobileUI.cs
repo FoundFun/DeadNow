@@ -25,7 +25,7 @@ namespace CodeBase.UI
         }
 
         private void Awake() =>
-            _mobileUI.SetActive(!IsMobilePlatform);
+            _mobileUI.SetActive(IsMobilePlatform);
 
         private void OnEnable()
         {

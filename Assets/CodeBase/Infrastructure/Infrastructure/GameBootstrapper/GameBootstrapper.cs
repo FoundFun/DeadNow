@@ -30,7 +30,7 @@ namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper
 
         private IInputService InputService()
         {
-            return !Application.isEditor
+            return Application.isEditor
                 ? new StandaloneInputService(_input)
                 : new MobileInputService();
         }
