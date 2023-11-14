@@ -50,7 +50,7 @@ namespace CodeBase.Hero
 
             _isGround = false;
             _rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-            _audioJump.Play();
+            //_audioJump.Play();
             _animator.Jump();
         }
     }

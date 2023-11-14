@@ -40,7 +40,7 @@ namespace CodeBase.Hero
         private IEnumerator Attack()
         {
             _animator.PlayAttack();
-            _attackSound.Play();
+            //_attackSound.Play();
         
             _rigidbody2D.AddForce(Vector2.down * DownSpeed);
         
