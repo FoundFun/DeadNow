@@ -29,17 +29,18 @@ namespace CodeBase.Infrastructure.Services.Load
                 onLoaded?.Invoke();
                 yield break;
             }
-            
+
 #if YANDEX_GAMES
             yield return new WaitUntil(() => YandexGamesSdk.IsInitialized);
 #endif
 
             AsyncOperation waitNextScene = SceneManager.LoadSceneAsync(nextScene);
-            
+
             yield return new WaitUntil(() => waitNextScene.isDone);
 
+#if YANDEX_GAMES
             _gameReadyService.GameReady();
-
+#endif
             onLoaded?.Invoke();
         }
     }
