@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using CodeBase.GameOvers;
 using DG.Tweening;
 using TMPro;
@@ -15,6 +16,16 @@ namespace CodeBase
         [SerializeField] private TextMeshProUGUI _theEnd;
         
         private const float Duration = 2;
+
+        private void OnEnable()
+        {
+            EventBus.Instance.BadFireGameOver += Open;
+        }
+
+        private void OnDisable()
+        {
+            EventBus.Instance.BadFireGameOver -= Open;
+        }
 
         protected override void GameOverReset()
         {

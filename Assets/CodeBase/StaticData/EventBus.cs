@@ -20,5 +20,9 @@ namespace CodeBase
         public Action HeroJump;
         public Action HeroAttack;
         public Action HeroSquat;
+        public Action GoodGameOver;
+        public Action BadFireGameOver;
+        public Action WarGameOver;
+        public Action BadGameOver;
     }
 }

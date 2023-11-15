@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Agava.YandexGames;
 using CodeBase.GameOvers;
 using DG.Tweening;
@@ -16,6 +17,16 @@ namespace CodeBase
         [SerializeField] private TextMeshProUGUI _theEnd;
         
         private const float Duration = 2;
+
+        private void OnEnable()
+        {
+            EventBus.Instance.GoodGameOver += Open;
+        }
+
+        private void OnDisable()
+        {
+            EventBus.Instance.GoodGameOver -= Open;
+        }
 
         protected override void GameOverReset()
         {

@@ -15,10 +15,7 @@ namespace CodeBase.Environment
         public GameObject Fire2;
         public AudioSource FireDeath;
         public AudioSource DeathExplosion;
-
-        public event Action BadFireGameOver;
-        public event Action GoodGameOver;
-
+        
         public bool AltarComplete { get; private set; }
 
         private void OnTriggerStay2D(Collider2D other)
@@ -45,14 +42,16 @@ namespace CodeBase.Environment
 
                 if (!Monah.IsDead && Wizard1.IsDead && Wizard2.IsDead)
                 {
+                    other.GetComponent<HeroAnimator>().PlayFinallyDeath();
                     Fire.SetActive(false);
                     FireDeath.Play();
-                    GoodGameOver?.Invoke();
+                    EventBus.Instance.GoodGameOver?.Invoke();
                 }
                 else
                 {
+                    other.GetComponent<HeroAnimator>().PlayDeath();
                     DeathExplosion.Play();
-                    BadFireGameOver?.Invoke();
+                    EventBus.Instance.BadFireGameOver?.Invoke();
                 }
             }
         }
