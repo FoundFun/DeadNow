@@ -5,20 +5,23 @@ namespace CodeBase.Hero
 {
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(HeroAnimator))]
+    [RequireComponent(typeof(AudioSource))]
     public class HeroJump : MonoBehaviour
     {
-        [SerializeField] private AudioSource _audioJump;
+        [SerializeField] private AudioClip _jump;
         [SerializeField] private float _jumpForce;
 
         private HeroInput _input;
         private Rigidbody2D _rigidbody2D;
         private HeroAnimator _animator;
+        private AudioSource _audioSource;
         private bool _isGround;
 
         private void Awake()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _animator = GetComponent<HeroAnimator>();
+            _audioSource = GetComponent<AudioSource>();
             
             _input = new HeroInput();
             
@@ -50,7 +53,7 @@ namespace CodeBase.Hero
 
             _isGround = false;
             _rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-            //_audioJump.Play();
+            _audioSource.PlayOneShot(_jump);
             _animator.Jump();
         }
     }

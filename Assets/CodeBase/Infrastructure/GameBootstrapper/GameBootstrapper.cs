@@ -1,12 +1,12 @@
 ﻿using BasicTemplate.CodeBase.Infrastructure;
 using BasicTemplate.CodeBase.Services.Yandex;
-using CodeBase.Infrastructure.Services.Load;
+using Cinemachine;
+using CodeBase.Infrastructure.Infrastructure;
+using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using CodeBase.Services;
-using CodeBase.Services.Input;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper
+namespace CodeBase.Infrastructure.GameBootstrapper
 {
     public class GameBootstrapper : MonoBehaviour, ICoroutineRunner
     {

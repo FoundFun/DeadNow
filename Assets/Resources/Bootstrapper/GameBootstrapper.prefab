@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _curtainPrefab: {fileID: 4308110831339082123, guid: aa64492047a42bb4da37d24bbe5fb668, type: 3}
+  _virtualCameraPrefab: {fileID: 753957137090375966, guid: 7c76cc912f7636e438a14fad393fb73b, type: 3}
 --- !u!1001 &481705353769053025
 PrefabInstance:
   m_ObjectHideFlags: 0

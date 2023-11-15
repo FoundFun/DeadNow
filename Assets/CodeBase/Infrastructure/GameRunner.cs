@@ -1,4 +1,5 @@
-﻿using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
+﻿using CodeBase.Infrastructure.GameBootstrapper;
+using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using UnityEngine;
 using UnityEngine.Serialization;
 

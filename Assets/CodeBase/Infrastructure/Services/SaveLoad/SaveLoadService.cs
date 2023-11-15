@@ -1,4 +1,5 @@
 using BasicTemplate.CodeBase.Infrastructure;
+using CodeBase.Infrastructure.Factory;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper

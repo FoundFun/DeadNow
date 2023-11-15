@@ -1,9 +1,13 @@
 using System;
 using System.Collections.Generic;
 using BasicTemplate.CodeBase.Infrastructure;
+using Cinemachine;
+using CodeBase.Infrastructure.Factory;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using CodeBase.Infrastructure.Services.Load;
+using CodeBase.Infrastructure.States;
 using CodeBase.Services;
+using UnityEngine;
 
 namespace CodeBase.Infrastructure.Infrastructure
 {
@@ -12,7 +16,8 @@ namespace CodeBase.Infrastructure.Infrastructure
         private Dictionary<Type, IExitableState> _states;
         private IExitableState _activeState;
 
-        public GameStateMachine(SceneLoader sceneLoader, LoadingCurtain loadingCurtain, HeroInput input,
+        public GameStateMachine(SceneLoader sceneLoader, LoadingCurtain loadingCurtain,
+            HeroInput input,
             AllServices services)
         {
             _states = new Dictionary<Type, IExitableState>

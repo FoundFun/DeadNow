@@ -1,9 +1,12 @@
+using BasicTemplate.CodeBase.Infrastructure;
+using Cinemachine;
+using CodeBase.Infrastructure.Factory;
 using CodeBase.Infrastructure.Infrastructure;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using CodeBase.Infrastructure.Services.Load;
 using UnityEngine;
 
-namespace BasicTemplate.CodeBase.Infrastructure
+namespace CodeBase.Infrastructure.States
 {
     public class LoadLevelState : IPayloadState<string>
     {
@@ -45,13 +48,26 @@ namespace BasicTemplate.CodeBase.Infrastructure
 
         private void OnLoaded()
         {
-            InitHero();
+            InitGameWorld();
             InformProgressReaders();
-
             _gameStateMachine.Enter<GameLoopState>();
         }
 
-        private void InitHero() =>
+        private void InitGameWorld()
+        {
+            GameObject hero = InitHero();
+
+            InitCameraFollow(hero);
+        }
+
+        private GameObject InitHero() =>
             _gameFactory.CreateHero(GameObject.FindWithTag(InitialPointTag));
+
+        private void InitCameraFollow(GameObject hero)
+        {
+            CinemachineVirtualCamera cameraFollow = _gameFactory.CreateCameraFollow();
+
+            cameraFollow.Follow = hero.transform;
+        }
     }
 }
