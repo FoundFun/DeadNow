@@ -1,4 +1,5 @@
 using BasicTemplate.CodeBase.Infrastructure;
+using CodeBase.Data;
 using CodeBase.Infrastructure.Factory;
 using UnityEngine;
 

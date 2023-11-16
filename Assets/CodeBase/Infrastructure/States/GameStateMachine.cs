@@ -1,15 +1,13 @@
 using System;
 using System.Collections.Generic;
 using BasicTemplate.CodeBase.Infrastructure;
-using Cinemachine;
 using CodeBase.Infrastructure.Factory;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
+using CodeBase.Infrastructure.Services;
 using CodeBase.Infrastructure.Services.Load;
-using CodeBase.Infrastructure.States;
 using CodeBase.Services;
-using UnityEngine;
 
-namespace CodeBase.Infrastructure.Infrastructure
+namespace CodeBase.Infrastructure.States
 {
     public class GameStateMachine
     {
@@ -24,7 +22,8 @@ namespace CodeBase.Infrastructure.Infrastructure
             {
                 [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader, input, services),
                 [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader, loadingCurtain,
-                    services.Single<IGameFactory>(), services.Single<IPersistentProgressService>()),
+                    services.Single<IGameFactory>(), services.Single<IPersistentProgressService>(),
+                    services.Single<IStaticDataService>()),
                 [typeof(LoadProgressState)] = new LoadProgressState(this, services.Single<IPersistentProgressService>(),
                     services.Single<ISaveLoadService>()),
                 [typeof(GameLoopState)] = new GameLoopState(this)

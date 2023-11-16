@@ -1,11 +1,15 @@
 using System.Collections.Generic;
+using BasicTemplate.CodeBase.Infrastructure;
 using Cinemachine;
 using CodeBase.Infrastructure.AssetManagement;
-using CodeBase.Infrastructure.Factory;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
+using CodeBase.Infrastructure.Services;
+using CodeBase.Logic.EnemySpawner;
+using CodeBase.StaticData;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-namespace BasicTemplate.CodeBase.Infrastructure
+namespace CodeBase.Infrastructure.Factory
 {
     public class GameFactory : IGameFactory
     {
@@ -13,12 +17,14 @@ namespace BasicTemplate.CodeBase.Infrastructure
         public List<ISavedProgress> ProgressesWriters { get; } = new List<ISavedProgress>();
 
         private readonly IAssets _assets;
+        private readonly IStaticDataService _staticData;
 
         private GameObject _hero;
 
-        public GameFactory(IAssets assets)
+        public GameFactory(IAssets assets, IStaticDataService staticData)
         {
             _assets = assets;
+            _staticData = staticData;
         }
 
         public GameObject CreateHero(GameObject at) => 
@@ -26,6 +32,26 @@ namespace BasicTemplate.CodeBase.Infrastructure
 
         public CinemachineVirtualCamera CreateCameraFollow() => 
             InstantiateRegistered(AssetPath.CameraFollow);
+
+        public GameObject CreateEnemy(EnemyTypeId typeId, SpawnerPoint parent)
+        {
+            EnemyStaticData enemyData = _staticData.ForMonster(typeId);
+
+            GameObject enemy =
+                Object.Instantiate(enemyData.Prefab, parent.transform.position, Quaternion.identity, parent.transform);
+
+            return enemy;
+        }
+        
+        public void CreateSpawner(Vector3 at, string spawnerId, EnemyTypeId monsterTypeId)
+        {
+            SpawnerPoint spawnerPoint = InstantiateRegistered(AssetPath.Spawner, at)
+                .GetComponent<SpawnerPoint>();
+
+            spawnerPoint.Construct(this);
+            spawnerPoint.Id = spawnerId;
+            spawnerPoint.EnemyTypeId = monsterTypeId;
+        }
 
         public void Cleanup()
         {

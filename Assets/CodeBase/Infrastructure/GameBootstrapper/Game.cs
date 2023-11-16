@@ -2,6 +2,7 @@
 using BasicTemplate.CodeBase.Services.Yandex;
 using Cinemachine;
 using CodeBase.Infrastructure.Services.Load;
+using CodeBase.Infrastructure.States;
 using CodeBase.Services;
 using UnityEngine;
 

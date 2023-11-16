@@ -1,4 +1,5 @@
 using BasicTemplate.CodeBase.Infrastructure;
+using CodeBase.Data;
 using CodeBase.Infrastructure.States;
 
 namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper

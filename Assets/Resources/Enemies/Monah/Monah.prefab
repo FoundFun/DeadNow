@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1043681274264106417}
   - component: {fileID: 4449414505181955503}
   m_Layer: 5
-  m_Name: Dead
+  m_Name: Death_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 3005948909446715511}
   - component: {fileID: 2809841073259363756}
   m_Layer: 5
-  m_Name: Tutorial
+  m_Name: Trigger_text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -405,7 +405,7 @@ Transform:
   m_GameObject: {fileID: 9066911819175888335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.49, y: -2.22, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -463,7 +463,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &2850614003113407937
 Animator:
   serializedVersion: 5

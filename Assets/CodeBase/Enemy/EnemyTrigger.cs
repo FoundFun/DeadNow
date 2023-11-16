@@ -1,4 +1,5 @@
-﻿using CodeBase.Hero;
+﻿using System;
+using CodeBase.Hero;
 using UnityEngine;
 
 namespace CodeBase.Enemy
@@ -8,6 +9,8 @@ namespace CodeBase.Enemy
         public EnemyAnimator Animator;
         public EnemySpeaker Speaker;
         public bool IsDead;
+
+        public event Action Happened;
 
         private void OnTriggerEnter2D(Collider2D col)
         {
@@ -25,6 +28,7 @@ namespace CodeBase.Enemy
                 {
                     Speaker.ShowText(Speaker.Dead);
                     IsDead = true;
+                    Happened?.Invoke();
                     Animator.Death();
                 }
             }

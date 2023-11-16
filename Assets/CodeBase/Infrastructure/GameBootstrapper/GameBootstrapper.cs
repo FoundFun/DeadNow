@@ -3,6 +3,7 @@ using BasicTemplate.CodeBase.Services.Yandex;
 using Cinemachine;
 using CodeBase.Infrastructure.Infrastructure;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
+using CodeBase.Infrastructure.States;
 using CodeBase.Services;
 using UnityEngine;
 

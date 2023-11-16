@@ -1,3 +1,4 @@
+using CodeBase.Data;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using CodeBase.Services;
 using CodeBase.Services.Input;
