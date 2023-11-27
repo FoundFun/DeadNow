@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00000667572, y: 0.000007927418}
-  m_SizeDelta: {x: 482.18, y: 155.08}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1043681274264106417
 CanvasRenderer:
@@ -93,12 +93,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 0.6
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 100
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -272,8 +272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00000667572, y: 0.000007927418}
-  m_SizeDelta: {x: 482.18, y: 155.08}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3005948909446715511
 CanvasRenderer:
@@ -332,12 +332,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 0.4
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 100
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -544,7 +544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b4e1afede6143618290146e0f6b6a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 2850614003113407937}
 --- !u!114 &1808119787913576420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,9 +585,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _deathText:
     _text: {fileID: 4449414505181955503}
-    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
-    _timeTextShow: 2
-    _durationTextShow: 2
+    _targetTextSize: {x: 1, y: 1, z: 1}
+    _timeTextShow: 4
+    _durationTextShow: 1
   _speakerController: {fileID: 7204822009580874676}
   _animator: {fileID: 8707180707315369566}
 --- !u!114 &7810587961407524120
@@ -605,7 +604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sayTexts:
   - _text: {fileID: 2809841073259363756}
-    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
-    _timeTextShow: 4
-    _durationTextShow: 2
+    _targetTextSize: {x: 1, y: 1, z: 1}
+    _timeTextShow: 2
+    _durationTextShow: 1
   _speakerController: {fileID: 7204822009580874676}
