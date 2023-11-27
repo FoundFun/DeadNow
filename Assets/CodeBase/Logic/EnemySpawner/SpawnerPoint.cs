@@ -1,5 +1,4 @@
 ﻿using CodeBase.Data;
-using CodeBase.Enemy;
 using CodeBase.Infrastructure.Factory;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using CodeBase.StaticData;
@@ -12,7 +11,7 @@ namespace CodeBase.Logic.EnemySpawner
         public EnemyTypeId EnemyTypeId;
 
         private IGameFactory _gameFactory;
-        private EnemyTrigger _enemyTrigger;
+        private EnemyDeath _enemyDeath;
         private bool _slain;
 
         public string Id { get; set; }
@@ -38,14 +37,14 @@ namespace CodeBase.Logic.EnemySpawner
         {
             GameObject monster = _gameFactory.CreateEnemy(EnemyTypeId, this);
 
-            _enemyTrigger = monster.GetComponent<EnemyTrigger>();
-            _enemyTrigger.Happened += Slay;
+            _enemyDeath = monster.GetComponent<EnemyDeath>();
+            _enemyDeath.OnDeath += Slay;
         }
 
         private void Slay()
         {
-            if (_enemyTrigger != null)
-                _enemyTrigger.Happened -= Slay;
+            if (_enemyDeath != null)
+                _enemyDeath.OnDeath -= Slay;
             
             _slain = true;
         }

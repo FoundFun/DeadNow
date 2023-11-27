@@ -42,9 +42,10 @@ namespace CodeBase.Hero
 
         private IEnumerator Attack()
         {
+            EventController.ActivateEvent<AttackController>(gameObject);
+
             _animator.PlayAttack();
             _audioSource.PlayOneShot(_attack);
-
             _rigidbody2D.AddForce(Vector2.down * DownSpeed);
 
             yield return new WaitForSeconds(0.2f);

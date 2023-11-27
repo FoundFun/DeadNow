@@ -7,9 +7,9 @@ namespace CodeBase.Environment
 {
     public class AltarTrigger : MonoBehaviour
     {
-        public EnemyTrigger Wizard1;
-        public EnemyTrigger Wizard2;
-        public EnemyTrigger Monah;
+        public EnemyDeath Wizard1;
+        public EnemyDeath Wizard2;
+        public EnemyDeath Monah;
         public GameObject Fire;
         public GameObject Fire1;
         public GameObject Fire2;

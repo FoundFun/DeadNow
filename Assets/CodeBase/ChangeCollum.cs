@@ -28,8 +28,8 @@ namespace CodeBase
                 if (Ship != null)
                     Ship.SetActive(true);
 
-                if (_hero != null)
-                    EventController.ActivateEvent<SpeakerController>(_hero.gameObject);
+                // if (_hero != null)
+                    //EventController.ActivateEvent<SpeakerController>(_hero.gameObject);
 
                 if (Enable != null)
                     Enable.SetActive(true);

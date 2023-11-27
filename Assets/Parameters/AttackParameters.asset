@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1afee148c8bc544eaf7818a88ecc0be, type: 3}
-  m_Name: EnemyTriggerParameters
+  m_Script: {fileID: 11500000, guid: 02b23335e4c8df54799afc95d4e9ee96, type: 3}
+  m_Name: AttackParameters
   m_EditorClassIdentifier: 
-  _liveObjects:
-  - {fileID: 0}
-  _deadObjects:
-  - {fileID: 0}
+  _attackRange: 2
+  _enemyMask:
+    serializedVersion: 2
+    m_Bits: 0

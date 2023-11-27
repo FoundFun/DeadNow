@@ -4,7 +4,7 @@ namespace CodeBase.Enemy
 {
     public class KnightController : MonoBehaviour
     {
-        [SerializeField] private EnemyTrigger _knight;
+        [SerializeField] private EnemyDeath _knight;
         [SerializeField] private GameObject _deadKnight;
 
         private void OnTriggerEnter2D(Collider2D col)

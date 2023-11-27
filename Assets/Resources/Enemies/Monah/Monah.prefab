@@ -389,7 +389,9 @@ GameObject:
   - component: {fileID: 8707180707315369566}
   - component: {fileID: 1808119787913576420}
   - component: {fileID: 7204822009580874676}
-  m_Layer: 0
+  - component: {fileID: 8578080449455062708}
+  - component: {fileID: 7810587961407524120}
+  m_Layer: 9
   m_Name: Monah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,8 +557,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6db1e2919ee40d48a898823af3efd52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 8707180707315369566}
-  IsDead: 0
+  _layerTrigger:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &7204822009580874676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,8 +572,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142b9a95b7eee434dac5ff910986dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8578080449455062708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066911819175888335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb63a4465e94344ea593c7dc3315fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deathText:
+    _text: {fileID: 4449414505181955503}
+    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
+    _timeTextShow: 2
+    _durationTextShow: 2
+  _speakerController: {fileID: 7204822009580874676}
+  _animator: {fileID: 8707180707315369566}
+--- !u!114 &7810587961407524120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066911819175888335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa09418d891bab44a27e19d4dc02139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _sayTexts:
   - _text: {fileID: 2809841073259363756}
     _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
     _timeTextShow: 4
     _durationTextShow: 2
+  _speakerController: {fileID: 7204822009580874676}

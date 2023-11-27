@@ -7,12 +7,12 @@ namespace CodeBase.Enemy
 {
     public class BossTarget : MonoBehaviour
     {
-        public EnemyTrigger FantasyKnight;
-        public EnemyTrigger Knight;
-        public EnemyTrigger Samurai;
-        public EnemyTrigger Bandit;
-        public EnemyTrigger Bringer;
-        public EnemyTrigger Monah;
+        public EnemyDeath FantasyKnight;
+        public EnemyDeath Knight;
+        public EnemyDeath Samurai;
+        public EnemyDeath Bandit;
+        public EnemyDeath Bringer;
+        public EnemyDeath Monah;
         public EnemyAnimator Animator;
         public AudioSource DeathExplosion;
 

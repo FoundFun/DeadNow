@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4039526750563544316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1304337659667533682}
+  m_Layer: 0
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1304337659667533682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039526750563544316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7052031114567442294}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4621709365529576097
 GameObject:
   m_ObjectHideFlags: 0
@@ -21,9 +52,9 @@ GameObject:
   - component: {fileID: 8122846945651671900}
   - component: {fileID: 2065539684486145372}
   - component: {fileID: 1940308447774542306}
-  - component: {fileID: 469892755044638577}
   - component: {fileID: 8388616953758710966}
-  m_Layer: 0
+  - component: {fileID: 2526213195635926852}
+  m_Layer: 8
   m_Name: Hero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,6 +74,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1304337659667533682}
   - {fileID: 6565921186242385410}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -376,19 +408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c89863502a4f5a4fa46967763466743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &469892755044638577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4621709365529576097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aea189e56fde40e18c7e2baf2049d15c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _mapsChangeMessage: {fileID: 161456695230779789}
 --- !u!114 &8388616953758710966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,11 +420,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142b9a95b7eee434dac5ff910986dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sayTexts:
-  - _text: {fileID: 161456695230779789}
-    _targetTextSize: {x: 0, y: 0, z: 0}
-    _timeTextShow: 0
-    _durationTextShow: 0
+--- !u!114 &2526213195635926852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4621709365529576097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de56c0df8b64c19428a497ecc47ad610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackPos: {fileID: 1304337659667533682}
+  _attackParameters: {fileID: 11400000, guid: e2549d109b8785a4189c48629aee87ea, type: 2}
 --- !u!1 &7676490239481863705
 GameObject:
   m_ObjectHideFlags: 0

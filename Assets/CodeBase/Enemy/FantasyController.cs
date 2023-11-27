@@ -4,7 +4,7 @@ namespace CodeBase.Enemy
 {
     public class FantasyController : MonoBehaviour
     {
-        [SerializeField] private EnemyTrigger _fantasyWarrior;
+        [SerializeField] private EnemyDeath _fantasyWarrior;
         [SerializeField] private GameObject _idleFantasyWarrior;
 
         private void OnTriggerEnter2D(Collider2D col)

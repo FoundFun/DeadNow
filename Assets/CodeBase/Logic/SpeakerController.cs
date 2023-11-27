@@ -4,36 +4,24 @@ using UnityEngine;
 
 namespace CodeBase.Logic
 {
-    public class SpeakerController : MonoBehaviour, IEventActivation, IEventDeactivation
+    public class SpeakerController : MonoBehaviour
     {
-        [SerializeField] private List<SpeakerText> _sayTexts;
-
         private Sequence _sequence;
 
         private void Start()
         {
-            ResetTexts();
             _sequence = DOTween.Sequence();
         }
 
-        public void Activate()
+        public void ResetTexts(List<SpeakerText> sayTexts)
         {
+            if (sayTexts == null)
+                return;
+
             _sequence.Kill();
             _sequence = DOTween.Sequence();
-            foreach (var sayText in _sayTexts)
-                ShowText(sayText);
-        }
 
-        public void Deactivate()
-        {
-            ResetTexts();
-            _sequence.Kill();
-        }
-
-        public void ResetTexts()
-        {
-            _sequence.Kill();
-            foreach (var sayText in _sayTexts)
+            foreach (var sayText in sayTexts)
                 _sequence.Append(sayText.Text.transform.DOScale(Vector3.zero, sayText.DurationTextShow));
         }
 
