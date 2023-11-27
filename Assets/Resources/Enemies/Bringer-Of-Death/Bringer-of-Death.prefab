@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 8851202628203945754}
   - component: {fileID: 5827227451363086365}
   - component: {fileID: 7181180805548089285}
-  - component: {fileID: 410547617439010929}
+  - component: {fileID: 8060896427133414352}
   m_Layer: 0
   m_Name: Bringer-of-Death
   m_TagString: Untagged
@@ -420,9 +420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 5827227451363086365}
-  Speaker: {fileID: 410547617439010929}
   IsDead: 0
---- !u!114 &410547617439010929
+--- !u!114 &8060896427133414352
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -431,11 +430,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4876263014339747065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e12ec5ee4d649568275cb1add6aebe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 142b9a95b7eee434dac5ff910986dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dead: {fileID: 5491022364210694223}
-  _tutorial: {fileID: 2606387671222844060}
+  _sayTexts:
+  - _text: {fileID: 2606387671222844060}
+    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
+    _timeTextShow: 4
+    _durationTextShow: 2
 --- !u!1 &5544428683293626335
 GameObject:
   m_ObjectHideFlags: 0

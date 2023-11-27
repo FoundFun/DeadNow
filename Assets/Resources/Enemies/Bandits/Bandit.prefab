@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 170528922191030122}
   - component: {fileID: 5951858105620420959}
   - component: {fileID: 5152346669767981906}
-  - component: {fileID: 7518443096879205981}
+  - component: {fileID: 25061830911843900}
   m_Layer: 0
   m_Name: Bandit
   m_TagString: Untagged
@@ -556,9 +556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 5951858105620420959}
-  Speaker: {fileID: 7518443096879205981}
   IsDead: 0
---- !u!114 &7518443096879205981
+--- !u!114 &25061830911843900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -567,8 +566,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6365363368334351587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e12ec5ee4d649568275cb1add6aebe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 142b9a95b7eee434dac5ff910986dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dead: {fileID: 700807404153042394}
-  _tutorial: {fileID: 686556921987270704}
+  _sayTexts:
+  - _text: {fileID: 686556921987270704}
+    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
+    _timeTextShow: 4
+    _durationTextShow: 2

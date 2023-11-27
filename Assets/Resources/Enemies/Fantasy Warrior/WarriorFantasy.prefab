@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 5627277315351823038}
   - component: {fileID: 1506104426957872953}
   - component: {fileID: 3257921752857537720}
-  - component: {fileID: 1431206093925474633}
+  - component: {fileID: 1160112567636530595}
   m_Layer: 0
   m_Name: WarriorFantasy
   m_TagString: Untagged
@@ -285,9 +285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 1506104426957872953}
-  Speaker: {fileID: 1431206093925474633}
   IsDead: 0
---- !u!114 &1431206093925474633
+--- !u!114 &1160112567636530595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,11 +295,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1375842308776724408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e12ec5ee4d649568275cb1add6aebe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 142b9a95b7eee434dac5ff910986dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dead: {fileID: 4003589626594374426}
-  _tutorial: {fileID: 2051614417876141736}
+  _sayTexts:
+  - _text: {fileID: 2051614417876141736}
+    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
+    _timeTextShow: 4
+    _durationTextShow: 2
 --- !u!1 &6464471651756158477
 GameObject:
   m_ObjectHideFlags: 0

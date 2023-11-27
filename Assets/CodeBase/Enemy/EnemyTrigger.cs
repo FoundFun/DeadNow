@@ -1,5 +1,6 @@
 ﻿using System;
 using CodeBase.Hero;
+using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase.Enemy
@@ -7,7 +8,6 @@ namespace CodeBase.Enemy
     public class EnemyTrigger : MonoBehaviour
     {
         public EnemyAnimator Animator;
-        public EnemySpeaker Speaker;
         public bool IsDead;
 
         public event Action Happened;
@@ -16,7 +16,7 @@ namespace CodeBase.Enemy
         {
             if (col.TryGetComponent(out HeroAttack heroAttack) && !IsDead)
             {
-                Speaker.ShowText(Speaker.Tutorial);
+                EventController.ActivateEvent<SpeakerController>(gameObject);
             }
         }
 
@@ -26,7 +26,7 @@ namespace CodeBase.Enemy
             {
                 if (heroAttack.IsAttack)
                 {
-                    Speaker.ShowText(Speaker.Dead);
+                    EventController.DeactivateEvent<SpeakerController>(gameObject);
                     IsDead = true;
                     Happened?.Invoke();
                     Animator.Death();

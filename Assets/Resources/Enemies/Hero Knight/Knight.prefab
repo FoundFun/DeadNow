@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 7648382049177250173}
   - component: {fileID: 1450536967349695301}
   - component: {fileID: 1012820232390604511}
-  - component: {fileID: 178691259010413713}
+  - component: {fileID: 7267955705372718698}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -555,9 +555,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 1450536967349695301}
-  Speaker: {fileID: 178691259010413713}
   IsDead: 0
---- !u!114 &178691259010413713
+--- !u!114 &7267955705372718698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -566,8 +565,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7647316768795639623}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e12ec5ee4d649568275cb1add6aebe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 142b9a95b7eee434dac5ff910986dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dead: {fileID: 6237774988876356465}
-  _tutorial: {fileID: 5554317564536384646}
+  _sayTexts:
+  - _text: {fileID: 5554317564536384646}
+    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
+    _timeTextShow: 4
+    _durationTextShow: 2

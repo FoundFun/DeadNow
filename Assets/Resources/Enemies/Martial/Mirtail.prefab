@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 279144315911946820}
   - component: {fileID: 1584867229934164700}
   - component: {fileID: 4504029665319379176}
-  - component: {fileID: 7103267915007767292}
+  - component: {fileID: 6719428971926604349}
   m_Layer: 0
   m_Name: Mirtail
   m_TagString: Untagged
@@ -285,9 +285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 1584867229934164700}
-  Speaker: {fileID: 7103267915007767292}
   IsDead: 0
---- !u!114 &7103267915007767292
+--- !u!114 &6719428971926604349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,11 +295,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4778544412615219977}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e12ec5ee4d649568275cb1add6aebe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 142b9a95b7eee434dac5ff910986dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dead: {fileID: 3771985187323897926}
-  _tutorial: {fileID: 3704349147756471688}
+  _sayTexts:
+  - _text: {fileID: 3704349147756471688}
+    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
+    _timeTextShow: 4
+    _durationTextShow: 2
 --- !u!1 &6604558995127662856
 GameObject:
   m_ObjectHideFlags: 0

@@ -388,7 +388,7 @@ GameObject:
   - component: {fileID: 3303742710025229733}
   - component: {fileID: 8707180707315369566}
   - component: {fileID: 1808119787913576420}
-  - component: {fileID: 5591925083240801767}
+  - component: {fileID: 7204822009580874676}
   m_Layer: 0
   m_Name: Monah
   m_TagString: Untagged
@@ -520,7 +520,7 @@ BoxCollider2D:
   m_Offset: {x: 0.0546093, y: 1.4945477}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5294118, y: -0.52}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.0625, y: 1.5625}
     newSize: {x: 1.0625, y: 1.5625}
     adaptiveTilingThreshold: 0.5
@@ -556,9 +556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 8707180707315369566}
-  Speaker: {fileID: 5591925083240801767}
   IsDead: 0
---- !u!114 &5591925083240801767
+--- !u!114 &7204822009580874676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -567,8 +566,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9066911819175888335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e12ec5ee4d649568275cb1add6aebe4, type: 3}
+  m_Script: {fileID: 11500000, guid: 142b9a95b7eee434dac5ff910986dbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dead: {fileID: 4449414505181955503}
-  _tutorial: {fileID: 2809841073259363756}
+  _sayTexts:
+  - _text: {fileID: 2809841073259363756}
+    _targetTextSize: {x: 0.1, y: 0.1, z: 0.1}
+    _timeTextShow: 4
+    _durationTextShow: 2

@@ -1,16 +1,17 @@
 using CodeBase.Hero;
+using CodeBase.Logic;
 using UnityEngine;
 
 namespace CodeBase
 {
     public class ChangeCollum : MonoBehaviour
     {
-        public GameObject CollumTarget;
-        public GameObject Collum;
-        public GameObject Ship;
-        public GameObject Enable;
-        public HeroSpeaker Speaker;
-        public AudioSource Unlock;
+        [SerializeField] private GameObject CollumTarget;
+        [SerializeField] private GameObject Collum;
+        [SerializeField] private GameObject Ship;
+        [SerializeField] private GameObject Enable;
+        [SerializeField] private GameObject _hero;
+        [SerializeField] private AudioSource Unlock;
 
         private AudioSource _explosionAudio;
 
@@ -26,9 +27,9 @@ namespace CodeBase
 
                 if (Ship != null)
                     Ship.SetActive(true);
-                
-                if (Speaker != null)
-                    Speaker.ShowText(Speaker.MapsChangeMessage);
+
+                if (_hero != null)
+                    EventController.ActivateEvent<SpeakerController>(_hero.gameObject);
 
                 if (Enable != null)
                     Enable.SetActive(true);
