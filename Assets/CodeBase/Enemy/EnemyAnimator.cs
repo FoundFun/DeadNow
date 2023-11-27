@@ -2,12 +2,18 @@
 
 namespace CodeBase.Enemy
 {
+    [RequireComponent (typeof(Animator))]
     public class EnemyAnimator : MonoBehaviour
     {
-        public Animator Animator;
+        private Animator _animator;
         
         private static readonly int DeathHash = Animator.StringToHash("Death");
-        
-        public void Death() => Animator.SetTrigger(DeathHash);
+
+        private void Awake()
+        {
+            _animator = GetComponent<Animator>();
+        }
+
+        public void Death() => _animator.SetTrigger(DeathHash);
     }
 }

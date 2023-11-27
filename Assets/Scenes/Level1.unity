@@ -4682,6 +4682,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2100619096}
     m_Modifications:
+    - target: {fileID: 587843192077870495, guid: 503616ab26cab1f4eb3b4aee5780b02a, type: 3}
+      propertyPath: _sayTexts.Array.data[0]._durationTextShow
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3902483882062069913, guid: 503616ab26cab1f4eb3b4aee5780b02a, type: 3}
+      propertyPath: _deathText._durationTextShow
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4778544412615219977, guid: 503616ab26cab1f4eb3b4aee5780b02a, type: 3}
       propertyPath: m_Name
       value: Mirtail

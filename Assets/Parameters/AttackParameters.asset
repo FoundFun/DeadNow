@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b23335e4c8df54799afc95d4e9ee96, type: 3}
   m_Name: AttackParameters
   m_EditorClassIdentifier: 
-  _attackRange: 2
+  _attackRange: 0.9
   _enemyMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
