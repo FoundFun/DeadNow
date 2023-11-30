@@ -2,6 +2,13 @@ namespace CodeBase.StaticData
 {
     public enum EnemyTypeId
     {
-        Monah
+        Monah,
+        Bandit,
+        Bringer,
+        EvilWizard1,
+        EvilWizard2,
+        FantasyWarrior,
+        HeroKnight,
+        Martial
     }
 }
