@@ -1,31 +1,30 @@
-﻿using System;
-using CodeBase.Enemy;
-using CodeBase.Hero;
+﻿using CodeBase.Hero;
+using CodeBase.Logic.EnemySpawner;
 using UnityEngine;
 
 namespace CodeBase.Environment
 {
     public class AltarTrigger : MonoBehaviour
     {
-        public EnemyDeath Wizard1;
-        public EnemyDeath Wizard2;
-        public EnemyDeath Monah;
-        public GameObject Fire;
-        public GameObject Fire1;
-        public GameObject Fire2;
-        public AudioSource FireDeath;
-        public AudioSource DeathExplosion;
+        [SerializeField] private SpawnerPoint Wizard1;
+        [SerializeField] private SpawnerPoint Wizard2;
+        [SerializeField] private SpawnerPoint Monah;
+        [SerializeField] private GameObject Fire;
+        [SerializeField] private GameObject Fire1;
+        [SerializeField] private GameObject Fire2;
+        [SerializeField] private AudioSource FireDeath;
+        [SerializeField] private AudioSource DeathExplosion;
         
         public bool AltarComplete { get; private set; }
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (Wizard1.IsDead && !AltarComplete)
+            if (Wizard1.Enemy.IsDead && !AltarComplete)
             {
                 Fire1.SetActive(false);
             }
 
-            if (Wizard2.IsDead && !AltarComplete)
+            if (Wizard2.Enemy.IsDead && !AltarComplete)
             {
                 Fire2.SetActive(false);
             }
@@ -40,7 +39,7 @@ namespace CodeBase.Environment
                 other.GetComponent<HeroFlipper>().enabled = false;
                 other.GetComponent<HeroAttack>().enabled = false;
 
-                if (!Monah.IsDead && Wizard1.IsDead && Wizard2.IsDead)
+                if (!Monah.Enemy.IsDead && Wizard1.Enemy.IsDead && Wizard2.Enemy.IsDead)
                 {
                     other.GetComponent<HeroAnimator>().PlayFinallyDeath();
                     Fire.SetActive(false);

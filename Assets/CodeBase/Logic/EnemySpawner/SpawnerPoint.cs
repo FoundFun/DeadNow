@@ -15,6 +15,7 @@ namespace CodeBase.Logic.EnemySpawner
         private bool _slain;
 
         public string Id { get; set; }
+        public EnemyDeath Enemy => _enemyDeath;
 
         public void Construct(IGameFactory gameFactory) => 
             _gameFactory = gameFactory;

@@ -1,20 +1,25 @@
-using System;
-using System.Collections;
 using CodeBase.Hero;
+using CodeBase.Logic.EnemySpawner;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace CodeBase.Enemy
 {
     public class BossTarget : MonoBehaviour
     {
+        [SerializeField] private List<SpawnerPoint> _deathUnits;
+        [SerializeField] private EnemyAnimator _animator;
+        [SerializeField] private AudioSource _deathExplosion;
+
+        /*
         public EnemyDeath FantasyKnight;
         public EnemyDeath Knight;
         public EnemyDeath Samurai;
         public EnemyDeath Bandit;
         public EnemyDeath Bringer;
         public EnemyDeath Monah;
-        public EnemyAnimator Animator;
-        public AudioSource DeathExplosion;
+        */
 
         private bool _isAttack;
 
@@ -29,12 +34,17 @@ namespace CodeBase.Enemy
                 animator.GetComponent<HeroSquat>().enabled = false;
                 animator.GetComponent<HeroFlipper>().enabled = false;
                 animator.GetComponent<HeroAttack>().enabled = false;
+                
+                foreach (var unit in _deathUnits)
+                {
+                    if (!unit.Enemy.IsDead)
+                    {
+                        StartCoroutine(OpenBadGameOver(animator));
+                        return;
+                    }
+                }
 
-                if (Monah.IsDead && Samurai.IsDead && FantasyKnight.IsDead && Knight.IsDead && Bandit.IsDead &&
-                    Bringer.IsDead)
-                    StartCoroutine(OpenWarGameOver(animator));
-                else
-                    StartCoroutine(OpenBadGameOver(animator));
+                StartCoroutine(OpenWarGameOver(animator));
             }
         }
 
@@ -56,12 +66,12 @@ namespace CodeBase.Enemy
         {
             yield return new WaitForSeconds(3f);
 
-            Animator.Death();
+            _animator.Death();
             
             yield return new WaitForSeconds(1f);
 
             animator.PlayDeath();
-            DeathExplosion.Play();
+            _deathExplosion.Play();
 
             yield return new WaitForSeconds(3f);
 
