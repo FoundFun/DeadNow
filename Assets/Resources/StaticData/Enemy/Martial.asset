@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c54486540f3b148a1bcf3e75eec8f4, type: 3}
   m_Name: Martial
   m_EditorClassIdentifier: 
-  _triggerText: "\u041E\u0434\u0438\u043D \u0443\u0434\u0430\u0440 - \u043E\u0434\u043D\u0430
+  _triggerText: "\u041E\u0434\u0438\u043D \u0443\u0434\u0430\u0440 - <shake>\u041E\u0414\u041D\u0410</shake>
     \u0436\u0438\u0437\u043D\u044C."
   _deathText: "\u0422\u044B \u0443\u0441\u0432\u043E\u0438\u043B \u0443\u0440\u043E\u043A..."
   Prefab: {fileID: 4778544412615219977, guid: 503616ab26cab1f4eb3b4aee5780b02a, type: 3}

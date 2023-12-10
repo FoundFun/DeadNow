@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HeroKnight
   m_EditorClassIdentifier: 
   _triggerText: "\u042F \u0441\u043E\u0431\u0438\u0440\u0430\u044E\u0441\u044C \u043F\u0440\u0438\u0441\u043B\u0443\u0448\u0430\u0442\u044C\u0441\u044F
-    \u043A \u0418\u0425 \u0441\u043B\u043E\u0432\u0430\u043C"
+    \u043A <shake>\u0418\u0425</shake> \u0441\u043B\u043E\u0432\u0430\u043C"
   _deathText: "\u0421\u043E\u0431\u0438\u0440\u0430\u0435\u0448\u044C\u0441\u044F
     \u0443\u0431\u0438\u0442\u044C \u0432\u0441\u0435\u0445?.."
   Prefab: {fileID: 7647316768795639623, guid: 81675f122ca6fbc46b7f99b332c65027, type: 3}

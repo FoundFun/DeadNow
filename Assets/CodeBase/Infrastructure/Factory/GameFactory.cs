@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using BasicTemplate.CodeBase.Infrastructure;
 using Cinemachine;
+using CodeBase.Enemy;
 using CodeBase.Infrastructure.AssetManagement;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using CodeBase.Infrastructure.Services;
@@ -39,6 +40,11 @@ namespace CodeBase.Infrastructure.Factory
 
             GameObject enemy =
                 Object.Instantiate(enemyData.Prefab, parent.transform.position, Quaternion.identity, parent.transform);
+
+            EnemySpeaker enemySpeaker = enemy.GetComponent<EnemySpeaker>();
+            
+            enemySpeaker.Tutorial.text = enemyData.TriggerText;
+            enemySpeaker.Dead.text = enemyData.DeathText;
 
             return enemy;
         }
