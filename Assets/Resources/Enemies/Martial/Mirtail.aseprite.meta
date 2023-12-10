@@ -85,7 +85,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 6
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -97,7 +97,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 6
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -105,7 +105,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638328858177250276
+  platformSettingsDirtyTick: 638378059292363027
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,7 +131,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Mirtail_Frame_0
     originalName: 
-    pivot: {x: -0.3902439, y: -0.1509434}
+    pivot: {x: 1.7317072, y: -0.1509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -151,7 +151,7 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 391}
   - name: Mirtail_Frame_1
     originalName: 
-    pivot: {x: -0.3255814, y: -0.1509434}
+    pivot: {x: 1.6976744, y: -0.1509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -171,7 +171,7 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 213}
   - name: Mirtail_Frame_2
     originalName: 
-    pivot: {x: -0.3902439, y: -0.1509434}
+    pivot: {x: 1.7317072, y: -0.1509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -191,7 +191,7 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 452}
   - name: Mirtail_Frame_3
     originalName: 
-    pivot: {x: -0.4390244, y: -0.1509434}
+    pivot: {x: 1.6829268, y: -0.1509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -211,7 +211,7 @@ ScriptedImporter:
     uvTransform: {x: 119, y: 65}
   - name: Mirtail_Frame_4
     originalName: 
-    pivot: {x: -0.25233644, y: -0.11594203}
+    pivot: {x: 0.5607477, y: -0.11594203}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -231,7 +231,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Mirtail_Frame_5
     originalName: 
-    pivot: {x: -0.25233644, y: -0.11594203}
+    pivot: {x: 0.5607477, y: -0.11594203}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -251,7 +251,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 81}
   - name: Mirtail_Frame_6
     originalName: 
-    pivot: {x: -0.6041667, y: -0.12698413}
+    pivot: {x: 1.2083333, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -271,7 +271,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 213}
   - name: Mirtail_Frame_7
     originalName: 
-    pivot: {x: -0.5625, y: -0.12698413}
+    pivot: {x: 1.25, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -291,7 +291,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 284}
   - name: Mirtail_Frame_8
     originalName: 
-    pivot: {x: -0.6041667, y: -0.12698413}
+    pivot: {x: 1.2083333, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -311,7 +311,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 355}
   - name: Mirtail_Frame_9
     originalName: 
-    pivot: {x: -0.6458333, y: -0.12698413}
+    pivot: {x: 1.1666667, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -331,7 +331,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 426}
   - name: Mirtail_Frame_10
     originalName: 
-    pivot: {x: -0.27522936, y: -0.1509434}
+    pivot: {x: 0.5229358, y: -0.1509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -351,7 +351,7 @@ ScriptedImporter:
     uvTransform: {x: 119, y: 4}
   - name: Mirtail_Frame_11
     originalName: 
-    pivot: {x: -0.2857143, y: -0.17021276}
+    pivot: {x: 0.54285717, y: -0.17021276}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -371,7 +371,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 158}
   - name: Mirtail_Frame_12
     originalName: 
-    pivot: {x: -0.35714287, y: -0.1509434}
+    pivot: {x: 1.7142856, y: -0.1509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -391,7 +391,7 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 274}
   - name: Mirtail_Frame_13
     originalName: 
-    pivot: {x: -0.34883723, y: -0.16}
+    pivot: {x: 1.6744186, y: -0.16}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -411,7 +411,7 @@ ScriptedImporter:
     uvTransform: {x: 168, y: 118}
   - name: Mirtail_Frame_14
     originalName: 
-    pivot: {x: -0.30434784, y: -0.16666667}
+    pivot: {x: 1.5869565, y: -0.16666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -431,7 +431,7 @@ ScriptedImporter:
     uvTransform: {x: 60, y: 335}
   - name: Mirtail_Frame_15
     originalName: 
-    pivot: {x: -0.2916667, y: -0.17777778}
+    pivot: {x: 1.5208334, y: -0.17777778}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -451,7 +451,7 @@ ScriptedImporter:
     uvTransform: {x: 168, y: 65}
   - name: Mirtail_Frame_16
     originalName: 
-    pivot: {x: -0.3333333, y: -0.19512196}
+    pivot: {x: 1.372549, y: -0.19512196}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -471,7 +471,7 @@ ScriptedImporter:
     uvTransform: {x: 168, y: 228}
   - name: Mirtail_Frame_17
     originalName: 
-    pivot: {x: -0.2916667, y: -0.18181819}
+    pivot: {x: 1.5208334, y: -0.18181819}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

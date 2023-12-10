@@ -85,7 +85,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 6
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -97,7 +97,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 6
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
     generateModelPrefab: 1
@@ -105,7 +105,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638328859925876797
+  platformSettingsDirtyTick: 638378058471301741
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -131,7 +131,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Knight_Frame_0
     originalName: 
-    pivot: {x: -0.8, y: 0}
+    pivot: {x: 1.2555556, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -151,7 +151,7 @@ ScriptedImporter:
     uvTransform: {x: 59, y: 223}
   - name: Knight_Frame_1
     originalName: 
-    pivot: {x: -0.7234042, y: 0}
+    pivot: {x: 1.2446809, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -171,7 +171,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 223}
   - name: Knight_Frame_2
     originalName: 
-    pivot: {x: -0.5576923, y: 0}
+    pivot: {x: 1.2211539, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -191,7 +191,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 148}
   - name: Knight_Frame_3
     originalName: 
-    pivot: {x: -0.7241379, y: 0}
+    pivot: {x: 0.87068963, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -211,7 +211,7 @@ ScriptedImporter:
     uvTransform: {x: 305, y: 4}
   - name: Knight_Frame_4
     originalName: 
-    pivot: {x: -0.8181818, y: 0}
+    pivot: {x: 0.8636363, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -231,7 +231,7 @@ ScriptedImporter:
     uvTransform: {x: 371, y: 4}
   - name: Knight_Frame_5
     originalName: 
-    pivot: {x: -0.8181818, y: 0}
+    pivot: {x: 0.8636363, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -251,7 +251,7 @@ ScriptedImporter:
     uvTransform: {x: 434, y: 4}
   - name: Knight_Frame_6
     originalName: 
-    pivot: {x: -1.2857143, y: 0}
+    pivot: {x: 1.3571428, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -271,7 +271,7 @@ ScriptedImporter:
     uvTransform: {x: 444, y: 223}
   - name: Knight_Frame_7
     originalName: 
-    pivot: {x: -0.18032786, y: 0}
+    pivot: {x: 1.3360656, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -291,7 +291,7 @@ ScriptedImporter:
     uvTransform: {x: 283, y: 148}
   - name: Knight_Frame_8
     originalName: 
-    pivot: {x: -0.22033899, y: 0}
+    pivot: {x: 1.3474576, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -311,7 +311,7 @@ ScriptedImporter:
     uvTransform: {x: 126, y: 148}
   - name: Knight_Frame_9
     originalName: 
-    pivot: {x: -0.33333334, y: 0}
+    pivot: {x: 1.3796296, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -331,7 +331,7 @@ ScriptedImporter:
     uvTransform: {x: 64, y: 148}
   - name: Knight_Frame_10
     originalName: 
-    pivot: {x: -0.09565217, y: 0}
+    pivot: {x: 0.70869565, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -351,7 +351,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Knight_Frame_11
     originalName: 
-    pivot: {x: -0.6075949, y: 0}
+    pivot: {x: 0.56329113, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -371,7 +371,7 @@ ScriptedImporter:
     uvTransform: {x: 127, y: 4}
   - name: Knight_Frame_12
     originalName: 
-    pivot: {x: -0.5783133, y: 0}
+    pivot: {x: 0.53614455, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -391,7 +391,7 @@ ScriptedImporter:
     uvTransform: {x: 214, y: 4}
   - name: Knight_Frame_13
     originalName: 
-    pivot: {x: -0.5853659, y: 0}
+    pivot: {x: 0.5426829, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -411,7 +411,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 148}
   - name: Knight_Frame_14
     originalName: 
-    pivot: {x: -1.0212766, y: 0}
+    pivot: {x: 0.94680846, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -431,7 +431,7 @@ ScriptedImporter:
     uvTransform: {x: 335, y: 223}
   - name: Knight_Frame_15
     originalName: 
-    pivot: {x: -1.0212766, y: 0}
+    pivot: {x: 0.94680846, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -451,7 +451,7 @@ ScriptedImporter:
     uvTransform: {x: 280, y: 223}
   - name: Knight_Frame_16
     originalName: 
-    pivot: {x: -1.0434783, y: 0}
+    pivot: {x: 0.96739125, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -471,7 +471,7 @@ ScriptedImporter:
     uvTransform: {x: 390, y: 223}
   - name: Knight_Frame_17
     originalName: 
-    pivot: {x: -0.9411765, y: 0}
+    pivot: {x: 0.872549, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -491,7 +491,7 @@ ScriptedImporter:
     uvTransform: {x: 352, y: 148}
   - name: Knight_Frame_18
     originalName: 
-    pivot: {x: -0.6575343, y: 0}
+    pivot: {x: 0.60958904, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -511,7 +511,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 92}
   - name: Knight_Frame_19
     originalName: 
-    pivot: {x: -0.6575343, y: 0}
+    pivot: {x: 0.60958904, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -531,7 +531,7 @@ ScriptedImporter:
     uvTransform: {x: 112, y: 223}
   - name: Knight_Frame_20
     originalName: 
-    pivot: {x: -0.631579, y: 0}
+    pivot: {x: 0.5855263, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -551,7 +551,7 @@ ScriptedImporter:
     uvTransform: {x: 411, y: 148}
   - name: Knight_Frame_21
     originalName: 
-    pivot: {x: -0.6075949, y: 0}
+    pivot: {x: 0.56329113, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -571,7 +571,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 223}
   - name: Knight_Frame_22
     originalName: 
-    pivot: {x: -0.64000005, y: 0}
+    pivot: {x: 0.5933333, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -591,7 +591,7 @@ ScriptedImporter:
     uvTransform: {x: 193, y: 263}
   - name: Knight_Frame_23
     originalName: 
-    pivot: {x: -0.6857143, y: 0}
+    pivot: {x: 0.63571423, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -611,7 +611,7 @@ ScriptedImporter:
     uvTransform: {x: 112, y: 267}
   - name: Knight_Frame_24
     originalName: 
-    pivot: {x: -0.6857143, y: 0}
+    pivot: {x: 0.63571423, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
