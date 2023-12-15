@@ -16,12 +16,20 @@ namespace PixelWeatherAsset.Scripts
         [SerializeField] private ParticleSystem _fogPart;
         [SerializeField] private bool _autoUpdate;
 
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private AudioClip _thunder;
+        [SerializeField] private AudioClip _thunder2;
+        [SerializeField] private AudioClip _thunder3;
+        [SerializeField] private AudioClip _thunder4;
+
         private ParticleSystem.EmissionModule _rainEmission;
         private ParticleSystem.ForceOverLifetimeModule _rainForce;
         private ParticleSystem.EmissionModule _windEmission;
         private ParticleSystem.MainModule _windMain;
         private ParticleSystem.EmissionModule _lightningEmission;
         private ParticleSystem.EmissionModule _fogEmission;
+
+        private float _delayThunder;
 
         private void Awake()
         {
@@ -52,9 +60,30 @@ namespace PixelWeatherAsset.Scripts
                 (1f + (_rainIntensity + _windIntensity) * 0.5f) * _fogIntensity * _masterIntensity;
 
             if (_rainIntensity * _masterIntensity < 0.7f)
+            {
                 _lightningEmission.rateOverTime = 0;
+            }
             else
+            {
                 _lightningEmission.rateOverTime = _lightningIntensity * _masterIntensity * 0.4f;
+            }
+
+            if (_lightningEmission.rateOverTime.constant > 0 && _delayThunder > 10)
+            {
+                AudioClip clip = Random.Range(0, 4) switch
+                {
+                    0 => _thunder,
+                    1 => _thunder2,
+                    2 => _thunder3,
+                    3 => _thunder4,
+                    _ => _thunder
+                };
+                
+                _audioSource.PlayOneShot(clip);
+                _delayThunder = 0;
+            }
+
+            _delayThunder += Time.deltaTime;
         }
 
         private void OnMasterChanged(float value)
