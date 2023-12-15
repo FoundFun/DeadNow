@@ -1,38 +1,41 @@
 ﻿using System;
 using CodeBase.Enemy;
 using CodeBase.Hero;
+using CodeBase.Infrastructure.Factory;
+using CodeBase.Services;
 using UnityEngine;
 
 namespace CodeBase.Environment
 {
     public class AltarTrigger : MonoBehaviour
     {
-        public EnemyTrigger Wizard1;
-        public EnemyTrigger Wizard2;
-        public EnemyTrigger Monah;
-        public GameObject Fire;
-        public GameObject Fire1;
-        public GameObject Fire2;
-        public AudioSource FireDeath;
-        public AudioSource DeathExplosion;
-        
-        public bool AltarComplete { get; private set; }
+        [SerializeField] private GameObject Fire;
+        [SerializeField] private GameObject Fire1;
+        [SerializeField] private GameObject Fire2;
+        [SerializeField] private AudioSource FireDeath;
+        [SerializeField] private AudioSource DeathExplosion;
+
+        private IGameFactory _gameFactory;
+        private bool _altarComplete;
+
+        private void Awake() => 
+            _gameFactory = AllServices.Container.Single<IGameFactory>();
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (Wizard1.IsDead && !AltarComplete)
+            if (_gameFactory.Wizard1.IsDead && !_altarComplete)
             {
                 Fire1.SetActive(false);
             }
 
-            if (Wizard2.IsDead && !AltarComplete)
+            if (_gameFactory.Wizard2.IsDead && !_altarComplete)
             {
                 Fire2.SetActive(false);
             }
 
-            if (other.GetComponent<HeroSquat>().IsSquat && !AltarComplete)
+            if (other.GetComponent<HeroSquat>().IsSquat && !_altarComplete)
             {
-                AltarComplete = true;
+                _altarComplete = true;
                 
                 other.GetComponent<HeroMove>().enabled = false;
                 other.GetComponent<HeroJump>().enabled = false;
@@ -40,7 +43,7 @@ namespace CodeBase.Environment
                 other.GetComponent<HeroFlipper>().enabled = false;
                 other.GetComponent<HeroAttack>().enabled = false;
 
-                if (!Monah.IsDead && Wizard1.IsDead && Wizard2.IsDead)
+                if (!_gameFactory.Monah.IsDead && _gameFactory.Wizard1.IsDead && _gameFactory.Wizard2.IsDead)
                 {
                     other.GetComponent<HeroAnimator>().PlayFinallyDeath();
                     Fire.SetActive(false);
@@ -58,7 +61,7 @@ namespace CodeBase.Environment
 
         public void Reset()
         {
-            AltarComplete = false;
+            _altarComplete = false;
             Fire.SetActive(false);
         }
     }

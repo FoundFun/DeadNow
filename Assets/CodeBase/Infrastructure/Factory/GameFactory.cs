@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using BasicTemplate.CodeBase.Infrastructure;
 using Cinemachine;
@@ -9,6 +10,7 @@ using CodeBase.Logic.EnemySpawner;
 using CodeBase.StaticData;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 namespace CodeBase.Infrastructure.Factory
 {
@@ -16,6 +18,14 @@ namespace CodeBase.Infrastructure.Factory
     {
         public List<ISavedProgressReader> ProgressesReaders { get; } = new List<ISavedProgressReader>();
         public List<ISavedProgress> ProgressesWriters { get; } = new List<ISavedProgress>();
+        public EnemyTrigger Wizard1 { get; set; }
+        public EnemyTrigger Wizard2 { get; set; }
+        public EnemyTrigger Monah { get; set; }
+        public EnemyTrigger Samurai { get; set; }
+        public EnemyTrigger FantasyKnight { get; set; }
+        public EnemyTrigger Knight { get; set; }
+        public EnemyTrigger Bandit { get; set; }
+        public EnemyTrigger Bringer { get; set; }
 
         private readonly IAssets _assets;
         private readonly IStaticDataService _staticData;
@@ -45,6 +55,38 @@ namespace CodeBase.Infrastructure.Factory
             
             enemySpeaker.Tutorial.text = enemyData.TriggerText;
             enemySpeaker.Dead.text = enemyData.DeathText;
+
+            EnemyTrigger enemyTrigger = enemy.GetComponent<EnemyTrigger>();
+
+            switch (enemyData.EnemyTypeId)
+            {
+                case EnemyTypeId.Monah:
+                    Monah = enemyTrigger;
+                    break;
+                case EnemyTypeId.Bandit:
+                    Bandit = enemyTrigger;
+                    break;
+                case EnemyTypeId.Bringer:
+                    Bringer = enemyTrigger;
+                    break;
+                case EnemyTypeId.Samurai:
+                    Samurai = enemyTrigger;
+                    break;
+                case EnemyTypeId.EvilWizard1:
+                    Wizard1 = enemyTrigger;
+                    break;
+                case EnemyTypeId.EvilWizard2:
+                    Wizard2 = enemyTrigger;
+                    break;
+                case EnemyTypeId.FantasyWarrior:
+                    FantasyKnight = enemyTrigger;
+                    break;
+                case EnemyTypeId.HeroKnight:
+                    Knight = enemyTrigger;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(enemyData.EnemyTypeId));
+            }
 
             return enemy;
         }

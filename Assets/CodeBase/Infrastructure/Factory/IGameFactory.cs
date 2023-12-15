@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using BasicTemplate.CodeBase.Infrastructure;
 using Cinemachine;
+using CodeBase.Enemy;
 using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using CodeBase.Logic.EnemySpawner;
 using CodeBase.Services;
@@ -13,6 +13,14 @@ namespace CodeBase.Infrastructure.Factory
     {
         List<ISavedProgressReader> ProgressesReaders { get; }
         List<ISavedProgress> ProgressesWriters { get; }
+        EnemyTrigger Wizard1 { get; }
+        EnemyTrigger Wizard2 { get; }
+        EnemyTrigger Monah { get; }
+        EnemyTrigger Samurai { get; }
+        EnemyTrigger FantasyKnight { get; }
+        EnemyTrigger Knight { get; }
+        EnemyTrigger Bandit { get; }
+        EnemyTrigger Bringer { get; }
         GameObject CreateHero(GameObject at);
         CinemachineVirtualCamera CreateCameraFollow();
         void Cleanup();

@@ -1,22 +1,22 @@
 using System;
 using System.Collections;
 using CodeBase.Hero;
+using CodeBase.Infrastructure.Factory;
+using CodeBase.Services;
 using UnityEngine;
 
 namespace CodeBase.Enemy
 {
     public class BossTarget : MonoBehaviour
     {
-        public EnemyTrigger FantasyKnight;
-        public EnemyTrigger Knight;
-        public EnemyTrigger Samurai;
-        public EnemyTrigger Bandit;
-        public EnemyTrigger Bringer;
-        public EnemyTrigger Monah;
-        public EnemyAnimator Animator;
-        public AudioSource DeathExplosion;
+        [SerializeField] private EnemyAnimator Animator;
+        [SerializeField] private AudioSource DeathExplosion;
 
         private bool _isAttack;
+        private IGameFactory _gameFactory;
+
+        private void Awake() => 
+            _gameFactory = AllServices.Container.Single<IGameFactory>();
 
         private void OnTriggerStay2D(Collider2D other)
         {
@@ -30,8 +30,12 @@ namespace CodeBase.Enemy
                 animator.GetComponent<HeroFlipper>().enabled = false;
                 animator.GetComponent<HeroAttack>().enabled = false;
 
-                if (Monah.IsDead && Samurai.IsDead && FantasyKnight.IsDead && Knight.IsDead && Bandit.IsDead &&
-                    Bringer.IsDead)
+                if (_gameFactory.Monah.IsDead
+                    && _gameFactory.Samurai.IsDead 
+                    && _gameFactory.FantasyKnight.IsDead
+                    && _gameFactory.Knight.IsDead 
+                    && _gameFactory.Bandit.IsDead
+                    && _gameFactory.Bringer.IsDead)
                     StartCoroutine(OpenWarGameOver(animator));
                 else
                     StartCoroutine(OpenBadGameOver(animator));

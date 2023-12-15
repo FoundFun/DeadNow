@@ -66,7 +66,7 @@ namespace CodeBase.GameOvers
 
             yield return new WaitForSeconds(DelayThanksText);
 
-            _thanks.transform.DOMoveY(TargetThanksPositionY, ThanksAnimationTime).SetLoops(3, LoopType.Restart);
+            _thanks.transform.DOMoveY(TargetThanksPositionY, ThanksAnimationTime).SetLoops(-1, LoopType.Restart);
         }
     }
 }

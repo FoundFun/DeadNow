@@ -9,6 +9,6 @@ namespace CodeBase.StaticData
         EvilWizard2,
         FantasyWarrior,
         HeroKnight,
-        Martial
+        Samurai
     }
 }
