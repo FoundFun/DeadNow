@@ -1,6 +1,6 @@
 using System;
 
-namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper
+namespace CodeBase.Data
 {
     [Serializable]
     public class WorldData

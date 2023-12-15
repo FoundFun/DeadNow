@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace BasicTemplate.CodeBase
+namespace CodeBase.Infrastructure
 {
     public class ScalableHorizontalLayoutGroup : LayoutGroup
     {

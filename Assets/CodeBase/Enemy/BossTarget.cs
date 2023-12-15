@@ -1,16 +1,16 @@
-using System;
 using System.Collections;
 using CodeBase.Hero;
 using CodeBase.Infrastructure.Factory;
-using CodeBase.Services;
+using CodeBase.Infrastructure.Services;
+using CodeBase.StaticData;
 using UnityEngine;
 
 namespace CodeBase.Enemy
 {
     public class BossTarget : MonoBehaviour
     {
-        [SerializeField] private EnemyAnimator Animator;
-        [SerializeField] private AudioSource DeathExplosion;
+        [SerializeField] private EnemyAnimator _animator;
+        [SerializeField] private AudioSource _deathExplosion;
 
         private bool _isAttack;
         private IGameFactory _gameFactory;
@@ -60,12 +60,12 @@ namespace CodeBase.Enemy
         {
             yield return new WaitForSeconds(3f);
 
-            Animator.Death();
+            _animator.Death();
             
             yield return new WaitForSeconds(1f);
 
             animator.PlayDeath();
-            DeathExplosion.Play();
+            _deathExplosion.Play();
 
             yield return new WaitForSeconds(3f);
 

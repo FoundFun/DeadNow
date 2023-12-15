@@ -1,9 +1,9 @@
-﻿using BasicTemplate.CodeBase.Services.Yandex;
+﻿using CodeBase.Infrastructure.Services.Yandex;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BasicTemplate.CodeBase.AdsLogic
+namespace CodeBase.Infrastructure.AdsLogic
 {
     public class RewardCounterAds : MonoBehaviour
     {

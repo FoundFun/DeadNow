@@ -1,8 +1,8 @@
 ﻿using Agava.WebUtility;
-using BasicTemplate.CodeBase.Services.Sound;
+using CodeBase.Infrastructure.Services.Sound;
 using UnityEngine;
 
-namespace BasicTemplate.CodeBase.Infrastructure
+namespace CodeBase.Infrastructure
 {
     public class FocusObserver : MonoBehaviour
     {

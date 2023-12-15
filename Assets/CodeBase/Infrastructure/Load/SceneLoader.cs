@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections;
-using Agava.YandexGames;
-using BasicTemplate.CodeBase.Infrastructure;
-using BasicTemplate.CodeBase.Services.Yandex;
+using CodeBase.Infrastructure.Services.Yandex;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace CodeBase.Infrastructure.Services.Load
+namespace CodeBase.Infrastructure.Load
 {
-    public class SceneLoader
+    public class SceneLoader : ISceneLoader
     {
         private readonly ICoroutineRunner _coroutineRunner;
         private readonly IYandexGameReadyService _gameReadyService;
+
+        private bool _isGameReady;
 
         public SceneLoader(ICoroutineRunner coroutineRunner, IYandexGameReadyService gameReadyService)
         {
@@ -21,6 +21,11 @@ namespace CodeBase.Infrastructure.Services.Load
 
         public void Load(string nextScene, Action onLoaded = null) =>
             _coroutineRunner.StartCoroutine(LoadAsync(nextScene, onLoaded));
+
+        public void Restart()
+        {
+            SceneManager.LoadScene("Level1");
+        }
 
         private IEnumerator LoadAsync(string nextScene, Action onLoaded = null)
         {
@@ -39,7 +44,11 @@ namespace CodeBase.Infrastructure.Services.Load
             yield return new WaitUntil(() => waitNextScene.isDone);
 
 #if YANDEX_GAMES
-            _gameReadyService.GameReady();
+            if (!_isGameReady)
+            {
+                _gameReadyService.GameReady();
+                _isGameReady = true;
+            }
 #endif
             onLoaded?.Invoke();
         }

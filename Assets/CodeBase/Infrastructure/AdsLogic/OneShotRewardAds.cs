@@ -1,8 +1,8 @@
-﻿using BasicTemplate.CodeBase.Services.Yandex;
+﻿using CodeBase.Infrastructure.Services.Yandex;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BasicTemplate.CodeBase.AdsLogic
+namespace CodeBase.Infrastructure.AdsLogic
 {
     public class OneShotRewardAds : MonoBehaviour
     {

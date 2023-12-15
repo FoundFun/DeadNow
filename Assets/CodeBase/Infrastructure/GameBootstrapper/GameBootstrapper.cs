@@ -1,10 +1,5 @@
-﻿using BasicTemplate.CodeBase.Infrastructure;
-using BasicTemplate.CodeBase.Services.Yandex;
-using Cinemachine;
-using CodeBase.Infrastructure.Infrastructure;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
-using CodeBase.Infrastructure.States;
-using CodeBase.Services;
+﻿using CodeBase.Infrastructure.States;
+using CodeBase.UI;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.GameBootstrapper
@@ -17,8 +12,7 @@ namespace CodeBase.Infrastructure.GameBootstrapper
 
         private void Awake()
         {
-            _game = new Game(this, AllServices.Container.Single<IYandexGameReadyService>(),
-                Instantiate(_curtainPrefab));
+            _game = new Game(this, Instantiate(_curtainPrefab));
 
             _game.StateMachine.Enter<BootstrapState>();
             

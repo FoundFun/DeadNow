@@ -1,4 +1,5 @@
 ﻿using CodeBase.Environment;
+using CodeBase.StaticData;
 using UnityEngine;
 
 namespace CodeBase.Hero

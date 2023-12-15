@@ -1,7 +1,7 @@
-using BasicTemplate.CodeBase.Services.Yandex;
+using CodeBase.Infrastructure.Services.Yandex;
 using UnityEngine;
 
-namespace BasicTemplate.CodeBase.Data
+namespace CodeBase.Data
 {
     public class PlayerData
     {

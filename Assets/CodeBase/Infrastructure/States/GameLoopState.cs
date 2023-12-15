@@ -1,8 +1,4 @@
-using CodeBase.Infrastructure.Infrastructure;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
-using CodeBase.Infrastructure.States;
-
-namespace BasicTemplate.CodeBase.Infrastructure
+namespace CodeBase.Infrastructure.States
 {
     public class GameLoopState : IState
     {

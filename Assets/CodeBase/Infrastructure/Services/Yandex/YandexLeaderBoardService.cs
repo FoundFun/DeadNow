@@ -1,10 +1,9 @@
 ﻿using System.Linq;
 using Agava.YandexGames;
-using BasicTemplate.CodeBase.StaticData;
-using BasicTemplate.CodeBase.Yandex;
-using Lean.Localization;
+using CodeBase.Data;
+using CodeBase.Infrastructure.Yandex;
 
-namespace BasicTemplate.CodeBase.Services.Yandex
+namespace CodeBase.Infrastructure.Services.Yandex
 {
     public class YandexLeaderBoardService : IYandexLeaderBoardService
     {

@@ -1,15 +1,13 @@
 using System;
 using System.Collections.Generic;
-using BasicTemplate.CodeBase.Infrastructure;
 using Cinemachine;
 using CodeBase.Enemy;
 using CodeBase.Infrastructure.AssetManagement;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 using CodeBase.Infrastructure.Services;
+using CodeBase.Infrastructure.Services.PersistentProgress;
 using CodeBase.Logic.EnemySpawner;
 using CodeBase.StaticData;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
 namespace CodeBase.Infrastructure.Factory

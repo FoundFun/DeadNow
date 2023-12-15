@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BasicTemplate.CodeBase.Infrastructure
+namespace CodeBase.UI
 {
     public class LoadingCurtain : MonoBehaviour
     {

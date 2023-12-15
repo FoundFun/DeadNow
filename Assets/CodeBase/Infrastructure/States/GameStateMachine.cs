@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using BasicTemplate.CodeBase.Infrastructure;
 using CodeBase.Infrastructure.Factory;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
+using CodeBase.Infrastructure.Load;
 using CodeBase.Infrastructure.Services;
-using CodeBase.Infrastructure.Services.Load;
-using CodeBase.Services;
+using CodeBase.Infrastructure.Services.PersistentProgress;
+using CodeBase.Infrastructure.Services.SaveLoad;
+using CodeBase.UI;
 
 namespace CodeBase.Infrastructure.States
 {
@@ -14,8 +14,7 @@ namespace CodeBase.Infrastructure.States
         private Dictionary<Type, IExitableState> _states;
         private IExitableState _activeState;
 
-        public GameStateMachine(SceneLoader sceneLoader, LoadingCurtain loadingCurtain,
-            HeroInput input,
+        public GameStateMachine(ISceneLoader sceneLoader, LoadingCurtain loadingCurtain, HeroInput input,
             AllServices services)
         {
             _states = new Dictionary<Type, IExitableState>

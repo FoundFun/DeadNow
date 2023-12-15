@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using CodeBase.GameOvers;
+using CodeBase.StaticData;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -14,7 +14,7 @@ namespace CodeBase
         [SerializeField] private AudioSource _war;
         [SerializeField] private TextMeshProUGUI _endingNumber;
         [SerializeField] private TextMeshProUGUI _theEnd;
-        
+
         private const float Duration = 2;
 
         private void OnEnable()

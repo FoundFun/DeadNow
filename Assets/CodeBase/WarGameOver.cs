@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using CodeBase.GameOvers;
+using CodeBase.StaticData;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;

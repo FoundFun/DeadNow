@@ -1,9 +1,6 @@
-﻿using CodeBase.Infrastructure.GameBootstrapper;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
-namespace BasicTemplate.CodeBase.Infrastructure
+namespace CodeBase.Infrastructure.GameBootstrapper
 {
     public class GameRunner : MonoBehaviour
     {
@@ -11,7 +8,7 @@ namespace BasicTemplate.CodeBase.Infrastructure
 
         private void Awake()
         {
-            var bootstrapper = FindObjectOfType<GameBootstrapper>();
+            GameBootstrapper bootstrapper = FindObjectOfType<GameBootstrapper>();
 
             if (bootstrapper != null) return;
 

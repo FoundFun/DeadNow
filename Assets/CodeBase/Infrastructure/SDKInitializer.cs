@@ -2,7 +2,7 @@
 using Agava.YandexGames;
 using UnityEngine;
 
-namespace BasicTemplate.CodeBase.Infrastructure
+namespace CodeBase.Infrastructure
 {
     public class SDKInitializer : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace CodeBase
+namespace CodeBase.StaticData
 {
     public class EventBus
     {

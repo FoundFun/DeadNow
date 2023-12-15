@@ -1,7 +1,7 @@
-﻿using BasicTemplate.CodeBase.SoundLogic;
+﻿using CodeBase.Infrastructure.SoundLogic;
 using UnityEngine;
 
-namespace BasicTemplate.CodeBase.Services.Sound
+namespace CodeBase.Infrastructure.Services.Sound
 {
     public class SoundService : ISoundService
     {

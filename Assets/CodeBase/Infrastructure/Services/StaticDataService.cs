@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using BasicTemplate.CodeBase.Infrastructure;
 using CodeBase.Infrastructure.AssetManagement;
 using CodeBase.StaticData;
 using UnityEngine;

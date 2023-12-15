@@ -1,6 +1,6 @@
 ﻿using Agava.YandexGames;
 
-namespace BasicTemplate.CodeBase.Services.Yandex
+namespace CodeBase.Infrastructure.Services.Yandex
 {
     public class YandexPersonalProfileDataService : IYandexPersonalProfileDataService
     {

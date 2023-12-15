@@ -1,4 +1,4 @@
-﻿namespace BasicTemplate.CodeBase.Yandex
+﻿namespace CodeBase.Infrastructure.Yandex
 {
     public class LeaderBoardElement
     {

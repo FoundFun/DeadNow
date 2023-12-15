@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
-using BasicTemplate.CodeBase.AdsLogic;
-using BasicTemplate.CodeBase.Data;
-using BasicTemplate.CodeBase.Infrastructure;
-using BasicTemplate.CodeBase.Services.Sound;
-using BasicTemplate.CodeBase.Services.Yandex;
-using BasicTemplate.CodeBase.SoundLogic;
-using BasicTemplate.CodeBase.Yandex;
+using CodeBase.Data;
+using CodeBase.Infrastructure.AdsLogic;
+using CodeBase.Infrastructure.Services.Sound;
+using CodeBase.Infrastructure.Services.Yandex;
+using CodeBase.Infrastructure.SoundLogic;
+using CodeBase.Infrastructure.Yandex;
 using UnityEngine;
 
-namespace BasicTemplate.CodeBase
+namespace CodeBase.Infrastructure
 {
     public class GameRoot : MonoBehaviour
     {

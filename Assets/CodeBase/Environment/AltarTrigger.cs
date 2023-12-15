@@ -2,18 +2,19 @@
 using CodeBase.Enemy;
 using CodeBase.Hero;
 using CodeBase.Infrastructure.Factory;
-using CodeBase.Services;
+using CodeBase.Infrastructure.Services;
+using CodeBase.StaticData;
 using UnityEngine;
 
 namespace CodeBase.Environment
 {
     public class AltarTrigger : MonoBehaviour
     {
-        [SerializeField] private GameObject Fire;
-        [SerializeField] private GameObject Fire1;
-        [SerializeField] private GameObject Fire2;
-        [SerializeField] private AudioSource FireDeath;
-        [SerializeField] private AudioSource DeathExplosion;
+        [SerializeField] private GameObject _fire;
+        [SerializeField] private GameObject _fire1;
+        [SerializeField] private GameObject _fire2;
+        [SerializeField] private AudioSource _fireDeath;
+        [SerializeField] private AudioSource _deathExplosion;
 
         private IGameFactory _gameFactory;
         private bool _altarComplete;
@@ -25,12 +26,12 @@ namespace CodeBase.Environment
         {
             if (_gameFactory.Wizard1.IsDead && !_altarComplete)
             {
-                Fire1.SetActive(false);
+                _fire1.SetActive(false);
             }
 
             if (_gameFactory.Wizard2.IsDead && !_altarComplete)
             {
-                Fire2.SetActive(false);
+                _fire2.SetActive(false);
             }
 
             if (other.GetComponent<HeroSquat>().IsSquat && !_altarComplete)
@@ -46,14 +47,14 @@ namespace CodeBase.Environment
                 if (!_gameFactory.Monah.IsDead && _gameFactory.Wizard1.IsDead && _gameFactory.Wizard2.IsDead)
                 {
                     other.GetComponent<HeroAnimator>().PlayFinallyDeath();
-                    Fire.SetActive(false);
-                    FireDeath.Play();
+                    _fire.SetActive(false);
+                    _fireDeath.Play();
                     EventBus.Instance.GoodGameOver?.Invoke();
                 }
                 else
                 {
                     other.GetComponent<HeroAnimator>().PlayDeath();
-                    DeathExplosion.Play();
+                    _deathExplosion.Play();
                     EventBus.Instance.BadFireGameOver?.Invoke();
                 }
             }
@@ -62,7 +63,7 @@ namespace CodeBase.Environment
         public void Reset()
         {
             _altarComplete = false;
-            Fire.SetActive(false);
+            _fire.SetActive(false);
         }
     }
 }

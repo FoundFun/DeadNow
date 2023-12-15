@@ -1,8 +1,8 @@
-using BasicTemplate.CodeBase.Infrastructure;
 using CodeBase.Data;
-using CodeBase.Infrastructure.States;
+using CodeBase.Infrastructure.Services.PersistentProgress;
+using CodeBase.Infrastructure.Services.SaveLoad;
 
-namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper
+namespace CodeBase.Infrastructure.States
 {
     public class LoadProgressState : IState
     {

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Cinemachine;
 using CodeBase.Enemy;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
+using CodeBase.Infrastructure.Services;
+using CodeBase.Infrastructure.Services.PersistentProgress;
 using CodeBase.Logic.EnemySpawner;
-using CodeBase.Services;
 using CodeBase.StaticData;
 using UnityEngine;
 

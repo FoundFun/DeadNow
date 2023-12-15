@@ -1,6 +1,4 @@
-﻿using CodeBase.Services;
-
-namespace BasicTemplate.CodeBase.Services.Yandex
+﻿namespace CodeBase.Infrastructure.Services.Yandex
 {
     public interface IYandexGameReadyService : IService
     {

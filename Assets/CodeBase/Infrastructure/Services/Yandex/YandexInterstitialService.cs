@@ -1,8 +1,8 @@
 ﻿using Agava.YandexGames;
-using BasicTemplate.CodeBase.Services.Sound;
+using CodeBase.Infrastructure.Services.Sound;
 using UnityEngine;
 
-namespace BasicTemplate.CodeBase.Services.Yandex
+namespace CodeBase.Infrastructure.Services.Yandex
 {
     public class YandexInterstitialService : IYandexInterstitialService
     {

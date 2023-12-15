@@ -1,9 +1,9 @@
-using BasicTemplate.CodeBase.Infrastructure;
 using CodeBase.Data;
 using CodeBase.Infrastructure.Factory;
+using CodeBase.Infrastructure.Services.PersistentProgress;
 using UnityEngine;
 
-namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper
+namespace CodeBase.Infrastructure.Services.SaveLoad
 {
     public class SaveLoadService : ISaveLoadService
     {

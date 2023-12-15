@@ -1,4 +1,4 @@
-﻿namespace BasicTemplate.CodeBase.Services.Yandex
+﻿namespace CodeBase.Infrastructure.Services.Yandex
 {
     public interface IYandexPersonalProfileDataService
     {

@@ -408,14 +408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f5638302a53bc44b2436861e4ecb7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FantasyKnight: {fileID: 0}
-  Knight: {fileID: 0}
-  Samurai: {fileID: 0}
-  Bandit: {fileID: 0}
-  Bringer: {fileID: 0}
-  Monah: {fileID: 0}
-  Animator: {fileID: 3497845429392493866}
-  DeathExplosion: {fileID: 0}
+  _animator: {fileID: 3497845429392493866}
+  _deathExplosion: {fileID: 0}
 --- !u!1 &7264126317825952568
 GameObject:
   m_ObjectHideFlags: 0

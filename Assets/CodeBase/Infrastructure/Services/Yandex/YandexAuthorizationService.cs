@@ -1,7 +1,7 @@
 ﻿using Agava.YandexGames;
-using BasicTemplate.CodeBase.Yandex;
+using CodeBase.Infrastructure.Yandex;
 
-namespace BasicTemplate.CodeBase.Services.Yandex
+namespace CodeBase.Infrastructure.Services.Yandex
 {
     public class YandexAuthorizationService : IYandexAuthorizationService
     {

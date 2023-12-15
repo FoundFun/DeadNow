@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BasicTemplate.CodeBase.SoundLogic
+namespace CodeBase.Infrastructure.SoundLogic
 {
     public class SoundView : MonoBehaviour
     {

@@ -1,10 +1,8 @@
 ﻿using System.Collections;
-using Agava.YandexGames;
-using BasicTemplate.CodeBase.StaticData;
 using Lean.Localization;
 using UnityEngine;
 
-namespace BasicTemplate.CodeBase.Services.Localization
+namespace CodeBase.Localization
 {
     public class Localization : MonoBehaviour
     {

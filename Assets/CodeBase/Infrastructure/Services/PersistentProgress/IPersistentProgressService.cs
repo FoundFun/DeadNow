@@ -1,7 +1,6 @@
 using CodeBase.Data;
-using CodeBase.Services;
 
-namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper
+namespace CodeBase.Infrastructure.Services.PersistentProgress
 {
     public interface IPersistentProgressService : IService
     {

@@ -1,11 +1,11 @@
-using BasicTemplate.CodeBase.Infrastructure;
 using Cinemachine;
+using CodeBase.Data;
 using CodeBase.Infrastructure.Factory;
-using CodeBase.Infrastructure.Infrastructure;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
+using CodeBase.Infrastructure.Load;
 using CodeBase.Infrastructure.Services;
-using CodeBase.Infrastructure.Services.Load;
+using CodeBase.Infrastructure.Services.PersistentProgress;
 using CodeBase.StaticData;
+using CodeBase.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,13 +16,13 @@ namespace CodeBase.Infrastructure.States
         private const string InitialPointTag = "InitialPoint";
 
         private readonly GameStateMachine _gameStateMachine;
-        private readonly SceneLoader _sceneLoader;
         private readonly LoadingCurtain _loadingCurtain;
+        private readonly ISceneLoader _sceneLoader;
         private readonly IPersistentProgressService _progress;
         private readonly IGameFactory _gameFactory;
         private readonly IStaticDataService _staticData;
 
-        public LoadLevelState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, LoadingCurtain loadingCurtain,
+        public LoadLevelState(GameStateMachine gameStateMachine, ISceneLoader sceneLoader, LoadingCurtain loadingCurtain,
             IGameFactory gameFactory, IPersistentProgressService progress, IStaticDataService staticData)
         {
             _gameStateMachine = gameStateMachine;

@@ -1,4 +1,4 @@
-﻿namespace BasicTemplate.CodeBase.StaticData
+﻿namespace CodeBase.Data
 {
     public static class DataLocalization
     {

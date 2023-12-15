@@ -1,4 +1,4 @@
-namespace CodeBase.Infrastructure.Infrastructure.GameBootstrapper
+namespace CodeBase.Data
 {
     public class PositionOnLevel
     {

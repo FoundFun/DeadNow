@@ -1,5 +1,4 @@
 using System;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
 
 namespace CodeBase.Data
 {

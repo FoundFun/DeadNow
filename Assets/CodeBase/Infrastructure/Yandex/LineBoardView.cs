@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BasicTemplate.CodeBase.Yandex
+namespace CodeBase.Infrastructure.Yandex
 {
     public class LineBoardView : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using Agava.YandexGames;
 using UnityEngine.UI;
 
-namespace BasicTemplate.CodeBase.Services.Yandex
+namespace CodeBase.Infrastructure.Services.Yandex
 {
     public class YandexCloudService : IYandexCloudService
     {

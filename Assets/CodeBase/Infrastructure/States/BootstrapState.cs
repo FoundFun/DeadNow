@@ -1,10 +1,11 @@
-using BasicTemplate.CodeBase.Infrastructure;
+using CodeBase.Infrastructure.AssetManagement;
 using CodeBase.Infrastructure.Factory;
-using CodeBase.Infrastructure.Infrastructure.GameBootstrapper;
+using CodeBase.Infrastructure.Load;
 using CodeBase.Infrastructure.Services;
-using CodeBase.Infrastructure.Services.Load;
-using CodeBase.Services;
-using CodeBase.Services.Input;
+using CodeBase.Infrastructure.Services.Input;
+using CodeBase.Infrastructure.Services.PersistentProgress;
+using CodeBase.Infrastructure.Services.SaveLoad;
+using CodeBase.Infrastructure.Services.Yandex;
 using UnityEngine;
 
 namespace CodeBase.Infrastructure.States
@@ -14,11 +15,11 @@ namespace CodeBase.Infrastructure.States
         private const string Initial = "Initial";
 
         private readonly GameStateMachine _gameStateMachine;
-        private readonly SceneLoader _sceneLoader;
+        private readonly ISceneLoader _sceneLoader;
         private readonly HeroInput _input;
         private readonly AllServices _services;
 
-        public BootstrapState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, HeroInput input,
+        public BootstrapState(GameStateMachine gameStateMachine, ISceneLoader sceneLoader, HeroInput input,
             AllServices services)
         {
             _gameStateMachine = gameStateMachine;
@@ -51,9 +52,11 @@ namespace CodeBase.Infrastructure.States
             
             IAssets assets = new AssetProvider();
             IPersistentProgressService progressService = new PersistentProgressService();
+            IYandexGameReadyService gameReadyService = new YandexGameReadyService();
 
             _services.RegisterSingle(assets);
             _services.RegisterSingle(progressService);
+            _services.RegisterSingle(gameReadyService);
             _services.RegisterSingle(InputService());
             _services.RegisterSingle<IGameFactory>(new GameFactory(assets, staticData));
             _services.RegisterSingle<ISaveLoadService>(new SaveLoadService(progressService,

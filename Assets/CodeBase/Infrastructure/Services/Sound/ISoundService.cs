@@ -1,4 +1,4 @@
-namespace BasicTemplate.CodeBase.Services.Sound
+namespace CodeBase.Infrastructure.Services.Sound
 {
     public interface ISoundService
     {

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
-using Agava.YandexGames;
+﻿using System.Collections;
 using CodeBase.GameOvers;
+using CodeBase.StaticData;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace CodeBase
 {
@@ -15,7 +13,7 @@ namespace CodeBase
         [SerializeField] private AudioSource _main;
         [SerializeField] private TextMeshProUGUI _endingNumber;
         [SerializeField] private TextMeshProUGUI _theEnd;
-        
+
         private const float Duration = 2;
 
         private void OnEnable()

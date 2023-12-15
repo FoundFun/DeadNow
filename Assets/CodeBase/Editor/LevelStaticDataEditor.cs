@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using CodeBase.Data;
 using CodeBase.Logic;
 using CodeBase.Logic.EnemySpawner;
 using CodeBase.StaticData;
